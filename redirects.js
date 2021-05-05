@@ -1,6 +1,10 @@
 const targetOrigin = "https://spec.smarthealth.cards";
 
 const remaps = [
+  {"page": "", "id": "health-card", "target": `${targetOrigin}/vocabulary`},
+  {"page": "", "id": "covid19", "target": `${targetOrigin}/vocabulary`},
+  {"page": "", "id": "laboratory", "target": `${targetOrigin}/vocabulary`},
+  {"page": "", "id": "immunization", "target": `${targetOrigin}/vocabulary`},
   {"page": "", "id": "overview"}, 
   {"page": "", "id": "status"}, 
   {"page": "", "id": "contributing"}, 
@@ -88,8 +92,12 @@ const remaps = [
 
 const path = window.location.pathname.replace(/\//g, "");
 const hash = window.location.hash.slice(1);
-const target = remaps.filter(({page, id}) => path === page && hash === id);
+const needRedirect = remaps.filter(({page, id}) => path === page && hash === id);
 
-if (target.length > 0) {
-  window.location.href = `${targetOrigin}${window.location.pathname}${window.location.hash}`
+if (needRedirect.length > 0) {
+  if (needRedirect[0].target) {
+     window.location.href = needRedirect[0].target;
+  } else {
+    window.location.href = `${targetOrigin}${window.location.pathname}${window.location.hash}`;
+  }
 }
