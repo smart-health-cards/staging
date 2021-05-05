@@ -1,4 +1,5 @@
-console.log("Creating redirects for old links");
+const targetOrigin = "https://spec.smarthealth.cards";
+
 const remaps = [
   {"page": "", "id": "overview"}, 
   {"page": "", "id": "status"}, 
@@ -87,9 +88,8 @@ const remaps = [
 
 const path = window.location.pathname.replace(/\//g, "");
 const hash = window.location.hash.slice(1);
-
 const target = remaps.filter(({page, id}) => path === page && hash === id);
-if (target.length > 0) {
-  window.location.href = `https://spec.smarthealth.cards/${path}/#${hash}`
-}
 
+if (target.length > 0) {
+  window.location.href = `${targetOrigin}${window.location.pathname}${window.location.hash}`
+}
