@@ -1,0 +1,74 @@
+/* navagation */
+
+nav
+{
+    border-bottom: 1px solid #676868;
+}
+
+.navbar-nav
+{
+    align-items: center;
+    display: flex;
+}
+
+.navbar-dark .navbar-nav .nav-link
+{
+    padding-right: 1.5rem;
+}
+
+/* Nav Links */
+nav #SMARTnavbar a:link {
+    font-style: normal;
+    font-size: 22px;
+    line-height: 28px;
+    color: #676868 !important;
+}
+
+nav #SMARTnavbar a:visited {
+    font-style: normal;
+    font-size: 22px;
+    line-height: 28px;
+    color: #676868 !important;
+}
+
+nav #SMARTnavbar a:hover {
+    font-style: normal;
+    font-size: 22px;
+    line-height: 28px;
+    color: #676868 !important;
+}
+
+nav #SMARTnavbar a:active {
+    font-style: normal;
+    font-size: 22px;
+    line-height: 28px;
+    color: #676868 !important;
+}
+
+nav .active
+{
+    font-weight: bold;
+}
+
+nav .logo
+{
+    height: 45px;
+}
+
+/* Nav Button */
+nav .btn-primary , nav .btn-primary:hover , nav .btn-primary:active , nav .btn-primary:visited  
+{
+    background-color: #058E97 !important;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    text-transform: capitalize;
+    color: #FFFFFF !important;
+    border: none !important;
+}
+
+.navbar-dark .navbar-toggler-icon 
+{
+    background-image: url("../Assets/Images/hamburger.svg");
+}
