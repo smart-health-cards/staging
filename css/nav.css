@@ -2,10 +2,10 @@
 
 nav
 {
-    border-bottom: 1px solid #676868;
+    border-bottom: 1px solid #BBBBBB;
 }
 
-.navbar-nav
+.navbar-nav > li
 {
     align-items: center;
     display: flex;
@@ -13,7 +13,7 @@ nav
 
 .navbar-dark .navbar-nav .nav-link
 {
-    padding-right: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 /* Nav Links */
@@ -35,7 +35,7 @@ nav #SMARTnavbar a:hover {
     font-style: normal;
     font-size: 22px;
     line-height: 28px;
-    color: #676868 !important;
+    color: #2BA9E0 !important;
 }
 
 nav #SMARTnavbar a:active {
@@ -56,7 +56,7 @@ nav .logo
 }
 
 /* Nav Button */
-nav .btn-primary , nav .btn-primary:hover , nav .btn-primary:active , nav .btn-primary:visited  
+nav .btn-primary , nav .btn-primary:active , nav .btn-primary:visited  
 {
     background-color: #058E97 !important;
     font-family: Source Sans Pro;
@@ -68,7 +68,56 @@ nav .btn-primary , nav .btn-primary:hover , nav .btn-primary:active , nav .btn-p
     border: none !important;
 }
 
+nav .btn-primary:hover
+{
+    background-color: #2BA9E0 !important;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    text-transform: capitalize;
+    color: #FFFFFF !important;
+    border: none !important;
+}
+
+
+
 .navbar-dark .navbar-toggler-icon 
 {
     background-image: url("../Assets/Images/hamburger.svg");
+}
+
+.navbar .navbar-nav .nav-link 
+{
+    color: #000000;
+    font-size: 1.1em;
+    position: relative;
+}
+
+/* Underline */
+@media (min-width: 992px) 
+{
+    .navbar .navbar-nav .active .nav-link::after 
+    {
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: #058E97;
+        color: transparent;
+
+        content: '.';
+        height: 4px;
+
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) 
+{
+    .navbar-dark .navbar-nav .nav-link
+    {
+        margin-left: 15px !important;
+    }
 }

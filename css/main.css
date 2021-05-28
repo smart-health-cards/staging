@@ -14,8 +14,8 @@ body
 @media (min-width: 1200px) {
     .mainSectionHome
     {
-        padding-top: 7rem !important;
-        padding-bottom: 7rem !important;
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
     }
 }
 
@@ -72,6 +72,12 @@ body
         font-size: 46px;
         line-height: 52px;
     }
+
+    /* Item offset for expanded navbar */
+    .nav-item
+    {
+        width: 100%;
+    }
 }
 
 @media (min-width: 992px) 
@@ -92,6 +98,18 @@ body
         font-style: normal;
         font-size: 72px;
         line-height: 80px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px)
+{
+    h1
+    {
+        color: #0A8E97; 
+        font-weight: 700;
+        font-style: bold;
+        font-size: 68px;
+        line-height: 70px;
     }
 }
 
@@ -161,7 +179,7 @@ a:link, a:hover, a:active, a:visited
     line-height: 17.6px;
 }
 
-section .btn-primary , section .btn-primary:hover , section .btn-primary:active , section .btn-primary:visited 
+section .btn-primary , section .btn-primary:active , section .btn-primary:visited 
 {
     background-color: #058E97 !important;
     font-family: Source Sans Pro;
@@ -172,6 +190,20 @@ section .btn-primary , section .btn-primary:hover , section .btn-primary:active 
     color: #FFFFFF;
     border: none !important;
 }
+
+section .btn-primary:hover
+{
+    background-color: #2BA9E0 !important;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    border: none !important;
+}
+
+
 
 /* Home Page */
 .text-intro
@@ -191,10 +223,14 @@ section .btn-primary , section .btn-primary:hover , section .btn-primary:active 
     line-height: 22px;
     color: #676868;
 }
+
+@media (min-width: 1200px) {
+    .pb-xl-7,
+    .py-xl-7 {
+      padding-bottom: 7rem !important;
+    }
+}
 /* /Home Page */
-
-
-
 
 a.anchor
 {
@@ -202,4 +238,11 @@ a.anchor
     position: relative;
     top: -100px;
     visibility: hidden;
+}
+
+.externalLinkIcon
+{
+    width:21px;
+    height:21px;
+    margin-left:-5px;
 }
