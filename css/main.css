@@ -246,3 +246,10 @@ a.anchor
     height:21px;
     margin-left:-5px;
 }
+
+.chevronText
+{
+    margin-bottom: 0px;
+    margin-right: .3rem;
+    white-space: nowrap;
+}
