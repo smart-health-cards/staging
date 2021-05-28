@@ -1,11 +1,22 @@
 
 /* FAQ */
-
+@media (max-width: 992px) 
+{
+    .mainSectionFAQ
+    {
+        padding-top: 2rem !important;
+        padding-bottom: 0rem !important;
+    }
+}
+@media (min-width: 992px) 
+{
 .mainSectionFAQ
 {
     padding-top: 6rem !important;
     padding-bottom: 0rem !important;
 }
+}
+
   
 .subSectionFAQ
   {
