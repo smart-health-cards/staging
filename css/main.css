@@ -230,6 +230,12 @@ section .btn-primary:hover
       padding-bottom: 7rem !important;
     }
 }
+
+.chevronText
+{
+    margin-right: .3rem;
+    white-space: nowrap;
+}
 /* /Home Page */
 
 a.anchor
@@ -247,9 +253,3 @@ a.anchor
     margin-left:-5px;
 }
 
-.chevronText
-{
-    margin-bottom: 0px;
-    margin-right: .3rem;
-    white-space: nowrap;
-}
