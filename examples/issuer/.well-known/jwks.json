@@ -1,4 +1,5 @@
 {
+  "warning": "You should be using spec.smarthealth.cards. This jwks file will be removed.",
   "keys": [
     {
       "kty": "EC",
