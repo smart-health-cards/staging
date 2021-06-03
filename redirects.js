@@ -117,7 +117,7 @@ const remaps = [
 
 const path = window.location.pathname.replace(/(^\/|\/$)/g, "");
 const hash = window.location.hash.slice(1);
-const needRedirect = remaps.filter(({page, id}) => path === page && hash === id);
+const needRedirect = remaps.filter(({page, id}) => (!page || page === path) && (!id || id === hash));
 
 if (needRedirect.length > 0) {
   if (needRedirect[0].target) {
