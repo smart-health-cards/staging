@@ -66,6 +66,31 @@ const remaps = [
   {"page": "examples", "id": "example-0"}, 
   {"page": "examples", "id": "example-1"}, 
   {"page": "examples", "id": "example-2"}, 
+  {"page": "examples/example-00-a-fhirBundle.json"},
+  {"page": "examples/example-00-b-jws-payload-expanded.json"},
+  {"page": "examples/example-00-c-jws-payload-minified.json"},
+  {"page": "examples/example-00-d-jws.txt"},
+  {"page": "examples/example-00-e-file.smart-health-card"},
+  {"page": "examples/example-00-f-qr-code-numeric-value-0.txt"},
+  {"page": "examples/example-00-g-qr-code-0.svg"},
+  {"page": "examples/example-01-a-fhirBundle.json"},
+  {"page": "examples/example-01-b-jws-payload-expanded.json"},
+  {"page": "examples/example-01-c-jws-payload-minified.json"},
+  {"page": "examples/example-01-d-jws.txt"},
+  {"page": "examples/example-01-e-file.smart-health-card"},
+  {"page": "examples/example-01-f-qr-code-numeric-value-0.txt"},
+  {"page": "examples/example-01-g-qr-code-0.svg"},
+  {"page": "examples/example-02-a-fhirBundle.json"},
+  {"page": "examples/example-02-b-jws-payload-expanded.json"},
+  {"page": "examples/example-02-c-jws-payload-minified.json"},
+  {"page": "examples/example-02-d-jws.txt"},
+  {"page": "examples/example-02-e-file.smart-health-card"},
+  {"page": "examples/example-02-f-qr-code-numeric-value-0.txt"},
+  {"page": "examples/example-02-f-qr-code-numeric-value-1.txt"},
+  {"page": "examples/example-02-f-qr-code-numeric-value-2.txt"},
+  {"page": "examples/example-02-g-qr-code-0.svg"},
+  {"page": "examples/example-02-g-qr-code-1.svg"},
+  {"page": "examples/example-02-g-qr-code-2.svg"},
   {"page": "changelog", "id": "changelog"}, 
   {"page": "changelog", "id": "045"}, 
   {"page": "changelog", "id": "044"}, 
@@ -87,10 +112,10 @@ const remaps = [
   {"page": "changelog", "id": "005"}, 
   {"page": "changelog", "id": "004"}, 
   {"page": "changelog", "id": "003"}, 
-  {"page": "changelog", "id": "002"}
+  {"page": "changelog", "id": "002"},
 ];
 
-const path = window.location.pathname.replace(/\//g, "");
+const path = window.location.pathname.replace(/(^\/|\/$)/g, "");
 const hash = window.location.hash.slice(1);
 const needRedirect = remaps.filter(({page, id}) => path === page && hash === id);
 
