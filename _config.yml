@@ -1,1 +1,1 @@
-include: ['examples/issuer/.well-known']
+include: ['examples/issuer/.well-known/jwks.json']
