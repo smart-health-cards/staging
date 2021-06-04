@@ -1,3 +1,7 @@
+---
+layout: none
+permalink: examples/issuer/.well-known/jwks.json
+---
 {
   "warning": "You should be using spec.smarthealth.cards. This jwks file will be removed.",
   "keys": [
