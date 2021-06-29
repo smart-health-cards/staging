@@ -56,6 +56,20 @@ nav .logo
 }
 
 /* Nav Button */
+nav .btn-secondary  , nav .btn-primary:active , nav .btn-primary:visited  
+{
+    background-color: transparent !important;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #205F5F !important;
+    border: none !important;
+}
+
+/* Nav Button */
 nav .btn-primary , nav .btn-primary:active , nav .btn-primary:visited  
 {
     background-color: #058E97 !important;
@@ -120,4 +134,16 @@ nav .btn-primary:hover
     {
         margin-left: 15px !important;
     }
+}
+
+.hr-teal
+{
+    border-color: #6EBDBD;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.link-small
+{
+    font-size: 17px !important;
 }
