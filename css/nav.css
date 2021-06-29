@@ -135,3 +135,15 @@ nav .btn-primary:hover
         margin-left: 15px !important;
     }
 }
+
+.hr-teal
+{
+    border-color: #6EBDBD;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.link-small
+{
+    font-size: 17px !important;
+}
