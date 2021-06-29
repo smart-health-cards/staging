@@ -1,7 +1,7 @@
 body 
 {
     font-family: "Source Sans Pro";
-    padding-top: 3.4rem;
+    padding-top: 7.6rem;
     background-color: white;
 }
 
@@ -11,22 +11,12 @@ body
     }
 }
 
-@media (min-width: 1200px) {
-    .mainSectionHome
-    {
-        padding-top: 3rem !important;
-        padding-bottom: 3rem !important;
-    }
+.mainSectionHome
+{
+    background-color: #6EBDBD;
 }
 
-@media (min-width: 768px) 
-{
-    .subSection
-    {
-        padding-top: 7rem !important;
-        padding-bottom: 7rem !important;
-    }
-}
+
 
 .bg-teal
 {
@@ -38,6 +28,11 @@ body
     background-color: white;
 }
 
+.bg-orange
+{
+    background-color: #FFAC36;
+}
+
 .bg-grey
 {
     background-color: rgba(242, 242, 242, 0.5);
@@ -45,7 +40,7 @@ body
 
 .bg-lightgrey
 {
-    background-color: #F8F8F8;
+    background-color: #F2F2F2;
 }
 
 .bg-white
@@ -57,20 +52,21 @@ body
 {
     h1
     {
-        color: #0A8E97; 
-        font-weight: 700;
-        font-style: bold;
-        font-size: 62px;
-        line-height: 66px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 54px;
+        line-height: 68px;
+
+        color: #003939;
     }
 
     h2
     {
-        color: #333333; 
-        font-weight: 700;
         font-style: normal;
-        font-size: 46px;
-        line-height: 52px;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 35px;
+        text-transform: capitalize;
     }
 
     /* Item offset for expanded navbar */
@@ -84,20 +80,20 @@ body
 {
     h1
     {
-        color: #0A8E97; 
-        font-weight: 700;
-        font-style: bold;
-        font-size: 88px;
-        line-height: 90px;
+        font-family: Source Sans Pro;
+        color: #003939; 
+        font-weight: 300;
+        font-size: 54px;
+        line-height: 68px;
     }
 
     h2
     {
-        color: #333333; 
-        font-weight: 700;
+        color: #222222; 
+        font-weight: 600;
         font-style: normal;
-        font-size: 72px;
-        line-height: 80px;
+        font-size: 30px;
+        line-height: 38px;
     }
 }
 
@@ -105,21 +101,21 @@ body
 {
     h1
     {
-        color: #0A8E97; 
-        font-weight: 700;
-        font-style: bold;
-        font-size: 68px;
-        line-height: 70px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 54px;
+        line-height: 68px;
+        color: #003939;
     }
 }
 
 h3
 {
-    color: #0A8E97; 
-    font-weight: 700;
-    font-style: bold;
+    font-style: normal;
+    font-weight: normal;
     font-size: 24px;
-    line-height: 30px;
+    line-height: 32px;
+    color: #003939;
 }
 
 h4
@@ -147,10 +143,10 @@ h5
 
 p
 {
-    color: #333333; 
+    color: #205F5F; 
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
 }
 
@@ -158,11 +154,11 @@ a:link, a:hover, a:active, a:visited
 {
     font-family: Source Sans Pro;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
     line-height: 23px;
     
-    color: #2BA9E0;
+    color: #003939;
 }
 
 .dark-bg
@@ -181,13 +177,13 @@ a:link, a:hover, a:active, a:visited
 
 section .btn-primary , section .btn-primary:active , section .btn-primary:visited 
 {
-    background-color: #058E97 !important;
+    background-color: #FFC749 !important;
     font-family: Source Sans Pro;
     font-style: normal;
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 16px !important;
+    line-height: 20px !important;
     text-transform: capitalize;
-    color: #FFFFFF;
+    color: #463B2A !important;
     border: none !important;
 }
 
@@ -208,11 +204,11 @@ section .btn-primary:hover
 /* Home Page */
 .text-intro
 {
-    color: #333333; 
-    font-weight: 400;
+    color: #003939; 
     font-style: normal;
-    font-size: 20px;
-    line-height: 26px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
 }
 
 .image-caption
@@ -236,13 +232,32 @@ section .btn-primary:hover
     margin-right: .3rem;
     white-space: nowrap;
 }
+
+.footnote
+{
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22.63px;
+}
 /* /Home Page */
+
+.largeBody
+{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+
+    color: #205F5F;
+}
 
 a.anchor
 {
     display: block;
     position: relative;
-    top: -100px;
+    top: -130px;
     visibility: hidden;
 }
 
@@ -253,3 +268,75 @@ a.anchor
     margin-left:-5px;
 }
 
+.hr-yellow
+{
+    border-color: #FFC749;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.border-top-teal
+{
+    border-top: 3px solid #205F5F;
+}
+
+/* FAQ Page */
+ul#FAQTOC
+{
+    line-height: 32px;
+}
+
+.question
+{
+    color: #003939;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px !important;
+    line-height: 32px !important;
+}
+
+.answer
+{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px !important;
+    line-height: 24px !important;
+    
+    margin-top: -0.6rem;
+
+    color: #205F5F;
+}
+/* /FAQ Page */
+
+
+/* About Page */
+
+.adoptersOrg
+{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+
+    color: #003939;
+}
+
+.adoptersQuote
+{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 21px;
+    
+    color: #003939;
+}
+
+/* /About Page */
+
+#backToTop 
+{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    display: none;
+}

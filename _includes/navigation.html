@@ -1,0 +1,43 @@
+<section>
+  {% if page.navBorder == "show" %}
+  <nav class="navbar navbar-expand-lg navbar-dark bg-white fixed-top navbar-hr">
+  {% else %}
+  <nav class="navbar navbar-expand-lg navbar-dark bg-white fixed-top">
+  {% endif %}
+    <div class="container">
+      <a href="index.html"><img src="../Assets/Images/logo_header.svg" alt="SMART Logo" class="float-left pr-5 pl-lg-4"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#SMARTnavbar" aria-controls="SMARTnavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="SMARTnavbar">
+        <ul class="navbar-nav mr-auto">
+
+          {% if page.nav == "community" %}
+            <li class="nav-item active">
+              <a class="nav-link active" href="community.html">Community <span class="sr-only">(current)</span></a>
+            </li>
+          {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="community.html">Community</span></a>
+            </li>
+          {% endif %}
+
+          {% if page.nav == "faq" %}
+            <li class="nav-item active">
+              <a class="nav-link active" href="faq.html">FAQ <span class="sr-only">(current)</span></a>
+            </li>
+          {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</span></a>
+            </li>
+          {% endif %}
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link" href="https://spec.smarthealth.cards/"  target="_blank">Technical Specifications <img src="../Assets/Images/externalLinkBlack.svg" class="ml-5 ml-lg-3 float-right externalLinkIcon" alt="..."></a>
+          </li>
+        </ul>
+      </div>
+      <a class="btn btn-primary pt-2 pb-2 pl-4 pr-4 d-none d-lg-block" href="https://spec.smarthealth.cards/"  target="_blank" role="button"><div class="float-left mr-3">Technical Specifications</div><img src="../Assets/Images/externalLinkBlack.svg" class="position-fixed externalLinkIcon" alt="..."> </a>
+  </div>
+</nav>
+</section>
+

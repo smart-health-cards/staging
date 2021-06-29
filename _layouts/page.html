@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="Assets/Images/favicon.ico">
+
+    <title>{{ page.title }}</title>
+    <script src="redirects.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/nav.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+  </head>
+
+  <body>
+    {% include navigation.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+  </body>
+</html>
+
+
+
+

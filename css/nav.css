@@ -2,7 +2,8 @@
 
 nav
 {
-    border-bottom: 1px solid #BBBBBB;
+    /*border-bottom: 1px solid #BBBBBB;*/
+    height: 120px;
 }
 
 .navbar-nav > li
@@ -13,7 +14,7 @@ nav
 
 .navbar-dark .navbar-nav .nav-link
 {
-    margin-right: 1.5rem;
+    margin-right: 2rem;
 }
 
 /* Nav Links */
@@ -21,14 +22,14 @@ nav #SMARTnavbar a:link {
     font-style: normal;
     font-size: 22px;
     line-height: 28px;
-    color: #676868 !important;
+    color: #205F5F !important;
 }
 
 nav #SMARTnavbar a:visited {
     font-style: normal;
     font-size: 22px;
     line-height: 28px;
-    color: #676868 !important;
+    color: #205F5F !important;
 }
 
 nav #SMARTnavbar a:hover {
@@ -42,7 +43,7 @@ nav #SMARTnavbar a:active {
     font-style: normal;
     font-size: 22px;
     line-height: 28px;
-    color: #676868 !important;
+    color: #205F5F !important;
 }
 
 nav .active
@@ -56,29 +57,15 @@ nav .logo
 }
 
 /* Nav Button */
-nav .btn-secondary  , nav .btn-primary:active , nav .btn-primary:visited  
-{
-    background-color: transparent !important;
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: capitalize;
-    color: #205F5F !important;
-    border: none !important;
-}
-
-/* Nav Button */
 nav .btn-primary , nav .btn-primary:active , nav .btn-primary:visited  
 {
-    background-color: #058E97 !important;
+    background-color: #FFC749 !important;
     font-family: Source Sans Pro;
     font-style: normal;
     font-size: 16px !important;
     line-height: 20px !important;
     text-transform: capitalize;
-    color: #FFFFFF !important;
+    color: #463B2A !important;
     border: none !important;
 }
 
@@ -118,7 +105,7 @@ nav .btn-primary:hover
         left: 0;
         right: 0;
         margin: auto;
-        background-color: #058E97;
+        background-color: #FFAC36;
         color: transparent;
 
         content: '.';
@@ -136,14 +123,7 @@ nav .btn-primary:hover
     }
 }
 
-.hr-teal
+.navbar-hr
 {
-    border-color: #6EBDBD;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-}
-
-.link-small
-{
-    font-size: 17px !important;
+    border-bottom: 1px solid #205F5F;
 }
