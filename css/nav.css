@@ -12,6 +12,16 @@ nav#mainNavBar
     display: flex;
 }
 
+.show .navbar-nav > li
+{
+    min-height: 55px;
+}
+
+.show .navbar-nav
+{
+    padding-top: 1rem;
+}
+
 .navbar-dark .navbar-nav .nav-link
 {
     margin-right: 2rem;

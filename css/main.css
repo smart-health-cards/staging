@@ -192,6 +192,7 @@ section .btn-primary , section .btn-primary:active , section .btn-primary:visite
     color: #463B2A !important;
     border: none !important;
     text-decoration: none;
+    font-weight: 600;
 }
 
 section .btn-primary:hover
@@ -264,7 +265,7 @@ a.anchor
 {
     display: block;
     position: relative;
-    top: -130px;
+    top: -150px;
     visibility: hidden;
 }
 

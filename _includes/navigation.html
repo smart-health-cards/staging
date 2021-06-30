@@ -12,16 +12,6 @@
       <div class="collapse navbar-collapse" id="SMARTnavbar">
         <ul class="navbar-nav mr-auto">
 
-          {% if page.nav == "community" %}
-            <li class="nav-item active">
-              <a class="nav-link active" href="community.html">Community <span class="sr-only">(current)</span></a>
-            </li>
-          {% else %}
-            <li class="nav-item">
-              <a class="nav-link" href="community.html">Community</span></a>
-            </li>
-          {% endif %}
-
           {% if page.nav == "faq" %}
             <li class="nav-item active">
               <a class="nav-link active" href="faq.html">FAQ <span class="sr-only">(current)</span></a>
@@ -29,6 +19,16 @@
           {% else %}
             <li class="nav-item">
               <a class="nav-link" href="faq.html">FAQ</span></a>
+            </li>
+          {% endif %}
+
+          {% if page.nav == "community" %}
+            <li class="nav-item active">
+              <a class="nav-link active" href="community.html">Community <span class="sr-only">(current)</span></a>
+            </li>
+          {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="community.html">Community</span></a>
             </li>
           {% endif %}
 
