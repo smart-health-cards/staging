@@ -85,7 +85,19 @@ nav .btn-primary:hover
     border: none !important;
 }
 
-
+/* Nav Button Secondary */
+nav .btn-secondary  , nav .btn-primary:active , nav .btn-primary:visited  
+{
+    background-color: transparent !important;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #205F5F !important;
+    border: none !important;
+}
 
 .navbar-dark .navbar-toggler-icon 
 {
