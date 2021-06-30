@@ -1,4 +1,4 @@
-<footer class="dark-bg">
+<footer class="dark-bg pt-3 pb-3">
     <div class="container">
       <div class="row justify-content-left pt-3 pb-3">
         <div class="col-12 col-xl-8 text-left">
@@ -6,25 +6,27 @@
           <ul class="list-unstyled text-small">
             <li><a class="" href="index.html">Home</a></li>
             <li><a class="" href="community.html">Community</a></li>
-            <li><a class="" href="faq.html">Frequently Asked Questions</a></li>
+            <li><a class="" href="faq.html">FAQ</a></li>
             <li><a class="" href="privacyPolicy.html">Privacy Policy</a></li>
-            <li><a href="https://spec.smarthealth.cards/"  target="_blank">Technical Specifications</a></li>
+            <!-- <li><a href="https://spec.smarthealth.cards/"  target="_blank">Technical Specifications</a></li> -->
           </ul>
         </div>
 
         <div class="col-12 col-xl-4 text-left">
           <div class="row justify-content-left pt-3">
-            <div class="col-6 text-right">
-              <a href="https://www.childrenshospital.org/"  target="_blank"><img src="../Assets/Images/logoBoston.svg" class="float-right img-fluid center-block d-block mx-auto logo" alt="Boston Logo"></a>
+            <div class="col-6 text-left">
+              <a href="https://www.childrenshospital.org/"  target="_blank"><img src="../Assets/Images/logoBoston.svg" class="float-left img-fluid center-block d-block mx-auto logo" alt="Boston Logo"></a>
             </div>
             <div class="col-6 text-left">
               <a href="https://smarthealthit.org/"  target="_blank"><img src="../Assets/Images/logo_footer.svg" class="float-left img-fluid center-block d-block mx-auto logo" alt="SMART Logo"></a>
             </div>
           </div>
           <div class="row justify-content-left pt-4">
-            <p>
-              © Copyright 2021 SMART Health IT and Boston Children’s Hospital
-            </p>
+            <div class="col-12 text-left">
+              <p class="copyright">
+                © Copyright 2021 SMART Health IT and Boston Children’s Hospital
+              </p>
+            </div>
           </div>
             
         </div>
@@ -33,38 +35,4 @@
   </footer>
   <script src="../lib/jQuery/jquery-3.6.0.js"></script>
   <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
-  <script>
-      
-      //Handle back to top button
-      //Var
-      let backToTop = document.getElementById("backToTop");
-      //Func
-      function onScroll() 
-      {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          backToTop.style.display = "block";
-        } else {
-          backToTop.style.display = "none";
-        }
-      }
-
-      function goBackToTop() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-
-      //Hooks
-      if(backToTop != null)
-      {
-        window.onscroll = function ()
-        {
-          onScroll();
-        };
-        backToTop.addEventListener("click", goBackToTop);
-      }
-
-      
-  </script>
+  <script src="../lib/main.js"></script>

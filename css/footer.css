@@ -44,4 +44,14 @@ footer .logo
 {
     height:45px;
 }
+
+.copyright
+{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px !important;
+    line-height: 15px !important;
+
+    color: #FFFFFF;
+}
 /* /Footer */

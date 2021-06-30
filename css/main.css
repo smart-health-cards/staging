@@ -16,7 +16,10 @@ body
     background-color: #6EBDBD;
 }
 
-
+.bg-yellow
+{
+    background-color: #FDC955;
+}
 
 .bg-teal
 {
@@ -57,7 +60,7 @@ body
         font-size: 54px;
         line-height: 68px;
 
-        color: #003939;
+        color: #205F5F;
     }
 
     h2
@@ -67,6 +70,7 @@ body
         font-size: 28px;
         line-height: 35px;
         text-transform: capitalize;
+        color: #222222;
     }
 
     /* Item offset for expanded navbar */
@@ -157,6 +161,8 @@ a:link, a:hover, a:active, a:visited
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
+
+    text-decoration: underline;
     
     color: #003939;
 }
@@ -185,6 +191,7 @@ section .btn-primary , section .btn-primary:active , section .btn-primary:visite
     text-transform: capitalize;
     color: #463B2A !important;
     border: none !important;
+    text-decoration: none;
 }
 
 section .btn-primary:hover
@@ -268,6 +275,11 @@ a.anchor
     margin-left:-5px;
 }
 
+.border-b2
+{
+    border-bottom-width: 2px !important;
+}
+
 .hr-yellow
 {
     border-color: #FFC749;
@@ -339,4 +351,33 @@ ul#FAQTOC
     bottom: 30px;
     right: 20px;
     display: none;
+}
+
+
+
+.link-small
+{
+    font-size: 17px !important;
+}
+
+.link-large
+{
+    font-size: 22px !important;
+    line-height: 32px !important;
+    font-weight: 600 !important;
+
+    text-decoration: none !important;
+
+    color: #205F5F !important;
+}
+
+@media (min-width: 992px) 
+{
+    .bg-logo
+    {
+        background-image: url(../Assets/Images/bgLogo.png);
+        background-size: 45%;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
 }

@@ -1,9 +1,9 @@
 /* navagation */
 
-nav
+nav#mainNavBar
 {
     /*border-bottom: 1px solid #BBBBBB;*/
-    height: 120px;
+    
 }
 
 .navbar-nav > li
@@ -23,6 +23,7 @@ nav #SMARTnavbar a:link {
     font-size: 22px;
     line-height: 28px;
     color: #205F5F !important;
+    text-decoration: none;
 }
 
 nav #SMARTnavbar a:visited {
@@ -30,6 +31,7 @@ nav #SMARTnavbar a:visited {
     font-size: 22px;
     line-height: 28px;
     color: #205F5F !important;
+    text-decoration: none;
 }
 
 nav #SMARTnavbar a:hover {
@@ -37,6 +39,7 @@ nav #SMARTnavbar a:hover {
     font-size: 22px;
     line-height: 28px;
     color: #2BA9E0 !important;
+    text-decoration: none;
 }
 
 nav #SMARTnavbar a:active {
@@ -44,6 +47,7 @@ nav #SMARTnavbar a:active {
     font-size: 22px;
     line-height: 28px;
     color: #205F5F !important;
+    text-decoration: none;
 }
 
 nav .active
@@ -127,3 +131,11 @@ nav .btn-primary:hover
 {
     border-bottom: 1px solid #205F5F;
 }
+
+.hr-teal
+{
+    border-color: #6EBDBD;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
