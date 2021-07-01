@@ -42,7 +42,7 @@ footer a:active {
 
 footer .logo
 {
-    height:45px;
+    max-height:45px;
 }
 
 .copyright
