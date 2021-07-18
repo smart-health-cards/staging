@@ -113,6 +113,7 @@ const remaps = [
   {"page": "changelog", "id": "004"}, 
   {"page": "changelog", "id": "003"}, 
   {"page": "changelog", "id": "002"},
+  {"page": "ial"},
 ];
 
 const path = window.location.pathname.replace(/(^\/|\/$)/g, "");
