@@ -91,6 +91,7 @@ const remaps = [
   {"page": "examples/example-02-g-qr-code-0.svg"},
   {"page": "examples/example-02-g-qr-code-1.svg"},
   {"page": "examples/example-02-g-qr-code-2.svg"},
+  {"page": "artifacts/operation-patient-i-health-cards-issue.json"},
   {"page": "changelog", "id": "changelog"}, 
   {"page": "changelog", "id": "045"}, 
   {"page": "changelog", "id": "044"}, 
