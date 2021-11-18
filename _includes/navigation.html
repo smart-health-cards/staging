@@ -37,6 +37,7 @@
                 <hr class="hr-teal">
             </div>
           </li>
+          {% if page.nav == "faq" %}
           <li class="nav-item d-block d-lg-none">
             <a class="nav-link link-small" href="../faq.html">English</a>
           </li>
@@ -51,12 +52,14 @@
                 <hr class="hr-teal">
             </div>
           </li>
+          {% endif %}
 
           <li class="nav-item d-block d-lg-none">
             <a class="nav-link" href="https://spec.smarthealth.cards/"  target="_blank">Technical Specifications <img src="../Assets/Images/externalLinkBlack.svg" class="ml-5 ml-lg-3 float-right externalLinkIcon" alt="..."></a>
           </li>
         </ul>
       </div>
+      {% if page.nav == "faq" %}
       <div class="dropdown mr-3 d-none d-lg-block">
         <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           English
@@ -66,6 +69,7 @@
           <a class="dropdown-item" href="sp/faq.html">Español</a>
         </div>
       </div>
+      {% endif %}
       <a class="btn btn-primary pt-2 pb-2 pl-4 pr-4 d-none d-lg-block" href="https://spec.smarthealth.cards/"  target="_blank" role="button"><div class="float-left mr-3">Technical Specifications</div><img src="../Assets/Images/externalLinkBlack.svg" class="position-fixed externalLinkIcon" alt="..."> </a>
   </div>
 </nav>

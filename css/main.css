@@ -406,4 +406,6 @@ ul#FAQTOC
     z-index: 1000;
 }
 
-
+.img-small {
+    max-width: 175px;
+}
