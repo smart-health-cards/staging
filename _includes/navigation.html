@@ -62,22 +62,22 @@
       {% if page.nav == "faq" %}
       <div class="dropdown mr-3 d-none d-lg-block">
         <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          {{page.lang}}
+          {{ page.lang }}
         </button>
         {% if page.lang == "English" %}
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="fr/faq.html">Français</a>
-          <a class="dropdown-item" href="sp/faq.html">Español</a>
+          <a class="dropdown-item" href="/fr/faq.html">Français</a>
+          <a class="dropdown-item" href="/sp/faq.html">Español</a>
         </div>
-        {% elif page.lang == "Français" %}
+        {% elsif page.lang == "Français" %}
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="sp/faq.html">Español</a>
-          <a class="dropdown-item" href="en/faq.html">English</a>
+          <a class="dropdown-item" href="/sp/faq.html">Español</a>
+          <a class="dropdown-item" href="/en/faq.html">English</a>
         </div>
-        {% elif page.lang == "Español" %}
+        {% elsif page.lang == "Español" %}
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="fr/faq.html">Français</a>
-          <a class="dropdown-item" href="en/faq.html">English</a>
+          <a class="dropdown-item" href="/fr/faq.html">Français</a>
+          <a class="dropdown-item" href="/en/faq.html">English</a>
         </div>
         {% endif %}
       </div>
