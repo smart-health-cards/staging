@@ -39,7 +39,7 @@
           </li>
           {% if page.nav == "faq" %}
           <li class="nav-item d-block d-lg-none">
-            <a class="nav-link link-small" href="../faq.html">English</a>
+            <a class="nav-link link-small" href="/en/faq.html">English</a>
           </li>
           <li class="nav-item d-block d-lg-none">
             <a class="nav-link link-small" href="/sp/faq.html">Español</a>
@@ -62,12 +62,24 @@
       {% if page.nav == "faq" %}
       <div class="dropdown mr-3 d-none d-lg-block">
         <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          English
+          {{page.lang}}
         </button>
+        {% if page.lang == "English" %}
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item" href="fr/faq.html">Français</a>
           <a class="dropdown-item" href="sp/faq.html">Español</a>
         </div>
+        {% elif page.lang == "Français" %}
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="sp/faq.html">Español</a>
+          <a class="dropdown-item" href="en/faq.html">English</a>
+        </div>
+        {% elif page.lang == "Español" %}
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="fr/faq.html">Français</a>
+          <a class="dropdown-item" href="en/faq.html">English</a>
+        </div>
+        {% endif %}
       </div>
       {% endif %}
       <a class="btn btn-primary pt-2 pb-2 pl-4 pr-4 d-none d-lg-block" href="https://spec.smarthealth.cards/"  target="_blank" role="button"><div class="float-left mr-3">Technical Specifications</div><img src="../Assets/Images/externalLinkBlack.svg" class="position-fixed externalLinkIcon" alt="..."> </a>
