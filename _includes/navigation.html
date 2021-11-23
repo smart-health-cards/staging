@@ -1,0 +1,97 @@
+
+  {% if page.navBorder == "show" %}
+  <nav class="navbar navbar-expand-lg navbar-dark bg-white fixed-top navbar-hr pb-4 pt-4 pb-lg-5 pt-lg-5" id="mainNavBar">
+  {% else %}
+  <nav class="navbar navbar-expand-lg navbar-dark bg-white fixed-top pb-4 pt-4 pb-lg-5 pt-lg-5" id="mainNavBar">
+  {% endif %}
+    <div class="container">
+      <a href="/index.html"><img src="../Assets/Images/logo_header.svg" alt="SMART Logo" class="float-left pr-5"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#SMARTnavbar" aria-controls="SMARTnavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="SMARTnavbar">
+        <ul class="navbar-nav mr-auto">
+
+          {% if page.nav == "faq" %}
+            <li class="nav-item active">
+              <a class="nav-link active" href="faq.html">FAQ <span class="sr-only">(current)</span></a>
+            </li>
+          {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</span></a>
+            </li>
+          {% endif %}
+
+          {% if page.nav == "community" %}
+            <li class="nav-item active">
+              <a class="nav-link active" href="/en/community.html">Community <span class="sr-only">(current)</span></a>
+            </li>
+          {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="/en/community.html">Community</span></a>
+            </li>
+          {% endif %}
+
+          <li>
+            <div class="w-100">
+                <hr class="hr-teal">
+            </div>
+          </li>
+          {% if page.nav == "faq" %}
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link link-small" href="/en/faq.html">English</a>
+          </li>
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link link-small" href="/sp/faq.html">Español</a>
+          </li>
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link link-small" href="/fr/faq.html">Française</a>
+          </li>
+          <li>
+            <div class="w-100">
+                <hr class="hr-teal">
+            </div>
+          </li>
+          {% endif %}
+
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link" href="https://spec.smarthealth.cards/"  target="_blank">Technical Specifications <img src="../Assets/Images/externalLinkBlack.svg" class="ml-5 ml-lg-3 float-right externalLinkIcon" alt="..."></a>
+          </li>
+        </ul>
+      </div>
+      {% if page.nav == "faq" %}
+      <div class="dropdown mr-3 d-none d-lg-block">
+        <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{ page.lang }}
+        </button>
+        {% if page.lang == "English" %}
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="/fr/faq.html">Française</a>
+          <a class="dropdown-item" href="/sp/faq.html">Español</a>
+        </div>
+        {% elsif page.lang == "Française" %}
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="/sp/faq.html">Español</a>
+          <a class="dropdown-item" href="/en/faq.html">English</a>
+        </div>
+        {% elsif page.lang == "Español" %}
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="/fr/faq.html">Française</a>
+          <a class="dropdown-item" href="/en/faq.html">English</a>
+        </div>
+        {% endif %}
+      </div>
+      {% endif %}
+      <a class="btn btn-primary pt-2 pb-2 pl-4 pr-4 d-none d-lg-block" href="https://spec.smarthealth.cards/"  target="_blank" role="button"><div class="float-left mr-3">Technical Specifications</div><img src="../Assets/Images/externalLinkBlack.svg" class="position-fixed externalLinkIcon" alt="..."> </a>
+  </div>
+</nav>
+
+<nav class="navbar navbar-dark bg-yellow fixed-bottom d-none" id="cookieBar">
+  <div>
+    This website uses cookies. We use cookies to analyze our site traffic and personalize this site. By clicking Accept, you consent to the use of these cookies and to our privacy policy.
+  </div>
+  <div class="btn-group mx-auto">
+    <button type="button" class="btn btn-secondary">Accept</button>
+    <button type="button" class="btn btn-secondary">Decline</button>
+  </div>
+</nav>
