@@ -1,41 +1,45 @@
-<footer class="dark-bg pt-3 pb-3">
-    <div class="container">
-      <div class="row justify-content-left pt-3 pb-3">
-        <div class="col-12 col-xl-8 text-left">
-          <!-- Site Map -->
-          <ul class="list-unstyled text-small">
-            <li><a class="" href="/index.html">Home</a></li>
-            <li><a class="" href="/en/community.html">Community</a></li>
-            <li><a class="" href="faq.html">FAQ</a></li>
-            <li><a class="" href="https://smarthealthit.org/smart-health-it-privacy-policy/" target="_blank">Privacy Policy</a></li>
-            <!-- <li><a href="https://spec.smarthealth.cards/"  target="_blank">Technical Specifications</a></li> -->
-          </ul>
-        </div>
 
-        <div class="col-12 col-xl-4 text-left">
-          <div class="row justify-content-left pt-3">
-            <div class="col-4 text-left">
-              <a href="https://www.childrenshospital.org/"  target="_blank"><img src="../Assets/Images/logoBoston.svg" class="float-left img-fluid center-block d-block mx-auto logo" alt="Boston Logo"></a>
-            </div>
-            <div class="col-4 text-left">
-              <a href="https://vci.org/"  target="_blank"><img src="../Assets/Images/VCI.png" class="float-left img-fluid center-block d-block mx-auto logo" alt="SMART Logo"></a>
-            </div>
-            <div class="col-4 text-left">
-              <a href="https://smarthealthit.org/"  target="_blank"><img src="../Assets/Images/logo_footer.svg" class="float-left img-fluid center-block d-block mx-auto logo" alt="SMART Logo"></a>
-            </div>
+    <footer class="dark-bg">
+      <div class="container">
+        <div class="row justify-content-left">
+          <div class="col-12 text-center mt-5">
+            <!-- Site Map -->
+            <ul class="list-unstyled text-small">
+              <li><a class="" href="index.html">Home</a></li>
+              <li><a class="" href="faq.html">Frequently Asked Questions</a></li>
+              <li><a href="https://spec.smarthealth.cards/"  target="_blank">Technical Specifications</a></li>
+            </ul>
           </div>
-          <div class="row justify-content-left pt-4">
-            <div class="col-12 text-left">
-              <p class="copyright">
-                © Copyright 2021 SMART Health IT and Boston Children’s Hospital
-              </p>
-            </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-left">
+          <div class="col-12 text-center">
+            <!-- Text -->
+            <p>
+              © Copyright 2021 SMART Health IT and Boston Children’s Hospital
+              {% include privacy.html %}
+            </p>
           </div>
-            
-        </div>
-      </div> <!-- / .row -->
-    </div> <!-- / .container -->
-  </footer>
-  <script src="../lib/jQuery/jquery-3.6.0.js"></script>
-  <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="../lib/main.js"></script>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center pb-5 pt-3">
+          <div class="col-6 text-right">
+            <a href="https://www.childrenshospital.org/"  target="_blank"><img src="/Assets/Images/logoBoston.svg" class="float-right img-fluid center-block d-block mx-auto logo" alt="Boston Logo"></a>
+          </div>
+          <div class="col-6 text-left">
+            <a href="https://smarthealthit.org/"  target="_blank"><img src="/Assets/Images/logo_footer.svg" class="float-left img-fluid center-block d-block mx-auto logo" alt="SMART Logo"></a>
+          </div>
+          
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </footer>
+    
+    <script src="/lib/jQuery/jquery-3.6.0.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y49831E6J3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y49831E6J3');
+    </script>
