@@ -170,6 +170,12 @@ p
     line-height: 24px;
 }
 
+.mainSectionHome h1,
+.mainSectionHome p
+{
+    color: #f2f2f2;
+}
+
 a:link, a:hover, a:active, a:visited 
 {
     font-family: Source Sans Pro;
