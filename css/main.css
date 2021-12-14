@@ -27,7 +27,8 @@ body
     }
 }
 
-.mainSectionHome
+.mainSectionHome,
+.bg-green
 {
     background-color: #6EBDBD;
 }
@@ -62,9 +63,9 @@ body
     background-color: #F2F2F2;
 }
 
-.bg-white
+.bg-black
 {
-    background-color: white;
+    background-color: black
 }
 
 @media (max-width: 992px) 
