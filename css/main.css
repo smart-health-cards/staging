@@ -173,8 +173,10 @@ p
 
 .mainSectionHome h1,
 .mainSectionHome p
+.bg-green h1,
+.bg-green p
 {
-    color: #f2f2f2;
+    color: #003636;
 }
 
 a:link, a:hover, a:active, a:visited 
