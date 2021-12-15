@@ -172,7 +172,7 @@ p
 }
 
 .mainSectionHome h1,
-.mainSectionHome p
+.mainSectionHome p,
 .bg-green h1,
 .bg-green p
 {
@@ -254,7 +254,6 @@ section .btn-primary:hover
 /* Home Page */
 .text-intro
 {
-    color: #003939; 
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
