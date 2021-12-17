@@ -65,24 +65,24 @@ nav: issuers
 
             <div class="row pt-4">
               <div class="col-12 col-md-4">
-                <p class="font-weight-bold">California</p>
-                <p class="font-weight-bold">Colorado</p>
-                <p class="font-weight-bold">Connecticut</p>
-                <p class="font-weight-bold">Hawaii</p>
-                <p class="font-weight-bold">Illinois</p>
+                <p><a class="font-weight-bold" href="https://myvaccinerecord.cdph.ca.gov/" target="_blank">California</a></p>
+                <p><a class="font-weight-bold" href="https://mycolorado.state.co.us/myvaccine-record" target="_blank">Colorado</a></p>
+                <p><a class="font-weight-bold" href="https://portal.ct.gov/DPH/Immunizations/CT-WiZ-Access-My-Immunization-Record" target="_blank">Connecticut</a></p>
+                <p><a class="font-weight-bold" href="https://hawaiicovid19.com/smart-health-card/" target="_blank">Hawaii</a></p>
+                <p><a class="font-weight-bold" href="https://idphportal.illinois.gov/s/?language=en_US" target="_blank">Illinois</a></p>
               </div>
               <div class="col-12 col-md-4">
-                <p class="font-weight-bold">Louisiana</p>
-                <p class="font-weight-bold">Maryland</p>
-                <p class="font-weight-bold">New Jersey</p>
-                <p class="font-weight-bold">New York</p>
+                <p><a class="font-weight-bold" href="https://lawallet.com/covid-19/" target="_blank">Louisiana</a></p>
+                <p><a class="font-weight-bold" href="https://www.marylandvax.org/" target="_blank">Maryland</a></p>
+                <p><a class="font-weight-bold" href="https://covid19.nj.gov/pages/vaxrecords" target="_blank">New Jersey</a></p>
+                <p><a class="font-weight-bold" href="https://covid19vaccine.health.ny.gov/excelsior-pass-and-excelsior-pass-plus" target="_blank">New York</a></p>
                 <p class="font-weight-bold">Puerto Rico</p>
               </div>
               <div class="col-12 col-md-4">
-                <p class="font-weight-bold">Rhode Island</p>
-                <p class="font-weight-bold">Utah</p>
-                <p class="font-weight-bold">Virginia</p>
-                <p class="font-weight-bold">Washington</p>
+                <p><a class="font-weight-bold" href="https://portal.ri.gov/VaccineRecord/s/" target="_blank">Rhode Island</a></p>
+                <p><a class="font-weight-bold" href="https://immunize.utah.gov/usiis/" target="_blank">Utah</a></p>
+                <p><a class="font-weight-bold" href="https://vase.vdh.virginia.gov/vacapps/f?p=545:1" target="_blank">Virginia</a></p>
+                <p><a class="font-weight-bold" href="https://waverify.doh.wa.gov/" target="_blank">Washington</a></p>
               </div>
             </div>
             <br>
@@ -94,14 +94,10 @@ nav: issuers
 
             <div class="row pt-4">
               <div class="col-12 col-md-4">
-                <p class="font-weight-bold">
-                  Canada
-                </p>
+                <p><a class="font-weight-bold" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-covid-19-proof-vaccination/get-proof.html" target="_blank">Canada</a></p>
               </div>
               <div class="col-12 col-md-4">
-                <p class="font-weight-bold">
-                  Cayman Islands
-                </p>
+                <p><a class="font-weight-bold" href="https://www.hsa.ky/news_events/digital-covid-vaccine-certificates-now-being-uploaded-to-myhsa-patient-portal/" target="_blank">Cayman Islands</a></p>
               </div>
             </div>
           </div>
@@ -147,11 +143,10 @@ nav: issuers
                 <p><a class="font-weight-bold" class="font-weight-bold" href="https://care.cvs.com/care-navigation/#/home" target="_blank">CVS</a></p>
               </div>
               <div class="col-12 col-md-4">
-                <p class="font-weight-bold">Kroger</p>
                 <p><a class="font-weight-bold" href="https://www.riteaid.com/pharmacy/vaccination-digital-proof" target="_blank">Rite Aid</a></p>
+                <p><a class="font-weight-bold" href="https://www.walgreens.com/login.jsp?ru=%2Ffindcare%2Fvaccination%2Fcovid%2F19%2Fdigital-dose-card%3Fregister%3Drx" target="_blank">Walgreens</a></p>
               </div>
               <div class="col-12 col-md-4">
-                <p><a class="font-weight-bold" href="https://www.walgreens.com/login.jsp?ru=%2Ffindcare%2Fvaccination%2Fcovid%2F19%2Fdigital-dose-card%3Fregister%3Drx" target="_blank">Walgreens</a></p>
                 <p><a class="font-weight-bold" href="https://www.walmart.com/cp/digital-vaccine-record/9508321" target="_blank">Walmart</a></p>
               </div>
             </div>
@@ -194,29 +189,29 @@ nav: issuers
           {% comment %} Iterate through the sorted array into three columns, offsetting by the items we've already listed. {% endcomment %}
           <div class="col-12 col-md-4">
             {% for issuer in issuers limit: looplength %}
-              {% if issuer.name == name %}
-                {% continue %}
-              {% endif %}
-              <p class="font-weight-bold">{{ issuer.name }}</p>
-              {% assign name = issuer.name %}
+            {% if issuer.name == name %}
+            {% continue %}
+            {% endif %}
+            <p class="font-weight-bold">{{ issuer.name }}</p>
+            {% assign name = issuer.name %}
             {% endfor %}
           </div>
           <div class="col-12 col-md-4">
             {% for issuer in issuers limit: looplength offset: looplength %}
-              {% if issuer.name == name %}
-                {% continue %}
-              {% endif %}
-              <p class="font-weight-bold">{{ issuer.name }}</p>
-              {% assign name = issuer.name %}
+            {% if issuer.name == name %}
+            {% continue %}
+            {% endif %}
+            <p class="font-weight-bold">{{ issuer.name }}</p>
+            {% assign name = issuer.name %}
             {% endfor %}
           </div>
           <div class="col-12 col-md-4">
             {% for issuer in issuers limit: looplength2 offset: looplength2  %}
-              {% if issuer.name == name %}
-                {% continue %}
-              {% endif %}
-              <p class="font-weight-bold">{{ issuer.name }}</p>
-              {% assign name = issuer.name %}
+            {% if issuer.name == name %}
+            {% continue %}
+            {% endif %}
+            <p class="font-weight-bold">{{ issuer.name }}</p>
+            {% assign name = issuer.name %}
             {% endfor %}
           </div>
 
