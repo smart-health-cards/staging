@@ -377,6 +377,38 @@ ul#FAQTOC
 .text-intro-small {
     font-size: 18px;
 }
+
+#issuers_list {
+    position: relative;
+    overflow-y: hidden;
+    max-height: 224px;
+    transition: all 0.2s ease-in-out;
+}
+
+#issuers_list::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(transparent 40%, #fff);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    transition: all 0.2s ease-in-out;
+}
+
+#issuers_list.toggled {
+    max-height: 100%;
+}
+
+#issuers_list.toggled::before {
+    content: none;
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+}
 /* /Issuers Page */
 
 /* Community Page */

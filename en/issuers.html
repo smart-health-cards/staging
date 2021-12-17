@@ -9,7 +9,7 @@ nav: issuers
       <div class="col-12 col-md-6 col-lg-5 d-flex flex-column justify-content-center py-5">
 
         <!-- Heading -->
-        <h1 class="text-left text-md-start">
+        <h1 class="text-left text-md-start font-weight-normal">
           U.S. SMART Health Card Issuers
         </h1>
 
@@ -40,7 +40,7 @@ nav: issuers
       <div class="col-12 col-lg-12 text-left">
 
         <!-- Heading -->
-        <h1 class="text-center">
+        <h1>
           Public Health Issuers Worldwide
         </h1>
 
@@ -48,18 +48,19 @@ nav: issuers
     </div> <!-- / .row -->
 
     <div class="row">
-      <div class="col-12 col-md-8 offset-md-2">
+      <div class="col-12">
         <!-- Text -->
-        <p class="text-center text-md-start mb-6 mb-lg-8">
+        <p class="text-md-start mb-0">
           These U.S. states and territories as well as countries across the globe have all become SMART Health Card issuers. You also can find a full list of more than 350 additional issuers at the end of this page.
         </p>
       </div>
     </div> <!-- / .row -->
+    <hr class="hr-yellow">
 
     <div class="row pt-2">
-      <div class="col-12 col-md-8 offset-md-2">
-        <div class="row pt-4 text-center">
-          <div class="col-12 pb-3">
+      <div class="col-12 col-md-8 ml-md-5">
+        <div class="row pt-4">
+          <div class="col-12 pb-4">
             <h2 class="font-weight-light">US States and Territories</h2>
 
             <div class="row pt-4">
@@ -85,19 +86,19 @@ nav: issuers
               </div>
             </div>
             <br>
-            <p class="font-italic">See more issuers, including pharmacies, hospitals, and healthcare providers below.</p>
+            <a href="#pharmacies">See more issuers, including pharmacies, hospitals, and healthcare providers below.</a>
           </div>
 
-          <div class="col-12 text-center">
+          <div class="col-12">
             <h2 class="font-weight-light">Worldwide</h2>
 
             <div class="row pt-4">
-              <div class="col-12 col-md-3 offset-md-3">
+              <div class="col-12 col-md-4">
                 <p class="font-weight-bold">
                   Canada
                 </p>
               </div>
-              <div class="col-12 col-md-3">
+              <div class="col-12 col-md-4">
                 <p class="font-weight-bold">
                   Cayman Islands
                 </p>
@@ -111,13 +112,14 @@ nav: issuers
   </div> <!-- / .container -->
 </section>
 
-<section class="subSection bg-green pt-5 pb-4">
+<section class="subSection bg-grey pt-5 pb-4">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-12 text-left">
+        <a class="anchor" name="pharmacies"></a>
 
         <!-- Heading -->
-        <h1 class="text-center">
+        <h1>
           Nationwide Pharmacies &mdash; United States
         </h1>
 
@@ -125,17 +127,18 @@ nav: issuers
     </div> <!-- / .row -->
 
     <div class="row">
-      <div class="col-12 col-md-8 offset-md-2">
+      <div class="col-12">
         <!-- Text -->
-        <p class="text-center text-md-start mb-6 mb-lg-8">
+        <p class="text-md-start mb-0">
           These nationwide retail pharmacies have all become SMART Health Card issuers, offering United States residents the opportunity to get access to SMART Health Cards anywhere they do business. You also can find a full list of other issuers at the end of this page.
         </p>
       </div>
     </div> <!-- / .row -->
+    <hr class="hr-yellow">
 
     <div class="row pt-2">
-      <div class="col-12 col-md-8 offset-md-2">
-        <div class="row pt-4 text-center">
+      <div class="col-12 col-md-9">
+        <div class="row pt-4r">
           <div class="col-12 pb-3">
 
             <div class="row pt-4">
@@ -152,8 +155,6 @@ nav: issuers
                 <p><a class="font-weight-bold" href="https://www.walmart.com/cp/digital-vaccine-record/9508321" target="_blank">Walmart</a></p>
               </div>
             </div>
-            <br>
-            <p class="font-italic">See all issuers in the full list below.</p>
           </div>
 
         </div> <!-- / .row -->
@@ -168,16 +169,17 @@ nav: issuers
       <div class="col-12 col-lg-12 text-left">
 
         <!-- Heading -->
-        <h1 class="text-center">
+        <h1>
           All Issuers
         </h1>
 
       </div>
     </div> <!-- / .row -->
+    <hr class="hr-yellow">
 
     <div class="row pt-2">
       <div class="col-12">
-        <div class="row pt-4 text-center">
+        <div class="row pt-4" id="issuers_list">
 
           {% comment %} Create a variable of the sorted list from the JSON file {% endcomment %}
           {% assign issuers = site.data.vci-issuers | sort_natural: 'name' %}
@@ -221,6 +223,11 @@ nav: issuers
         </div> <!-- / .row -->
       </div>
     </div> <!-- / .row -->
+    <div class="row py-3">
+      <div class="col-12 text-center">
+        <button class="btn btn-primary btn btn-primary pt-2 pb-2 pl-4 pr-4 text-uppercase" id="list_toggle"><span class="float-left mr-3"></span>Show All {{ issuers.size }} Issuers <img src="../Assets/Images/MIC21224_Icon_Link_v01_DS_2021_06_28.png" class="float-right mx-auto rotate-90" width="21" height="21" alt=""></button>
+      </div>
+    </div>
   </div> <!-- / .container -->
 </section>
 
@@ -233,7 +240,7 @@ nav: issuers
 
             <!-- Heading -->
             <h2>
-              Learn more about how to use SMART&nbsp;Health&nbsp;Cards
+              For more information
             </h2>
           </div>
         </div> <!-- / .row -->
@@ -242,11 +249,13 @@ nav: issuers
           <div class="col-12 text-left">
             <!-- Text -->
             <p class="largeBody fs-lg mb-md-9">
-              Visit our Frequently Asked Questions page to learn more about how to use your SMART Health Card and the benefits of SMART Health Cards.
+              Although clinical and government organizations are the only issuers we include in the directory today, we recognize that there are many health and technology organizations playing an important role in the ecosystem as data aggregators and health IT vendors.
             </p>
-            <p class="text-left pt-2 pb-3">
-              <a class="btn btn-primary pt-2 pb-2 pl-2 pr-2" href="faq.html" role="button"><span class="float-left mr-3"></span>Visit our FAQ</span> <img src="../Assets/Images/MIC21224_Icon_Link_v01_DS_2021_06_28.png" class="float-right mx-auto" style=" width:21px; height:21px;" alt=""></a>
-            </p>
+            <ul>
+              <li><a href="#">Go here to learn more about data aggregators and health IT vendors.</a></li>
+              <li><a href="https://vci.org/issuers" target="_blank">Go here to learn about becoming an issuer and joining the VCI directory.</a></li>
+              <li><a href="#" target="_blank">Go here to see a map that shows countries worldwide that are accepting SMART Health Cards as valid proof of vaccination.</a></li>
+            </ul>
           </div>
         </div> <!-- / .row -->
       </div>
