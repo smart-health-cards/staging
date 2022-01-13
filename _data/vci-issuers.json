@@ -1857,9 +1857,5 @@
     "iss": "https://proxy.eskenazihealth.edu/FHIR-Proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Eskenazi Health",
     "website": "https://www.eskenazihealth.edu/"
-  },
-  {
-    "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/albertsons",
-    "name": "Albertsons Companies"
   }
 ]
