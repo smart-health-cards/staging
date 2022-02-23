@@ -1830,11 +1830,6 @@
     "website": "https://www.whhs.com/"
   },
   {
-    "iss": "https://api.myirmobile.com/issuer",
-    "name": "MyIR: AZ DC LA MD MS WA WV",
-    "website": "https://myirmobile.com"
-  },
-  {
     "iss": "https://arrprod.midmichigan.net/ProdFHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "MyMichigan Health"
   },
@@ -2142,5 +2137,111 @@
     "iss": "https://vaccinerecord.dc.gov",
     "name": "District of Columbia Department of Health",
     "website": "https://dchealth.dc.gov/"
+  },
+  {
+    "iss": "https://rp.sleh.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+    "name": "CommonSpirit Health",
+    "website": "https://www.commonspirit.org/"
+  },
+  {
+    "iss": "https://rp.chihealth.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+    "name": "CommonSpirit Health",
+    "website": "https://www.commonspirit.org/"
+  },
+  {
+    "iss": "https://rp.catholichealth.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+    "name": "CommonSpirit Health",
+    "website": "https://www.commonspirit.org/"
+  },
+  {
+    "iss": "https://api.myirmobile.com/az/issuer",
+    "name": "Arizona Department of Health Services",
+    "website": "https://www.azdhs.gov/"
+  },
+  {
+    "iss": "https://api.myirmobile.com/md/issuer",
+    "name": "Maryland Department of Health"
+  },
+  {
+    "iss": "https://api.myirmobile.com/ms/issuer",
+    "name": "Mississippi State Department of Health",
+    "website": "https://msdh.ms.gov/"
+  },
+  {
+    "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/big+y+foods+inc",
+    "name": "Big Y Foods Inc",
+    "website": "https://www.bigy.com/Pharmacy/covid19-vaccine-faq"
+  },
+  {
+    "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/bismarck",
+    "name": "Bismarck",
+    "website": "https://www.bismarckpharmacy.com/"
+  },
+  {
+    "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/costco",
+    "name": "Costco",
+    "website": "https://www.costco.com/covid-vaccine.html"
+  },
+  {
+    "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/food+city",
+    "name": "Food City",
+    "website": "https://www.foodcity.com/content/48/"
+  },
+  {
+    "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/fruth",
+    "name": "Fruth",
+    "website": "https://fruthpharmacy.com/"
+  },
+  {
+    "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
+    "name": "Giant Eagle Pharmacy"
+  },
+  {
+    "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
+    "name": "Harps Pharmacy",
+    "website": "https://www.harpsfood.com/Pages/19653/COVID-19%20Vaccination%20Information"
+  },
+  {
+    "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
+    "name": "Hartig Drug Co",
+    "website": "https://www.hartigdrug.com/covidvaccine"
+  },
+  {
+    "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
+    "name": "KMART PHARMACY"
+  },
+  {
+    "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
+    "name": "Meijer",
+    "website": "https://clinic.meijer.com/"
+  },
+  {
+    "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
+    "name": "Pharmaca"
+  },
+  {
+    "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
+    "name": "Skripts",
+    "website": "https://www.skriptspharmacy.com/immunizations"
+  },
+  {
+    "iss": "https://api.myirmobile.com/la/issuer",
+    "name": "State of Louisiana",
+    "website": "https://ldh.la.gov/"
+  },
+  {
+    "iss": "https://api.myirmobile.com/wa/issuer",
+    "name": "Washington State Department of Health",
+    "website": "https://www.doh.wa.gov/"
+  },
+  {
+    "iss": "https://epicproxy.et0815.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+    "name": "Children’s Wisconsin",
+    "website": "https://childrenswi.org/"
+  },
+  {
+    "iss": "https://fhir.omhs.org/rp-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+    "name": "Owensboro Health",
+    "website": "https://www.owensborohealth.org"
   }
 ]
