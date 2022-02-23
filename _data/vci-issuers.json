@@ -815,7 +815,7 @@
   },
   {
     "iss": "https://epincoming.slhs.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "St. Luke’s Health System (Idaho)"
+    "name": "St. Luke's Health System (Idaho)"
   },
   {
     "iss": "https://fhir.lakelandregional.org/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -829,7 +829,7 @@
   },
   {
     "iss": "https://fhir.seattlechildrens.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Seattle Children’s",
+    "name": "Seattle Children's",
     "website": "https://www.seattlechildrens.org/"
   },
   {
@@ -1249,7 +1249,7 @@
   },
   {
     "iss": "https://epicmobile.corp.saint-lukes.org/FHIRPROXY/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Saint Luke’s Health System KC",
+    "name": "Saint Luke's Health System KC",
     "website": "https://www.saintlukeskc.org/"
   },
   {
@@ -1391,7 +1391,7 @@
   },
   {
     "iss": "https://ic.valleychildrens.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Valley Children’s Healthcare",
+    "name": "Valley Children's Healthcare",
     "website": "https://www.valleychildrens.org/"
   },
   {
@@ -1406,7 +1406,7 @@
   },
   {
     "iss": "https://fhir.archildrens.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Arkansas Children’s",
+    "name": "Arkansas Children's",
     "website": "https://www.archildrens.org/"
   },
   {
@@ -1503,7 +1503,7 @@
   },
   {
     "iss": "https://fhir.slhn.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "St. Luke’s University Health Network",
+    "name": "St. Luke's University Health Network",
     "website": "https://www.slhn.org/"
   },
   {
@@ -1520,7 +1520,7 @@
   },
   {
     "iss": "https://mobileapps.texaschildrens.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Texas Children’s Hospital",
+    "name": "Texas Children's Hospital",
     "website": "https://www.texaschildrens.org/"
   },
   {
@@ -1794,7 +1794,7 @@
   },
   {
     "iss": "https://fhir-ehr.cerner.com/r4/18c2ddf7-cb55-4622-a2b3-eb9aad8f5a43",
-    "name": "Boston Children’s Hospital Employees"
+    "name": "Boston Children's Hospital Employees"
   },
   {
     "iss": "https://myvaxrecord.idph.illinois.gov/creds/v1",
@@ -1807,7 +1807,7 @@
   },
   {
     "iss": "https://epicproxy.connecticutchildrens.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Connecticut Children’s",
+    "name": "Connecticut Children's",
     "website": "https://www.connecticutchildrens.org/"
   },
   {
@@ -2061,12 +2061,12 @@
   },
   {
     "iss": "https://hkc.nationwidechildrens.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Nationwide Children’s Hospital",
+    "name": "Nationwide Children's Hospital",
     "website": "https://www.nationwidechildrens.org/"
   },
   {
     "iss": "https://cookicfg.cookchildrens.org/CookFHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Cook Children’s"
+    "name": "Cook Children's"
   },
   {
     "iss": "https://vc.vrs.digital.go.jp/issuer",
@@ -2236,7 +2236,7 @@
   },
   {
     "iss": "https://epicproxy.et0815.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Children’s Wisconsin",
+    "name": "Children's Wisconsin",
     "website": "https://childrenswi.org/"
   },
   {
