@@ -65,26 +65,32 @@ nav: issuers
 
             <div class="row pt-4">
               <div class="col-12 col-md-4">
+                <p><a class="font-weight-bold" href="https://azdhs.gov/preparedness/epidemiology-disease-control/immunization/azmyir/index.php" target="_blank">Arizona</a></p>
                 <p><a class="font-weight-bold" href="https://myvaccinerecord.cdph.ca.gov/" target="_blank">California</a></p>
                 <p><a class="font-weight-bold" href="https://mycolorado.state.co.us/myvaccine-record" target="_blank">Colorado</a></p>
                 <p><a class="font-weight-bold" href="https://portal.ct.gov/DPH/Immunizations/CT-WiZ-Access-My-Immunization-Record" target="_blank">Connecticut</a></p>
                 <p><a class="font-weight-bold" href="https://delvax.dhss.delaware.gov/delvax_public/Application/PublicPortal" target="_blank">Delaware</a></p>
                 <p><a class="font-weight-bold" href="https://hawaiicovid19.com/smart-health-card/" target="_blank">Hawaii</a></p>
                 <p><a class="font-weight-bold" href="https://idphportal.illinois.gov/s/?language=en_US" target="_blank">Illinois</a></p>
+                <p><a class="font-weight-bold" href="https://kyir.chfs.ky.gov/webiznet_kyir/Login.aspx" target="_blank">Kentucky</a></p>
               </div>
               <div class="col-12 col-md-4">
                 <p><a class="font-weight-bold" href="https://lawallet.com/covid-19/" target="_blank">Louisiana</a></p>
+                <p><a class="font-weight-bold" href="https://health.maryland.gov/phpa/OIDEOR/IMMUN/Pages/immunet-for-public.aspx" target="_blank">Maryland</a></p>
                 <p><a class="font-weight-bold" href="https://myvaxrecords.mass.gov/" target="_blank">Massachusetts</a></p>
+                <p><a class="font-weight-bold" href="https://msdh.ms.gov/msdhsite/_static/14,0,71,969.html" target="_blank">Mississippi</a></p>
                 <p><a class="font-weight-bold" href="https://izrecord.nv.gov/public/Application/PublicPortal" target="_blank">Nevada</a></p>
                 <p><a class="font-weight-bold" href="https://covid19.nj.gov/pages/vaxrecords" target="_blank">New Jersey</a></p>
-                <p><a class="font-weight-bold" href="https://covid19vaccine.health.ny.gov/excelsior-pass-and-excelsior-pass-plus" target="_blank">New York</a></p>
-                <p><a class="font-weight-bold" href="https://www.prits.pr.gov/vacu-id" target="_blank">Puerto Rico</a></p>
+                <p><a class="font-weight-bold" href="https://nmsiis.health.state.nm.us/webiznet_nm_public/Application/PublicPortal" target="_blank">New Mexico</a></p>
               </div>
               <div class="col-12 col-md-4">
+                <p><a class="font-weight-bold" href="https://covid19vaccine.health.ny.gov/excelsior-pass-and-excelsior-pass-plus" target="_blank">New York</a></p>
+                <p><a class="font-weight-bold" href="https://www.prits.pr.gov/vacu-id" target="_blank">Puerto Rico</a></p>
                 <p><a class="font-weight-bold" href="https://covid.ri.gov/covid-19-prevention/401health-app" target="_blank">Rhode Island</a></p>
                 <p><a class="font-weight-bold" href="https://immunize.utah.gov/usiis/" target="_blank">Utah</a></p>
                 <p><a class="font-weight-bold" href="https://vase.vdh.virginia.gov/vacapps/f?p=545:1" target="_blank">Virginia</a></p>
                 <p><a class="font-weight-bold" href="https://waverify.doh.wa.gov/" target="_blank">Washington</a></p>
+                <p><a class="font-weight-bold" href="https://vaccinerecord.dc.gov/" target="_blank">Washington, D.C.</a></p>
               </div>
             </div>
           </div>
@@ -147,7 +153,7 @@ nav: issuers
 
             <div class="row pt-4">
               <div class="col-12 col-md-4">
-                <p><a class="font-weight-bold" class="font-weight-bold" href="https://www.albertsons.com/pharmacy/covid-19.html" target="_blank" title="Including Acme, Albertsons, Albertsons Market, Amigos, Carrs, Haggen, Jewel-Osco, Lucky's, Market Street, Osco, Pak n Save, Pavilions, Randalls, Sav-On, Shaw's Safeway, Star Market, Tom Thumb, United, and Vons.">Albertsons</a></p>
+                <p><a class="font-weight-bold" class="font-weight-bold" href="https://www.albertsons.com/pharmacy/covid-19.html" target="_blank" title="Including Acme, Albertsons, Albertsons Market, Amigos, Carrs, Haggen, Jewel-Osco, Lucky, Market Street, Osco, Pak 'N Save, Pavilions, Randalls, Sav-On, Shaw's, Safeway, Star Market, Tom Thumb, United, and Vons.">Albertsons</a></p>
                 <p><a class="font-weight-bold" class="font-weight-bold" href="https://care.cvs.com/care-navigation/#/home" target="_blank">CVS</a></p>
                 <p><a class="font-weight-bold" href="https://www.riteaid.com/pharmacy/vaccination-digital-proof" target="_blank">Rite Aid</a></p>
               </div>
@@ -191,8 +197,9 @@ nav: issuers
 
           {% comment %} Setup a variable to track the most recently iterated name. If that name comes up more than once, skip the duplicate(s) {% endcomment %}
           {% assign name = '' %}
+          {% assign num = 0 %}
 
-          {% comment %} Iterate through the sorted array into three columns, offsetting by the items we've already listed. {% endcomment %}
+          {% comment %} Iterate through the sorted array into three columns, offsetting by the items we've already listed. Add each entry together to get the total of non-duplicate entries. {% endcomment %}
           <div class="col-12 col-md-4">
             {% for issuer in issuers limit: looplength %}
             {% if issuer.name == name %}
@@ -200,6 +207,7 @@ nav: issuers
             {% endif %}
             <p class="font-weight-bold">{{ issuer.name }}</p>
             {% assign name = issuer.name %}
+            {% assign num = num | plus: 1 %}
             {% endfor %}
           </div>
           <div class="col-12 col-md-4">
@@ -209,6 +217,7 @@ nav: issuers
             {% endif %}
             <p class="font-weight-bold">{{ issuer.name }}</p>
             {% assign name = issuer.name %}
+            {% assign num = num | plus: 1 %}
             {% endfor %}
           </div>
           <div class="col-12 col-md-4">
@@ -218,6 +227,7 @@ nav: issuers
             {% endif %}
             <p class="font-weight-bold">{{ issuer.name }}</p>
             {% assign name = issuer.name %}
+            {% assign num = num | plus: 1 %}
             {% endfor %}
           </div>
 
@@ -226,7 +236,7 @@ nav: issuers
     </div> <!-- / .row -->
     <div class="row py-3" aria-hidden="true">
       <div class="col-12 text-center">
-        <button class="btn btn-primary btn btn-primary pt-2 pb-2 pl-4 pr-4 text-uppercase list-toggle"><span class="float-left mr-3"></span>Show All {{ issuers.size }} Issuers <img src="../Assets/Images/MIC21224_Icon_Link_v01_DS_2021_06_28.png" class="float-right mx-auto rotate-90" width="21" height="21" alt=""></button>
+        <button class="btn btn-primary btn btn-primary pt-2 pb-2 pl-4 pr-4 text-uppercase list-toggle"><span class="float-left mr-3"></span>Show All {{ num }} Issuers <img src="../Assets/Images/MIC21224_Icon_Link_v01_DS_2021_06_28.png" class="float-right mx-auto rotate-90" width="21" height="21" alt=""></button>
         <button class="btn btn-primary btn btn-primary pt-2 pb-2 pl-4 pr-4 text-uppercase list-toggle toggle-hide"><span class="float-left mr-3"></span>See Less <img src="../Assets/Images/MIC21224_Icon_Link_v01_DS_2021_06_28.png" class="float-right mx-auto rotate-270" width="21" height="21" alt=""></button>
       </div>
     </div>

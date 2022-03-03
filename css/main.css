@@ -371,6 +371,11 @@ ul#FAQTOC
 
     color: #205F5F;
 }
+
+.answer + ul li a {
+    font-size: inherit;
+    line-height: inherit;
+}
 /* /FAQ Page */
 
 /* Issuers Page */

@@ -1300,6 +1300,15 @@
     "website": "https://izrecord.nv.gov/public/Application/PublicPortal"
   },
   {
+    "iss": "https://smarthealthcard.iisregistry.net/newmexico/issuer",
+    "name": "NM Department of Health",
+    "website": "http://vaxviewnm.org/"
+  },
+  {
+    "iss": "https://smarthealthcard.iisregistry.net/kentucky/issuer",
+    "name": "Kentucky Registry"
+  },
+  {
     "iss": "https://fhir-myrecord.cerner.com/r4/c32cb33f-ec61-4f25-9140-0b9b174fe4db",
     "name": "Atrium Health"
   },
@@ -2243,5 +2252,44 @@
     "iss": "https://fhir.omhs.org/rp-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Owensboro Health",
     "website": "https://www.owensborohealth.org"
+  },
+  {
+    "iss": "https://epicproxy.et1235.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+    "name": "Self Regional Healthcare",
+    "website": "https://www.selfregional.org/"
+  },
+  {
+    "iss": "https://fhir-myrecord.cerner.com/r4/Hq9lMFKIau9MlCiBN698ZPzTKNvsMrCb",
+    "name": "Genesis Healthcare System"
+  },
+  {
+    "iss": "https://fhir-myrecord.cerner.com/r4/9d2c8ef0-9a25-45b4-b53b-3738c3eda603",
+    "name": "MyHealthHome"
+  },
+  {
+    "iss": "https://fhir-myrecord.cerner.com/r4/082fe843-d2e4-4f68-96c9-531186c7d48d",
+    "name": "MyHealthHome"
+  },
+  {
+    "iss": "https://fhir-myrecord.cerner.com/r4/b92996e8-6deb-4500-b78a-e05435af1db3",
+    "name": "MyHealthHome"
+  },
+  {
+    "iss": "https://fhir-myrecord.cerner.com/r4/9366dc53-07b6-47b5-8809-6f7b8a082b2d",
+    "name": "MyHealthHome"
+  },
+  {
+    "iss": "https://fhir-myrecord.cerner.com/r4/62f3918e-1f4f-42f1-a374-2667f4059c19",
+    "name": "Lutheran Health Network MyHealthHome"
+  },
+  {
+    "iss": "https://yrmccare1.yumaregional.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+    "name": "Yuma Regional Medical Center",
+    "website": "https://www.yumaregional.org/Home"
+  },
+  {
+    "iss": "https://surescripts.gmh.edu/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+    "name": "Grady Health",
+    "website": "https://www.gradyhealth.org/"
   }
 ]
