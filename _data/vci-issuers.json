@@ -1,10 +1,12 @@
 [{
     "iss": "https://myvaccinerecord.cdph.ca.gov/creds",
-    "name": "State of California"
+    "name": "State of California",
+    "website": "https://myvaccinerecord.cdph.ca.gov/"
   },
   {
     "iss": "https://healthcardcert.lawallet.com",
-    "name": "State of Louisiana"
+    "name": "State of Louisiana",
+    "website": "https://lawallet.com/covid-19/"
   },
   {
     "iss": "https://epicproxy.et0502.epichosted.com/EPPARRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -844,7 +846,8 @@
   },
   {
     "iss": "https://www.riteaid.com",
-    "name": "Rite Aid Pharmacy"
+    "name": "Rite Aid Pharmacy",
+    "website": "https://www.riteaid.com/pharmacy/vaccination-digital-proof"
   },
   {
     "iss": "https://epicproxy.et1134.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1074,6 +1077,7 @@
   {
     "iss": "https://SMART.slhd.nsw.gov.au/health-card",
     "name": "Sydney Local Health District"
+    "website": "https://www.nsw.gov.au/covid-19/vaccination/proof"
   },
   {
     "iss": "https://ssrx.ksnet.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1143,17 +1147,17 @@
   {
     "iss": "https://healthcard.walgreens.com",
     "name": "Walgreens",
-    "website": "https://www.walgreens.com"
+    "website": "https://www.walgreens.com/topic/promotion/covid-vaccine.jsp"
   },
   {
     "iss": "https://docket.care/ut",
     "name": "State of Utah",
-    "website": "https://docket.care"
+    "website": "https://immunize.utah.gov/usiis/"
   },
   {
     "iss": "https://docket.care/nj",
     "name": "State of New Jersey",
-    "website": "https://docket.care"
+    "website": "https://covid19.nj.gov/pages/vaxrecords"
   },
   {
     "iss": "https://immunizationcard.manitoba.ca/api/national",
@@ -1239,6 +1243,7 @@
   {
     "iss": "https://epicproxy.et0958.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Mayo Clinic"
+    "webiste": "https://mayoclinichealthsystem.org/patient-online-services"
   },
   {
     "iss": "https://fhir.genesishcs.org/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1248,6 +1253,7 @@
   {
     "iss": "https://smarthealthcard.iisregistry.net/delaware/issuer",
     "name": "Delaware Immunization Program"
+    "website": "https://delvax.dhss.delaware.gov/delvax_public/Application/PublicPortal"
   },
   {
     "iss": "https://epicmobile.corp.saint-lukes.org/FHIRPROXY/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1313,7 +1319,8 @@
   },
   {
     "iss": "https://smarthealthcard.iisregistry.net/kentucky/issuer",
-    "name": "Kentucky Registry"
+    "name": "Kentucky Registry",
+    "website": "https://kyir.chfs.ky.gov/webiznet_kyir/Login.aspx"
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/c32cb33f-ec61-4f25-9140-0b9b174fe4db",
@@ -1339,11 +1346,13 @@
   },
   {
     "iss": "https://waverify.doh.wa.gov/creds",
-    "name": "Washington State Department of Health"
+    "name": "Washington State Department of Health",
+    "website": "https://waverify.doh.wa.gov/"
   },
   {
     "iss": "https://cdphe.colorado.gov",
-    "name": "State of Colorado"
+    "name": "State of Colorado",
+     "website": "https://mycolorado.state.co.us/myvaccine-record"
   },
   {
     "iss": "https://soapproxyprod.thechristhospital.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1357,7 +1366,8 @@
   },
   {
     "iss": "https://webprd.ochin.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "OCHIN"
+    "name": "OCHIN",
+    "website": "https://mychart.ochin.org/mychart/"
   },
   {
     "iss": "https://mcproxyprd.med.umich.edu/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1371,7 +1381,7 @@
   {
     "iss": "https://smarthealthcard.iisregistry.net/colorado/issuer",
     "name": "State of Colorado",
-    "website": "https://mycolorado.page.link/shc"
+    "website": "https://mycolorado.gov/myvaccine-record"
   },
   {
     "iss": "https://ehrmobile.monument.health/interconnect-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1561,6 +1571,7 @@
   {
     "iss": "https://credenciales.cescodigital.pr.gov",
     "name": "Government of Puerto Rico"
+    "website": "https://www.vacuid.pr.gov/"
   },
   {
     "iss": "https://covidrecords.alberta.ca/smarthealth/issuer",
@@ -1674,7 +1685,8 @@
   },
   {
     "iss": "https://api.cvshealth.com/smarthealth/v1/card",
-    "name": "CVS Health"
+    "name": "CVS Health",
+    "website": "https://care.cvs.com/"
   },
   {
     "iss": "https://cslinkmobile.csmc.edu",
@@ -1714,7 +1726,8 @@
   },
   {
     "iss": "https://www.walmart.com/health/vaccinerecords",
-    "name": "Walmart"
+    "name": "Walmart",
+    "website": "https://www.walmart.com/cp/digital-vaccine-record/9508321"
   },
   {
     "iss": "https://eprescribing.accesscommunityhealth.net/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1727,7 +1740,8 @@
   },
   {
     "iss": "https://pvc.cloud.forces.gc.ca",
-    "name": "Government of Canada - Gouvernement du Canada"
+    "name": "Government of Canada - Gouvernement du Canada",
+    "website": "https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/vaccine-proof/get-canadian.html"
   },
   {
     "iss": "https://prd.pkey.dhdp.ontariohealth.ca",
@@ -1791,7 +1805,8 @@
   },
   {
     "iss": "https://health.ri.gov/sh.cards/production",
-    "name": "The State of Rhode Island"
+    "name": "The State of Rhode Island",
+    "website": "https://covid.ri.gov/covid-19-prevention/401health-app"
   },
   {
     "iss": "https://epicproxy.institute.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1819,12 +1834,13 @@
   },
   {
     "iss": "https://myvaxrecord.idph.illinois.gov/creds/v1",
-    "name": "Illinois Department of Public Health"
+    "name": "Illinois Department of Public Health",
+    "website": "https://idphportal.illinois.gov/s/?language=en_US"
   },
   {
     "iss": "https://arr.mysrhs.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Singing River Health System",
-    "website": "https://singingriverhealthsystem.com/"
+    "website": "https://mychart.mysrhs.com/mychart"
   },
   {
     "iss": "https://epicproxy.connecticutchildrens.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1890,7 +1906,8 @@
   },
   {
     "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/albertsons",
-    "name": "Albertsons Companies"
+    "name": "Albertsons Companies",
+    "website": "https://www.albertsons.com/pharmacy/covid-19.html"
   },
   {
     "iss": "https://surescripts.mdmercy.com/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -2162,7 +2179,7 @@
   {
     "iss": "https://vaccinerecord.dc.gov",
     "name": "District of Columbia Department of Health",
-    "website": "https://dchealth.dc.gov/"
+    "website": "https://vaccinerecord.dc.gov/"
   },
   {
     "iss": "https://rp.sleh.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -2253,12 +2270,12 @@
   {
     "iss": "https://api.myirmobile.com/la/issuer",
     "name": "State of Louisiana",
-    "website": "https://ldh.la.gov/"
+    "website": "https://lawallet.com/covid-19/"
   },
   {
     "iss": "https://api.myirmobile.com/wa/issuer",
     "name": "Washington State Department of Health",
-    "website": "https://www.doh.wa.gov/"
+    "website": "https://waverify.doh.wa.gov/"
   },
   {
     "iss": "https://epicproxy.et0815.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
