@@ -1012,23 +1012,27 @@
   {
     "iss": "https://fhir.renown.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Renown Health",
-    "website": "https://www.renown.org/en/"
+    "website": "https://mychart.renown.org/mychart"
   },
   {
     "iss": "https://interconnect.lcmchealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "LCMC Health"
+    "name": "LCMC Health",
+    "website": "https://patientportal.lcmchealth.org/MyChart/"  
   },
   {
     "iss": "https://epicproxy.et1178.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "The University of Texas Health Science Center at Houston"
+    "name": "The University of Texas Health Science Center at Houston",
+    "website": "https://myuthealth.org/MyChart/"
   },
   {
     "iss": "https://webproxyprd.monroeclinic.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Monroe Clinic"
+    "name": "Monroe Clinic",
+    "website": "https://mychart.monroeclinic.org/mychart"  
   },
   {
     "iss": "https://fhir.mainehealth.org/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "MaineHealth"
+    "name": "MaineHealth",
+    "website": "https://mychart.mainehealth.org/mychart"  
   },
   {
     "iss": "https://reports.bioreference.com/fhir",
@@ -1036,7 +1040,8 @@
   },
   {
     "iss": "https://erx.aspirus.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Aspirus"
+    "name": "Aspirus",
+    "website": "https://myaspirus.org/MyChart"  
   },
   {
     "iss": "https://epicproxy.et1024.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1046,12 +1051,12 @@
   {
     "iss": "https://ssproxy.pennhealth.com/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Penn Medicine",
-    "website": "https://www.pennmedicine.org"
+    "website": "https://secure.mypennmedicine.org/MyPennMedicine"
   },
   {
     "iss": "https://epicmobile.johnshopkins.edu/FHIR_PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Johns Hopkins Medicine",
-    "website": "https://hopkinsmedicine.org/"
+    "website": "https://mychart.hopkinsmedicine.org/mychart/"
   },
   {
     "iss": "https://epicsoap.stormontvail.org/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1061,12 +1066,12 @@
   {
     "iss": "https://eportal.gbmc.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Greater Baltimore Medical Center",
-    "website": "https://www.gbmc.org/"
+    "website": "https://eportal.gbmc.org/MyChart/"
   },
   {
     "iss": "https://epicicfore.quadmedical.com/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "QuadMed",
-    "website": "https://www.quadmedical.com/"
+    "website": "https://mychart.myquadmedical.com/MyChart"
   },
   {
     "iss": "https://epcapp.mhd.com/arr-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1080,42 +1085,42 @@
   {
     "iss": "https://epicproxy.et1052.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Premise Health",
-    "website": "https://premisehealth.com/"
+    "website": "https://www.mypremisehealth.com/MyChart"
   },
   {
     "iss": "https://mepic.hackensackumc.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Hackensack Meridian Health",
-    "website": "https://www.hackensackmeridianhealth.org/"
+    "website": "https://mychart.hmhn.org/mychart/"
   },
   {
     "iss": "https://ema.franciscanalliance.org/FHIR_PROXY/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Franciscan Alliance",
-    "website": "https://www.franciscanhealth.org/"
+    "website": "https://franciscanmychart.org/Mychart"
   },
   {
     "iss": "https://epicfhir.msmc.com/proxysite-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Mt Sinai - FL",
-    "website": "https://www.msmc.com/"
+    "website": "https://mychart.msmc.com/MyChart/"
   },
   {
     "iss": "https://mobileprod.arcmd.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Austin Regional Clinic",
-    "website": "https://www.austinregionalclinic.com/"
+    "website": "https://mychart.austinregionalclinic.com/mychart/"
   },
   {
     "iss": "https://rxproxy.sw.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Baylor Scott & White Health",
-    "website": "https://www.bswhealth.com/"
+    "website": "https://my.bswhealth.com/login"
   },
   {
     "iss": "https://fhir.chppoc.org/Fhir-External/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Pediatric Physicians' Organization at Children's",
-    "website": "https://www.ppochildrens.org/locate-a-practice/"
+    "website": "https://mychart.chppoc.org/mychart"
   },
   {
     "iss": "https://arrprd.southeasthealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Southeast Health",
-    "website": "https://www.southeasthealth.org/"
+    "website": "https://mychart.southeasthealth.org/"
   },
   {
     "iss": "https://SMART.slhd.nsw.gov.au/health-card",
@@ -1125,46 +1130,52 @@
   {
     "iss": "https://ssrx.ksnet.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Kelsey-Seybold Clinic",
-    "website": "https://www.kelsey-seybold.com"
+    "website": "https://www.mykelseyonline.com/MyChart/"
   },
   {
     "iss": "https://epicprod-mobile.parkview.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Parkview Health"
+    "name": "Parkview Health",
+    "website": "https://mychart.parkview.com/MyChart/"  
   },
   {
     "iss": "https://epicproxy.et1095.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Kennedy Krieger Institute"
+    "name": "Kennedy Krieger Institute",
+    "website": "https://mychart.kennedykrieger.org/mychart/"  
   },
   {
     "iss": "https://esp.ecommunity.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Community Health Network",
-    "website": "https://www.ecommunity.com"
+    "website": "https://mychart.ecommunity.com/mychart"
   },
   {
     "iss": "https://ep-rps.gvhc.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Golden Valley Health Centers"
+    "name": "Golden Valley Health Centers",
+    "website": "https://mychart.gvhc.org/MyChartPRD/"  
   },
   {
     "iss": "https://fhir.memorialcare.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "MemorialCare"
+    "name": "MemorialCare",
+    "website": "https://mymemorialcare.memorialcare.org/MyChart"  
   },
   {
     "iss": "https://epicproxy.et0905.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Atrium Health"
+    "name": "Atrium Health",
+    "website": "https://my.atriumhealth.org/MyAtriumHealth"
   },
   {
     "iss": "https://api.utmsa.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "UT Health San Antonio",
-    "website": "https://www.uthscsa.edu/"
+    "website": "https://mychart.utmedicinesa.com/mychart/"
   },
   {
     "iss": "https://epicproxy.et0883.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "One Brooklyn Health System",
-    "website": "https://onebrooklynhealth.org/"
+    "website": "https://www.myonebrooklynhealth.org/MyChart/Authentication/Login"
   },
   {
     "iss": "https://eprp.deaconess.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Deaconess Health System"
+    "name": "Deaconess Health System",
+    "website": "https://www.viewmychart.com/MyChart/"  
   },
   {
     "iss": "https://soap.uhcs.org/IC-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1173,11 +1184,12 @@
   {
     "iss": "https://epicproxy.et1055.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Mary Washington Healthcare",
-    "website": "https://www.marywashingtonhealthcare.com/"
+    "website": "https://mychart.mwhc.com/MyChart/"
   },
   {
     "iss": "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Mass General Brigham"
+    "name": "Mass General Brigham",
+    "website": "https://patientgateway.massgeneralbrigham.org/mychart-prd"  
   },
   {
     "iss": "https://www.express-scripts.com/frontendservice/mobilepatient-proxy/1/shc",
@@ -1214,50 +1226,53 @@
   },
   {
     "iss": "https://m.essentiahealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Essentia Health"
+    "name": "Essentia Health",
+    "website": "https://www.essentiamychart.org/MyChart"  
   },
   {
     "iss": "https://epic-arr.pinnaclehealth.org/PRD-FHIR-ARR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "UPMC Central PA"
+    "name": "UPMC Central PA",
+    "website": "https://mypinnaclehealth.org/mychart"  
   },
   {
     "iss": "https://fhir.samhealth.org/fhir-arr/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Samaritan Health Services",
-    "website": "https://www.samhealth.org/"
+    "website": "https://mychart.samhealth.org/MyChart"
   },
   {
     "iss": "https://soapproxy.umc.edu/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "University of Mississippi Medical Center",
-    "website": "https://www.umc.edu/"
+    "website": "https://www.umc.edu/mychart"
   },
   {
     "iss": "https://soapprod.hattiesburgclinic.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Hattiesburg Clinic and Forrest Health"
+    "name": "Hattiesburg Clinic and Forrest Health",
+    "website": "https://iris.hattiesburgclinic.com/iris"  
   },
   {
     "iss": "https://epicproxy.et1144.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Catholic Health System",
-    "website": "https://www.chsbuffalo.org"
+    "website": "https://mychart.chsbuffalo.org/MyChart/"
   },
   {
     "iss": "https://epicfhir.nyumc.org/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "NYU Langone Health System",
-    "website": "https://nyulangone.org/"
+    "website": "https://mychart.nyulmc.org/mychart/"
   },
   {
     "iss": "https://epicproxy.et1031.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Bryan Health",
-    "website": "https://www.bryanhealth.com/"
+    "website": "https://mychart.bryanhealth.org/MyChart"
   },
   {
     "iss": "https://soapproxy.peacehealth.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "PeaceHealth",
-    "website": "https://www.peacehealth.org/"
+    "website": "https://my.peacehealth.org/MyPeaceHealth/"
   },
   {
     "iss": "https://fhir.hfhs.org/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Henry Ford Health System",
-    "website": "https://www.henryford.com/"
+    "website": "https://mychart.hfhs.org/mychart"
   },
   {
     "iss": "https://epicsoap.readinghospital.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1271,17 +1286,18 @@
   },
   {
     "iss": "https://epicproxy.et1127.epichosted.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "United Health Services"
+    "name": "United Health Services",
+    "website": "https://mychart.nyuhs.org/MyChart/"  
   },
   {
     "iss": "https://fhir.promedica.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "ProMedica",
-    "website": "https://www.promedica.org/"
+    "website": "https://mychart.promedica.org/MyChart/"
   },
   {
     "iss": "https://fhir.mdanderson.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "The University of Texas MD Anderson Cancer Center",
-    "website": "https://www.mdanderson.org/"
+    "website": "https://my.mdanderson.org/Account/Login"
   },
   {
     "iss": "https://epicproxy.et0958.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1291,7 +1307,7 @@
   {
     "iss": "https://fhir.genesishcs.org/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Genesis Healthcare System",
-    "website": "https://www.genesishcs.org/"
+    "website": "https://mychart.genesishcs.org/mychart/"
   },
   {
     "iss": "https://smarthealthcard.iisregistry.net/delaware/issuer",
@@ -1301,26 +1317,27 @@
   {
     "iss": "https://epicmobile.corp.saint-lukes.org/FHIRPROXY/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Saint Luke's Health System KC",
-    "website": "https://www.saintlukeskc.org/"
+    "website": "https://mysaintlukes.corp.saint-lukes.org/MyChartPRD"
   },
   {
     "iss": "https://epproxy.bayhealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Bayhealth Medical Center",
-    "website": "https://www.bayhealth.org/"
+    "website": "https://epmychart.bayhealth.org/Mychart"
   },
   {
     "iss": "https://epicproxy.et0967.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Erlanger Health System",
-    "website": "https://www.erlanger.org/"
+    "website": "https://mychart.erlanger.org/MyChart"
   },
   {
     "iss": "https://nmepicproxy.nm.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Northwestern Medicine",
-    "website": "https://www.nm.org/"
+    "website": "https://mynm.nm.org/MyChart/"
   },
   {
     "iss": "https://FHIR.umm.edu/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "University of Maryland Medical System"
+    "name": "University of Maryland Medical System",
+    "website": "https://myportfolio.umm.edu/MyChart/"  
   },
   {
     "iss": "https://arr.thedacare.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1328,17 +1345,18 @@
   },
   {
     "iss": "https://emerge-soap1.bmc.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Boston Medical Center"
+    "name": "Boston Medical Center",
+    "website": "https://mychart.bmc.org/mychart"  
   },
   {
     "iss": "https://epicprdproxy.nch.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Northwest Community Hospital",
-    "website": "https://www.nch.org/"
+    "website": "https://www.nch.org/landing/coronavirus/digital-proof-of-vaccination/"
   },
   {
     "iss": "https://api.ccf.org/mu/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Cleveland Clinic",
-    "website": "https://my.clevelandclinic.org/"
+    "website": "https://mychart.clevelandclinic.org/"
   },
   {
     "iss": "https://smarthealthcard.iisregistry.net/connecticut/issuer",
@@ -1367,25 +1385,28 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/c32cb33f-ec61-4f25-9140-0b9b174fe4db",
-    "name": "Atrium Health"
+    "name": "Atrium Health",
+    "website": "https://my.atriumhealth.org/MyAtriumHealth"
   },
   {
     "iss": "https://ihismufhir.osumc.edu/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "The Ohio State University Wexner Medical Center"
+    "name": "The Ohio State University Wexner Medical Center",
+    "website": "https://wexnermedical.osu.edu/features/mychart"  
   },
   {
     "iss": "https://epiclbsprxyprodpass.houstonmethodist.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Houston Methodist",
-    "website": "https://www.houstonmethodist.org"
+    "website": "https://mychart.houstonmethodist.org/mychart-prod/"
   },
   {
     "iss": "https://epicproxy.et1023.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "UMC Southern Nevada"
+    "name": "UMC Southern Nevada",
+    "website": "https://umconnect.umcsn.com/MyChart" 
   },
   {
     "iss": "https://prd-proxy.vidanthealth.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Vidant Health",
-    "website": "https://www.vidanthealth.com/"
+    "website": "https://mychart.vidanthealth.com/mychart"
   },
   {
     "iss": "https://waverify.doh.wa.gov/creds",
@@ -1400,12 +1421,12 @@
   {
     "iss": "https://soapproxyprod.thechristhospital.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "The Christ Hospital",
-    "website": "https://www.thechristhospital.com/"
+    "website": "https://www.thechristhospitalmychart.com/mychart"
   },
   {
     "iss": "https://prevprox.bch.org/FHIRproxyPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Boulder Community Health",
-    "website": "https://www.bch.org/"
+    "website": "https://my.bch.org/MyChartPRD"
   },
   {
     "iss": "https://webprd.ochin.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1419,7 +1440,7 @@
   {
     "iss": "https://health-apis.duke.edu/FHIR/patient/DSTU2/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Duke University Health System",
-    "website": "https://www.dukehealth.org/"
+    "website": "https://www.dukemychart.org/home"
   },
   {
     "iss": "https://smarthealthcard.iisregistry.net/colorado/issuer",
@@ -1429,59 +1450,62 @@
   {
     "iss": "https://ehrmobile.monument.health/interconnect-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Monument Health",
-    "website": " https://monument.health/"
+    "website": "https://mychart.regionalhealth.org/MyChart/"
   },
   {
     "iss": "https://scripts.prevea.com/FHIR-ARR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Hospital Sisters Health System"
+    "name": "Hospital Sisters Health System",
+    "website": "https://www.myhshs.org/myhshs"  
   },
   {
     "iss": "https://epicedge.upstate.edu/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "SUNY Upstate"
+    "name": "SUNY Upstate",
+    "website": "https://www.upstate.edu/healthcare/mychart.php"  
   },
   {
     "iss": "https://lmcrcs.lexmed.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Lexington Medical Center",
-    "website": "https://www.lexmed.com/"
+    "website": "https://mychart.lexmed.com/mychart"
   },
   {
     "iss": "https://webproxy.mynovant.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Novant Health",
-    "website": "https://www.novanthealth.org/"
+    "website": "https://www.novantmychart.org/mychart"
   },
   {
     "iss": "https://epicrp.firsthealth.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "FirstHealth of the Carolinas",
-    "website": "https://www.firsthealth.org/"
+    "website": "https://www.firsthealthmychart.org/mychartprd"
   },
   {
     "iss": "https://epicmobile.ohsu.edu/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Oregon Health & Science University",
-    "website": "https://www.ohsu.edu/"
+    "website": "https://mychartweb.ohsu.edu/mychart"
   },
   {
     "iss": "https://epicrpprd.inova.org/fhirrp/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Inova Health System"
+    "name": "Inova Health System",
+    "website": "https://mychart.inova.org/mychart/"  
   },
   {
     "iss": "https://ic.valleychildrens.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Valley Children's Healthcare",
-    "website": "https://www.valleychildrens.org/"
+    "website": "https://mychart.valleychildrens.org/portal"
   },
   {
     "iss": "https://epicproxy.et1240.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "El Rio Health",
-    "website": "https://www.elrio.org/"
+    "website": "https://elriomychart.org/MyChart/"
   },
   {
     "iss": "https://epicproxy.et1222.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "GW University Medical Faculty Associates",
-    "website": "https://gwdocs.com/"
+    "website": "https://mychart.gwdocs.com/MyChart"
   },
   {
     "iss": "https://fhir.archildrens.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Arkansas Children's",
-    "website": "https://www.archildrens.org/"
+    "website": "https://mychart.archildrens.org/mychart/"
   },
   {
     "iss": "https://arrprd.metrohealth.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
