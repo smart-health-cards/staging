@@ -71,7 +71,7 @@ nav: issuers
                 <p><a class="font-weight-bold" href="https://portal.ct.gov/DPH/Immunizations/CT-WiZ-Access-My-Immunization-Record" target="_blank">Connecticut</a></p>
                 <p><a class="font-weight-bold" href="https://delvax.dhss.delaware.gov/delvax_public/Application/PublicPortal" target="_blank">Delaware</a></p>
                 <p><a class="font-weight-bold" href="https://dphss.guam.gov/" target="_blank">Guam</a></p>
-                <p><a class="font-weight-bold" href="https://hawaiicovid19.com/smart-health-card/" target="_blank">Hawaii</a></p>
+                <p><a class="font-weight-bold" href="https://hawaiicovid19.com/smart-health-card/" target="_blank" title="Not currently issuing new SMART Health Cards.">Hawaii*</a></p>
                 <p><a class="font-weight-bold" href="https://idphportal.illinois.gov/s/?language=en_US" target="_blank">Illinois</a></p>
               </div>
               <div class="col-12 col-md-4">
@@ -113,9 +113,12 @@ nav: issuers
                 <p><a class="font-weight-bold" href="https://webiz.rmihealth.org/webiznet_rmi/Login.aspx/" target="_blank">Marshall Islands</a></p>
               </div>
             </div>
-            <div class="row text-right pt-3">
-              <div class="col-10">
-                <a  href="#pharmacies">See more issuers, including pharmacies, below.</a>
+            <div class="row text-left pt-3">
+              <div class="col-lg-6 col-12">
+                <p><em>*Not currently issuing new SMART Health Cards.</em></p>
+              </div>
+              <div class="col-lg-6 col-12">
+                <a href="#pharmacies">See more issuers, including pharmacies, below.</a>
               </div>
             </div>
           </div>
@@ -134,7 +137,7 @@ nav: issuers
 
         <!-- Heading -->
         <h1>
-          U.S. Nationwide Pharmacies
+          U.S. Nationwide Pharmacies and Test Providers
         </h1>
 
       </div>
@@ -144,7 +147,7 @@ nav: issuers
       <div class="col-12">
         <!-- Text -->
         <p class="text-md-start mb-0">
-          These nationwide retail pharmacies have all become SMART Health Card issuers, offering United States residents the opportunity to get access to SMART Health Cards anywhere they do business. You also can find a full list of other issuers at the end of this page.
+          These nationwide labs and retail pharmacies have all become SMART Health Card issuers, offering United States residents the opportunity to get access to SMART Health Cards anywhere they do business. You also can find a full list of other issuers at the end of this page.
         </p>
       </div>
     </div> <!-- / .row -->
@@ -158,7 +161,11 @@ nav: issuers
             <div class="row pt-4">
               <div class="col-12 col-md-4">
                 <p><a class="font-weight-bold" class="font-weight-bold" href="https://www.albertsons.com/pharmacy/covid-19.html" target="_blank" title="Including Acme, Albertsons, Albertsons Market, Amigos, Carrs, Haggen, Jewel-Osco, Lucky, Market Street, Osco, Pak 'N Save, Pavilions, Randalls, Sav-On, Shaw's, Safeway, Star Market, Tom Thumb, United, and Vons.">Albertsons</a></p>
+                <p><a class="font-weight-bold" class="font-weight-bold" href="https://www.bioreference.com/patient-portal" target="_blank">BioReference Laboratories</a></p>
                 <p><a class="font-weight-bold" class="font-weight-bold" href="https://care.cvs.com/care-navigation/#/home" target="_blank">CVS</a></p>
+              </div>
+              <div class="col-12 col-md-4">
+                <p><a class="font-weight-bold" class="font-weight-bold" href="https://ihealthlabs.com/account/login" target="_blank">iHealth Labs</a></p>
                 <p><a class="font-weight-bold" href="https://www.riteaid.com/pharmacy/vaccination-digital-proof" target="_blank">Rite Aid</a></p>
               </div>
               <div class="col-12 col-md-4">
@@ -193,7 +200,38 @@ nav: issuers
         <div class="row pt-4" id="issuers_list">
 
           {% comment %} Create a variable of the sorted list from the JSON file {% endcomment %}
-          {% assign issuers = site.data.vci-issuers | sort_natural: 'name' %}
+          {% assign issuers_grouped = site.data.vci-issuers | group_by: 'name' | sort_natural: 'name' %}
+          {% assign issuers = '' | split: '' %}
+          {% for issuer_entry in issuers_grouped %}
+            {% assign array_item = '' | split: '' %}
+
+              {% if issuer_entry.size > 1 %}
+                {% assign arr_to_str = array_item | join: ' ' %}
+                {% for item in issuer_entry.items %}
+                  {% if item.website %}
+                    {% unless arr_to_str contains item.name or arr_to_str contains item.website %}
+                      {% assign array_item = array_item | push: item %}
+                    {% endunless %}
+                  {% endif %}
+                {% endfor %}
+
+                {% unless arr_to_str contains issuer_entry.items[0].name %}
+                  {% assign array_item = array_item | push: issuer_entry.items[0] %}
+                {% endunless %}
+
+                {% if array_item %}
+                  {% assign issuers = issuers | push: array_item %}
+                {% endif %}
+              {% else %}
+                {% assign issuers = issuers | push: issuer_entry.items[0] %}
+              {% endif %}
+
+              {% unless issuers contains array_item %}
+                {% assign issuers = issuers | push: array_item %}
+              {% endunless %}
+          {% endfor %}
+
+          {% assign issuers = issuers | sort_natural: 'name' %}
 
           {% comment %} Create offset numbers to break the list up into 3 roughly equal groups {% endcomment %}
           {% assign looplength = issuers.size | divided_by: 3 %}
@@ -209,7 +247,13 @@ nav: issuers
             {% if issuer.name == name %}
             {% continue %}
             {% endif %}
+            {% if issuer.website %}
+            <a href={{ issuer.website }} target="_blank">
+            {% endif %}
             <p class="font-weight-bold">{{ issuer.name }}</p>
+            {% if issuer.website %}
+            </a>
+            {% endif %}
             {% assign name = issuer.name %}
             {% assign num = num | plus: 1 %}
             {% endfor %}
@@ -219,7 +263,13 @@ nav: issuers
             {% if issuer.name == name %}
             {% continue %}
             {% endif %}
+            {% if issuer.website %}
+            <a href={{ issuer.website }} target="_blank">
+            {% endif %}
             <p class="font-weight-bold">{{ issuer.name }}</p>
+            {% if issuer.website %}
+            </a>
+            {% endif %}
             {% assign name = issuer.name %}
             {% assign num = num | plus: 1 %}
             {% endfor %}
@@ -229,7 +279,13 @@ nav: issuers
             {% if issuer.name == name %}
             {% continue %}
             {% endif %}
+            {% if issuer.website %}
+            <a href={{ issuer.website }} target="_blank">
+            {% endif %}
             <p class="font-weight-bold">{{ issuer.name }}</p>
+            {% if issuer.website %}
+            </a>
+            {% endif %}
             {% assign name = issuer.name %}
             {% assign num = num | plus: 1 %}
             {% endfor %}
