@@ -200,38 +200,12 @@ nav: issuers
         <div class="row pt-4" id="issuers_list">
 
           {% comment %} Create a variable of the sorted list from the JSON file {% endcomment %}
-          {% assign issuers_grouped = site.data.vci-issuers | group_by: 'name' | sort_natural: 'name' %}
           {% assign issuers = '' | split: '' %}
+          {% assign issuers_grouped = site.data.vci-issuers | group_by: 'name' | sort_natural: 'name' %}
           {% for issuer_entry in issuers_grouped %}
-            {% assign array_item = '' | split: '' %}
-
-              {% if issuer_entry.size > 1 %}
-                {% assign arr_to_str = array_item | join: ' ' %}
-                {% for item in issuer_entry.items %}
-                  {% if item.website %}
-                    {% unless arr_to_str contains item.name or arr_to_str contains item.website %}
-                      {% assign array_item = array_item | push: item %}
-                    {% endunless %}
-                  {% endif %}
-                {% endfor %}
-
-                {% unless arr_to_str contains issuer_entry.items[0].name %}
-                  {% assign array_item = array_item | push: issuer_entry.items[0] %}
-                {% endunless %}
-
-                {% if array_item %}
-                  {% assign issuers = issuers | push: array_item %}
-                {% endif %}
-              {% else %}
-                {% assign issuers = issuers | push: issuer_entry.items[0] %}
-              {% endif %}
-
-              {% unless issuers contains array_item %}
-                {% assign issuers = issuers | push: array_item %}
-              {% endunless %}
+              {% assign best_entry_for_issuer = issuer_entry.items | sort: "website" | last %}
+              {% assign issuers = issuers | push: best_entry_for_issuer %}
           {% endfor %}
-
-          {% assign issuers = issuers | sort_natural: 'name' %}
 
           {% comment %} Create offset numbers to break the list up into 3 roughly equal groups {% endcomment %}
           {% assign looplength = issuers.size | divided_by: 3 %}
