@@ -1510,46 +1510,48 @@
   {
     "iss": "https://arrprd.metrohealth.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "University of Michigan Health-West",
-    "website": "https://uofmhealthwest.org/"
+    "website": "https://www.myuofmhealth.org/MyChart-PRD"
   },
   {
     "iss": "https://epicproxy.et0927.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Hospital for Special Surgery",
-    "website": "https://www.hss.edu/"
+    "website": "https://myhss.hss.edu/MyHSS/"
   },
   {
     "iss": "https://epicproxy.et0927.epichosted.com/VCI_PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "canonical_iss": "https://epicproxy.et0927.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Hospital for Special Surgery",
-    "website": "https://www.hss.edu/"
+    "website": "https://myhss.hss.edu/MyHSS/"
   },
   {
     "iss": "https://eprescribe.sanfordhealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Sanford Health"
+    "name": "Sanford Health",
+    "website": "https://www.mysanfordchart.org/MyChart/"  
   },
   {
     "iss": "https://soap.wellmont.org/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Ballad Health",
-    "website": "https://www.balladhealth.org/"
+    "website": "https://mychart.balladhealth.org/mychart"
   },
   {
     "iss": "https://epicproxy.et0764.epichosted.com/Fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Confluence Health",
-    "website": "https://www.confluencehealth.org/"
+    "website": "https://mychart.confluencehealth.org/MyChart"
   },
   {
     "iss": "https://epic-soap.wakemed.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "WakeMed",
-    "website": "https://www.wakemed.org/"
+    "website": "https://mychart.wakemed.org/MyChart-PRD"
   },
   {
     "iss": "https://epic-fhir-prd.upmc.com/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "University of Pittsburgh Medical Center (UPMC)"
+    "name": "University of Pittsburgh Medical Center (UPMC)",
+    "website": "https://myupmc.upmc.com/"  
   },
   {
     "iss": "https://epicsoap.nortonhealthcare.org/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Norton Healthcare",
-    "website": "https://nortonhealthcare.com/"
+    "website": "https://mychart.nortonhealthcare.org/mychart"
   },
   {
     "iss": "https://www.gov.nl.ca/covid-19/life-during-covid-19/vaccination-record/prod",
@@ -1559,7 +1561,7 @@
   {
     "iss": "https://fhir.hurleymc.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Hurley Medical Center",
-    "website": "https://www.hurleymc.com/"
+    "website": "https://mychart.hurleymc.com/mychart"
   },
   {
     "iss": "https://pvc.novascotia.ca/issuer",
@@ -1569,62 +1571,67 @@
   {
     "iss": "https://epicproxy.et1085.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "UI Health",
-    "website": "https://hospital.uillinois.edu/"
+    "website": "https://mychart.uillinois.edu/MyChart"
   },
   {
     "iss": "https://epichaiku.chs-mi.com/FHIRPROXY/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Covenant Healthcare"
+    "name": "Covenant Healthcare",
+    "website": "https://mychart.chs-mi.com/MyChartPRD"  
   },
   {
     "iss": "https://eweb.peninsula.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "TidalHealth",
-    "website": "https://tidalhealth.org/"
+    "website": "https://mychart.tidalhealth.org/MyChart/"
   },
   {
     "iss": "https://wavesurescripts.sansumclinic.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Sansum Clinic",
-    "website": "https://www.sansumclinic.org/"
+    "website": "https://mychart.sansumclinic.org/MyChart"
   },
   {
     "iss": "https://prodsoap1.tgh.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Tampa General Hospital and University of South Florida"
+    "name": "Tampa General Hospital and University of South Florida",
+    "website": "https://mychart.tgh.org/mychart/"  
   },
   {
     "iss": "https://meritus-rev-prd.meritushealth.com/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Meritus Health",
-    "website": "https://www.meritushealth.com/"
+    "website": "https://mychart.meritushealth.com/meritus"
   },
   {
     "iss": "https://tpc-shield.tpcllp.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "The Portland Clinic",
-    "website": "https://www.theportlandclinic.com/"
+    "website": "https://mychart.tpcllp.com/mychart"
   },
   {
     "iss": "https://fhir.slhn.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "St. Luke's University Health Network",
-    "website": "https://www.slhn.org/"
+    "website": "https://www.slhn.org/mychart/login"
   },
   {
     "iss": "https://LHSPDXFHIRPRD.LHS.ORG/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Legacy Health"
+    "name": "Legacy Health",
+    "website": "https://myhealth.lhs.org/MyHealth"  
   },
   {
     "iss": "https://emrproxy.mcfarlandclinic.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Health Ventures"
+    "name": "Health Ventures",
+    "website": "https://www.mychartiowa.com/mychartprd"  
   },
   {
     "iss": "https://epicproxy.et1130.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "University Health"
+    "name": "University Health",
+    "website": "https://mychart.universityhealthsystem.com/mychart/"  
   },
   {
     "iss": "https://mobileapps.texaschildrens.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Texas Children's Hospital",
-    "website": "https://www.texaschildrens.org/"
+    "website": "https://mychart.texaschildrens.org/mychart/"
   },
   {
     "iss": "https://soapprod.tvc.org/ARR-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Vancouver Clinic",
-    "website": "https://tvc.org/"
+    "website": "https://mychart.tvc.org/mychart/"
   },
   {
     "iss": "https://fhir.lluh.org/interconnect-fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1633,7 +1640,8 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/rii-5tqZIeHcg01uWOcN3lATP151-1Q9",
-    "name": "Northern Light Health"
+    "name": "Northern Light Health",
+    "website": "https://northernlighthealth.org/myNorthernLightHealth"  
   },
   {
     "iss": "https://credenciales.cescodigital.pr.gov",
@@ -1642,11 +1650,13 @@
   },
   {
     "iss": "https://covidrecords.alberta.ca/smarthealth/issuer",
-    "name": "Government of Alberta"
+    "name": "Government of Alberta",
+    "website": "https://covidrecords.alberta.ca/home"  
   },
   {
     "iss": "https://geisapi.geisinger.edu/FHIR_PROD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Geisinger"
+    "name": "Geisinger",
+    "website": "https://www.geisinger.org/mygeisinger"  
   },
   {
     "iss": "https://guam.mdcareclik.net/fhir",
@@ -1655,11 +1665,12 @@
   {
     "iss": "https://pmh-vmhaiku-01.pmh.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Parkland Health",
-    "website": "https://www.parklandhospital.com/"
+    "website": "https://mychart.pmh.org/MyChart/"
   },
   {
     "iss": "https://epicarr.emc.org/EMC_FHIR_PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Eisenhower Health"
+    "name": "Eisenhower Health",
+    "website": "https://mychart.emc.org/mychart/"  
   },
   {
     "iss": "https://scvhhsfhir.sccgov.org/interconnect-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1668,12 +1679,12 @@
   {
     "iss": "https://edhwebportal.hitchcock.org/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Dartmouth-Hitchcock Health",
-    "website": "https://www.dartmouth-hitchcock.org/"
+    "website": "https://www.mydh.org/portal/"
   },
   {
     "iss": "https://epicsoapproxyprd.mountsinai.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Mount Sinai Health System",
-    "website": "https://www.mountsinai.org/"
+    "website": "https://mychart.mountsinai.org/mychart"
   },
   {
     "iss": "https://fhir.myeverettclinic.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1682,7 +1693,7 @@
   {
     "iss": "https://fhirprd.reliantmedicalgroup.org/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Reliant Medical Group",
-    "website": "https://reliantmedicalgroup.org/"
+    "website": "https://mychart.reliantmedicalgroup.org/mychart/"
   },
   {
     "iss": "https://webproxy.piedmont.org/ARR-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
