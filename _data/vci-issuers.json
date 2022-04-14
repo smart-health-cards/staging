@@ -10,7 +10,8 @@
   },
   {
     "iss": "https://epicproxy.et0502.epichosted.com/EPPARRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "UC Health (San Diego / Irvine / Riverside) and Affiliates"
+    "name": "UC Health (San Diego / Irvine / Riverside) and Affiliates",
+    "website": "https://myucsdchart.ucsd.edu/ucsd" 
   },
   {
     "iss": "https://epicproxy-pub.et0502.epichosted.com/EPPARRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -39,91 +40,113 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/11e960ca-465e-403d-a8ac-dfa9be65dd83",
-    "name": "University of Alabama Hospital"
+    "name": "University of Alabama Hospital",
+    "website": "https://www.uabmedicine.org/me?_ga=2.246174851.649315599.1649955640-1679145760.1649955640"   
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/Vo3nb7XNL_9G2kQXBPPW3-r0QcpkrCy7",
-    "name": "University of Missouri Health Care"
+    "name": "University of Missouri Health Care",
+    "website": "https://www.muhealth.org/patient-login"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/7517efed-1048-4d65-8b97-98e147342cf5",
-    "name": "Baptist Health South Florida"
+    "name": "Baptist Health South Florida",
+    "website": "https://baptisthealth.net/patient-resources/mybaptisthealth-patient-portal"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/MgfJfJ70Dbsm4ZMgvz93Y8Q5rmD9yGq5",
     "name": "Memorial Hermann"
+    "website": "https://accounts.everydaywell.memorialhermann.org/saml2/sso/login?authenticationRequestId=51436c78-ab1f-4145-aed2-ed0c81146139"
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/29a5ccea-f4ab-4447-a191-56b20695970f",
-    "name": "Adventist Health"
+    "name": "Adventist Health",
+    "website": "https://accounts.myadventisthealthportal.org/saml2/sso/login?authenticationRequestId=6b261b37-fe1b-4850-a35e-4650156f720a"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/a1b70c2c-780f-4d21-a690-3d71302d3d4f",
-    "name": "CoxHealth"
+    "name": "CoxHealth",
+    "website": "https://www.coxhealth.com/portals/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/fdqklJrzTg5-JsHjn6gcvJbZmmigMGfd",
-    "name": "Dignity Health"
+    "name": "Dignity Health",
+    "website": "https://login.dignityhealth.org/#/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/c93f0ebd-007a-4296-b842-6ac2a4658eb9",
-    "name": "Lafayette General Medical Center"
+    "name": "Lafayette General Medical Center",
+    "website": "https://ochsnerlg.org/myhealth"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/Y62ncCuwN85GGa7s0iz44XRnQoc9qr60",
-    "name": "Banner Health"
+    "name": "Banner Health",
+    "website": "https://mybanner.bannerhealth.com/portal-login?_ga=2.211224533.1966852915.1649957132-1501833769.1649957132"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/0qElfuk7cvLgJndB7hTiCVck6NR0D5uM",
     "name": "Dignity Health"
+    "website": "https://login.dignityhealth.org/#/"   
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/83090b64-9cdb-4df9-93d3-bb2473dfa7f3",
-    "name": "Georgia Regents Health System"
+    "name": "Georgia Regents Health System",
+    "website": "https://www.augustahealth.org/patient-family-info/vip"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/31d3d17c-a50c-4d78-bc5b-e9716826315e",
-    "name": "Mission Health"
+    "name": "Mission Health",
+    "website": "https://missionhealth.org/patient-portal/" 
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/208486af-ceea-4a7d-b4d7-95c884a327df",
-    "name": "Los Angeles County Department of Health Services"
+    "name": "Los Angeles County Department of Health Services",
+    "website": "https://dhs.lacounty.gov/lahealthportal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/072ee25e-9ba2-4626-bd4b-17ff1ccdc763",
-    "name": "My VCU Health"
+    "name": "My VCU Health",
+    "website": "https://www.vcuhealth.org/my-vcu-health/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/-yJKGL5-49LdGDJaxmfdb85K2Njr-hkB",
-    "name": "Alaska Tribal Health System"
+    "name": "Alaska Tribal Health System",
+    "website": "https://anmc.org/patients-visitors/myhealth/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/CZXZx6LxE-L3UYv_vYuZuKXOvALyMhgz",
-    "name": "Einstein Healthcare Network"
+    "name": "Einstein Healthcare Network",
+    "website": "https://www.einstein.edu/myhealth"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/4a2476ac-8e51-4591-af31-2fc7fcc3fc0d",
-    "name": "Memorial Hospital"
+    "name": "Memorial Hospital",
+    "website": "https://www.mhchester.com/patient-portal"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/4nwOwRkG2bMG2PY-W1zZZrlh0VQphgtr",
-    "name": "University of New Mexico"
+    "name": "University of New Mexico",
+    "website": "https://cernerhealth.com/oauth/authenticate?redirect_uri=https%3A%2F%2Fcernerhealth.com%2Fsaml%2Fsso%2Fresponse%3Fmessage_id%3D_b4db8cd8-de36-453d-9c73-46a1a8b0d1d8%26issuer%3Dhttps%253A%252F%252Fmyhealthunm.iqhealth.com%252Fsession-api%252Fprotocol%252Fsaml2%252Fmetadata&sign_in_only=on&client_id=62bd791fa5c44b1d9cc8f8b9e48b210d"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/MtxVU3dbzZwHcvfCb2vTAE2_Nwhai9Oq",
-    "name": "North Kansas City Hospital and Meritas Health"
+    "name": "North Kansas City Hospital and Meritas Health",
+    "website": "https://www.nkch.org/meritas/for-patients/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/993df7f9-6163-4b2c-9388-9d472c4ef3f9",
-    "name": "Moffitt Cancer Center"
+    "name": "Moffitt Cancer Center",
+    "website": "https://my.moffitt.org/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/136fea15-c667-40bc-9ed2-b1115d62123b",
-    "name": "LifeBridge Health"
+    "name": "LifeBridge Health",
+    "website": "https://www.lifebridgehealth.org/Uploads/Public/enewsletters/patientportal/PatientPortal.htm"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/4ec99ef7-2f74-4efb-9ab9-a702c7c570f4",
-    "name": "Broward Health"
+    "name": "Broward Health",
+    "website": "https://www.browardhealth.org/pages/patient-portal"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/2ae7d625-833b-4a4d-a216-8fc7be3f9894",
