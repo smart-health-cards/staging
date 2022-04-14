@@ -2199,7 +2199,8 @@
   },
   {
     "iss": "https://cookicfg.cookchildrens.org/CookFHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Cook Children's"
+    "name": "Cook Children's",
+    "website": "https://www.cookchildrens.org/mycookchildrens/"  
   },
   {
     "iss": "https://vc.vrs.digital.go.jp/issuer",
@@ -2208,11 +2209,13 @@
   },
   {
     "iss": "https://epicproxy.et1220.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Reid Health"
+    "name": "Reid Health",
+    "website": "https://myreidhealth.org/mychart"  
   },
   {
     "iss": "https://webproxy.comhs.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Community Healthcare System"
+    "name": "Community Healthcare System",
+    "website": "https://mychart.comhs.org/MyChart/"  
   },
   {
     "iss": "https://wellbility.app",
@@ -2222,26 +2225,27 @@
   {
     "iss": "https://epicproxy.et1200.epichosted.com/oauth2-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "VCU Health",
-    "website": "https://www.vcuhealth.org/"
+    "website": "https://www.vcuhealth.org/mychart"
   },
   {
     "iss": "https://prodinterconnect.leonmedicalcenters.com/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Leon Medical Centers",
-    "website": "https://leonmedicalcenters.com/"
+    "website": "https://www.leonmediconnect.com/MyChartLeonMediConnect"
   },
   {
     "iss": "https://epicproxy.et0578.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Cooper University Healthcare",
-    "website": "https://cooperhealth.org/"
+    "website": "https://my.cooperhealth.org/MyChart/"
   },
   {
     "iss": "https://epicscripts.trihealth.com/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "TriHealth",
-    "website": "https://www.trihealth.com/"
+    "website": "https://mychart.trihealth.com/mychart"
   },
   {
     "iss": "https://cms.hvhs.org/shc",
-    "name": "Heritage Valley Health System"
+    "name": "Heritage Valley Health System",
+    "website": "https://heritagevalley.followmyhealth.com/Login/Home/Index?authproviders=0&returnArea=PatientAccess"
   },
   {
     "iss": "https://smart.medconciergela.com/api/ISSUER",
@@ -2251,7 +2255,7 @@
   {
     "iss": "https://soapepic.montefiore.org/FhirProxyPrd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Montefiore Medical Center",
-    "website": "https://www.montefiore.org/"
+    "website": "https://www.montefiore.org/mychart"
   },
   {
     "iss": "https://api.vaulthealth.com/smart",
@@ -2264,7 +2268,8 @@
   },
   {
     "iss": "https://haiku.bshsi.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Bon Secours Health System"
+    "name": "Bon Secours Health System",
+    "website": "https://www.bonsecours.com/patient-resources/mychart"  
   },
   {
     "iss": "https://vaccinerecord.dc.gov",
