@@ -55,7 +55,7 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/MgfJfJ70Dbsm4ZMgvz93Y8Q5rmD9yGq5",
-    "name": "Memorial Hermann"
+    "name": "Memorial Hermann",
     "website": "https://accounts.everydaywell.memorialhermann.org/saml2/sso/login?authenticationRequestId=51436c78-ab1f-4145-aed2-ed0c81146139"
   },
   {
