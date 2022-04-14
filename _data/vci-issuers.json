@@ -150,91 +150,114 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/2ae7d625-833b-4a4d-a216-8fc7be3f9894",
-    "name": "Methodist Health System"
+    "name": "Methodist Health System",
+    "website": "https://nmhs.consumeridp.us-1.healtheintent.com/saml2/sso/login?authenticationRequestId=0ebcd58f-1f6d-459c-973e-750f1c17ba16"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/6f2341d3-c614-4a71-9cef-bdca1a222d48",
-    "name": "St. Joseph's Health"
+    "name": "St. Joseph's Health",
+    "website": "https://www.stjosephshealth.org/portal"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/gF4lFO34tdbrCuznA3JTeuZ_9C_vRKZf",
-    "name": "Truman Medical Centers"
+    "name": "Truman Medical Centers",
+    "website": "https://www.universityhealthkc.org/patients-visitors/myuhealth/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/fjycTxieSBez9BFs-LP0YIikqnvefkZc",
-    "name": "Children's Hospital Los Angeles"
+    "name": "Children's Hospital Los Angeles",
+    "website": "https://www.chla.org/mychildrensla-patient-portal"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/929sni9vNtBT8k3NbtgAnVZlZv_TYNXC",
-    "name": "Stony Brook Medicine"
+    "name": "Stony Brook Medicine",
+    "website": "https://www.stonybrookmedicine.edu/patient-portal"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/3c2e5608-7636-4d74-9aae-b044a991c609",
-    "name": "Barnabas Health"
+    "name": "Barnabas Health",
+    "website": "https://www.rwjbh.org/patients-visitors/patient-portal/"
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/8d8e2b72-238a-4f00-88a3-8ba1a0a2d561",
-    "name": "Cook County Health"
+    "name": "Cook County Health",
+    "website": "https://cookcountyhealth.org/patients-visitors/mycookcountyhealth/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/9997a5fc-aad4-42a6-b005-45276937bbd0",
-    "name": "Olathe Health"
+    "name": "Olathe Health",
+    "website": "https://www.olathehealth.org/patients-and-visitors/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/l0sV4kAP8XYUeDPWgsblj-f2yztSg0Ya",
-    "name": "Borgess Health Alliance Inc."
+    "name": "Borgess Health Alliance Inc.",
+    "website": "https://healthcare.ascension.org/Patient-Resources"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/Dbsl25a-uo0gf9Q0PnfwA_QlUbZ5qTHL",
-    "name": "Torrance Memorial"
+    "name": "Torrance Memorial",
+    "website": "https://www.torrancememorial.org/patients-visitors/portal/"  
+      
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/3c4a889f-c0c4-4f50-90d1-60f6a5ad9e7d",
-    "name": "Covenant Health"
+    "name": "Covenant Health",
+    "website": "https://www.covenanthealth.com/mycovenanthealth/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/d88010de-d791-42d4-b72d-513f9afc5ed1",
-    "name": "Northside Hospital"
+    "name": "Northside Hospital",
+    "website": "https://www.northside.com/patient-portal"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/479d1758-f967-4c2c-8306-7960101dd8ca",
-    "name": "University of Tennessee Medical Center"
+    "name": "University of Tennessee Medical Center",
+    "website": "https://www.utmedicalcenter.org/patients-visitors/portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/idzZ7Xu4K4e6cf6O6PqH5zcqaSD8_vYU",
-    "name": "Columbia St. Mary's"
+    "name": "Columbia St. Mary's",
+    "website": "https://healthcare.ascension.org/locations/wisconsin/wimil/milwaukee-ascension-columbia-st-marys-hospital-milwaukee/my-patient-resources"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/5d5c0d2d-0eb7-48af-8536-161bb1a08f58",
-    "name": "Community HealthCare System"
+    "name": "Community HealthCare System",
+    "website": "https://mychart.comhs.org/MyChart/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/5ce1dfad-1169-4dc3-a793-3ed399b70e67",
-    "name": "Health Quest"
+    "name": "Health Quest",
+    "website": "https://www.nuvancehealth.org/patients-and-visitors/patient-portals"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/53c0399e-61c8-4d87-b605-11883089184d",
-    "name": "My Health Kaweah Health"
+    "name": "My Health Kaweah Health",
+    "website": "https://www.kaweahhealth.org/patients-visitors/for-patients/myhealth-kaweah-health/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/763a86fd-c545-483a-9179-bb60864b329a",
-    "name": "Maury Regional Health"
+    "name": "Maury Regional Health",
+    "website": "https://www.mauryregional.com/patient-and-visitor-information/patient-portal"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/d63001e8-2b2d-46b2-9b8b-4bc37428b829",
-    "name": "Munson Healthcare"
+    "name": "Munson Healthcare",
+    "website": "https://www.munsonhealthcare.org/new-patient-portals/patient-portals-home-new"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/c1a92d40-9e4c-42a9-a69d-27d782800e16",
-    "name": "St. John's Health"
+    "name": "St. John's Health",
+    "website": "https://www.stjohns.health/patients-visitors/patient-portals/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/db9c2801-7026-47b6-a85f-5d485070d969",
-    "name": "Western Connecticut Health Network"
+    "name": "Western Connecticut Health Network",
+    "website": "https://www.nuvancehealth.org/patients-and-visitors/patient-portals"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/a03a0cab-f0e8-4c09-b504-1f5b4ebcf684",
-    "name": "Ascension"
+    "name": "Ascension",
+    "website": "https://healthcare.ascension.org/Patient-Resources"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/1co7TB-AnE4kKYvBDzXBJf-MlYrYrEnf",
@@ -242,31 +265,38 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/UMZ-Uxn6V9x08sH5gCnG-5yPg9ZX7et6",
-    "name": "NorthBay Healthcare"
+    "name": "NorthBay Healthcare",
+    "website": "https://www.northbay.org/mynorthbaydoc/index.cfm"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/mP6IHJrv4n0_mPZFBm5GcbTX3TNMQJqa",
-    "name": "Aultman"
+    "name": "Aultman",
+    "website": "https://aultman.org/home/patients-and-visitors/patient-support/patient-portal"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/d04f75c7-2a62-4686-b520-7bf0635f38f0",
-    "name": "Lowell General Hospital"
+    "name": "Lowell General Hospital",
+    "website": "https://www.lowellgeneral.org/patients-and-visitors/for-patients/mytuftsmed"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/c5cd8f23-ae54-4fcb-84cc-92eea9354e2b",
-    "name": "MIT Medical"
+    "name": "MIT Medical",
+    "website": "https://medical.mit.edu/make-appointment/about-healthelife"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/2ee676c7-a169-4238-a242-e953ca559f22",
-    "name": "Tenet Healthcare Corporation"
+    "name": "Tenet Healthcare Corporation",
+    "website": "https://www.tenethealth.com/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/4a0f2b1c-3433-4080-963d-5ef416dec69b",
-    "name": "SoutheastHEALTH"
+    "name": "SoutheastHEALTH",
+    "website": "https://www.sehealth.org/patients-visitors/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/dcf3b1c6-3971-4673-962e-8b2cce0ff827",
-    "name": "Wyoming Medical Center"
+    "name": "Wyoming Medical Center",
+    "website": "https://wyomingmedicalcenter.org/patients-visitors/patient-portal"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/5b3de6b7-e81f-4297-bc82-78ac9e1083cc",
