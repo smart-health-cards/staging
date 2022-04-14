@@ -2199,8 +2199,7 @@
   },
   {
     "iss": "https://cookicfg.cookchildrens.org/CookFHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Cook Children's",
-    "website": "https://www.cookchildrens.org/mycookchildrens/"  
+    "name": "Cook Children's"
   },
   {
     "iss": "https://vc.vrs.digital.go.jp/issuer",
@@ -2209,13 +2208,11 @@
   },
   {
     "iss": "https://epicproxy.et1220.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Reid Health",
-    "website": "https://myreidhealth.org/mychart"  
+    "name": "Reid Health"
   },
   {
     "iss": "https://webproxy.comhs.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Community Healthcare System",
-    "website": "https://mychart.comhs.org/MyChart/"  
+    "name": "Community Healthcare System"
   },
   {
     "iss": "https://wellbility.app",
@@ -2225,27 +2222,26 @@
   {
     "iss": "https://epicproxy.et1200.epichosted.com/oauth2-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "VCU Health",
-    "website": "https://www.vcuhealth.org/mychart"
+    "website": "https://www.vcuhealth.org/"
   },
   {
     "iss": "https://prodinterconnect.leonmedicalcenters.com/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Leon Medical Centers",
-    "website": "https://www.leonmediconnect.com/MyChartLeonMediConnect"
+    "website": "https://leonmedicalcenters.com/"
   },
   {
     "iss": "https://epicproxy.et0578.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Cooper University Healthcare",
-    "website": "https://my.cooperhealth.org/MyChart/"
+    "website": "https://cooperhealth.org/"
   },
   {
     "iss": "https://epicscripts.trihealth.com/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "TriHealth",
-    "website": "https://mychart.trihealth.com/mychart"
+    "website": "https://www.trihealth.com/"
   },
   {
     "iss": "https://cms.hvhs.org/shc",
-    "name": "Heritage Valley Health System",
-    "website": "https://heritagevalley.followmyhealth.com/Login/Home/Index?authproviders=0&returnArea=PatientAccess"
+    "name": "Heritage Valley Health System"
   },
   {
     "iss": "https://smart.medconciergela.com/api/ISSUER",
@@ -2255,7 +2251,7 @@
   {
     "iss": "https://soapepic.montefiore.org/FhirProxyPrd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Montefiore Medical Center",
-    "website": "https://www.montefiore.org/mychart"
+    "website": "https://www.montefiore.org/"
   },
   {
     "iss": "https://api.vaulthealth.com/smart",
@@ -2268,8 +2264,7 @@
   },
   {
     "iss": "https://haiku.bshsi.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Bon Secours Health System",
-    "website": "https://www.bonsecours.com/patient-resources/mychart"  
+    "name": "Bon Secours Health System"
   },
   {
     "iss": "https://vaccinerecord.dc.gov",
@@ -2294,16 +2289,17 @@
   {
     "iss": "https://api.myirmobile.com/az/issuer",
     "name": "Arizona Department of Health Services",
-    "website": "https://www.azdhs.gov/"
+    "website": "https://azdhs.gov/preparedness/epidemiology-disease-control/immunization/azmyir/index.php"
   },
   {
     "iss": "https://api.myirmobile.com/md/issuer",
-    "name": "Maryland Department of Health"
+    "name": "Maryland Department of Health",
+    "website": "https://health.maryland.gov/phpa/OIDEOR/IMMUN/Pages/immunet-for-public.aspx"  
   },
   {
     "iss": "https://api.myirmobile.com/ms/issuer",
     "name": "Mississippi State Department of Health",
-    "website": "https://msdh.ms.gov/"
+    "website": "https://msdh.ms.gov/msdhsite/_static/14,0,71,969.html"
   },
   {
     "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/big+y+foods+inc",
@@ -2313,7 +2309,7 @@
   {
     "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/bismarck",
     "name": "Bismarck",
-    "website": "https://www.bismarckpharmacy.com/"
+    "website": "https://www.bismarckpharmacy.com/immunizations"
   },
   {
     "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/costco",
@@ -2332,7 +2328,8 @@
   },
   {
     "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
-    "name": "Giant Eagle Pharmacy"
+    "name": "Giant Eagle Pharmacy",
+    "website": "https://www.gianteagle.com/covidvaccine#electronic-record"  
   },
   {
     "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
@@ -2346,7 +2343,8 @@
   },
   {
     "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
-    "name": "KMART PHARMACY"
+    "name": "KMART PHARMACY",
+    "website": "https://pharmacy.kmart.com/newrx-immunization"  
   },
   {
     "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
@@ -2355,7 +2353,8 @@
   },
   {
     "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
-    "name": "Pharmaca"
+    "name": "Pharmaca",
+    "website": "https://www.pharmacarx.com/"  
   },
   {
     "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
@@ -2375,51 +2374,57 @@
   {
     "iss": "https://epicproxy.et0815.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Children's Wisconsin",
-    "website": "https://childrenswi.org/"
+    "website": "https://mychart.chw.org/MyChart"
   },
   {
     "iss": "https://fhir.omhs.org/rp-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Owensboro Health",
-    "website": "https://www.owensborohealth.org"
+    "website": "https://mychart.omhs.org/mychart"
   },
   {
     "iss": "https://epicproxy.et1235.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Self Regional Healthcare",
-    "website": "https://www.selfregional.org/"
+    "website": "https://mychart.selfregional.org/MySRH"
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/Hq9lMFKIau9MlCiBN698ZPzTKNvsMrCb",
-    "name": "Genesis Healthcare System"
+    "name": "Genesis Healthcare System",
+    "website": "https://genesishealth.consumeridp.us-1.healtheintent.com/saml2/sso/login?authenticationRequestId=e510d561-bef4-4e4a-8d86-e2e0c7d8bed8"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/9d2c8ef0-9a25-45b4-b53b-3738c3eda603",
-    "name": "MyHealthHome"
+    "name": "MyHealthHome",
+    "website": "https://cernerhealth.com/oauth/authenticate?redirect_uri=https%3A%2F%2Fcernerhealth.com%2Fsaml%2Fsso%2Fresponse%3Fmessage_id%3D_9898b7b1-37cc-4660-950b-2f6f0c912eb4%26issuer%3Dhttps%253A%252F%252Fmyhealthhome.iqhealth.com%252Fsession-api%252Fprotocol%252Fsaml2%252Fmetadata&sign_in_only=on&client_id=ff0b09db809a42a8b121deb8b9ec7903"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/082fe843-d2e4-4f68-96c9-531186c7d48d",
-    "name": "MyHealthHome"
+    "name": "MyHealthHome",
+    "website": "https://cernerhealth.com/oauth/authenticate?redirect_uri=https%3A%2F%2Fcernerhealth.com%2Fsaml%2Fsso%2Fresponse%3Fmessage_id%3D_9898b7b1-37cc-4660-950b-2f6f0c912eb4%26issuer%3Dhttps%253A%252F%252Fmyhealthhome.iqhealth.com%252Fsession-api%252Fprotocol%252Fsaml2%252Fmetadata&sign_in_only=on&client_id=ff0b09db809a42a8b121deb8b9ec7903"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/b92996e8-6deb-4500-b78a-e05435af1db3",
-    "name": "MyHealthHome"
+    "name": "MyHealthHome",
+    "website": "https://cernerhealth.com/oauth/authenticate?redirect_uri=https%3A%2F%2Fcernerhealth.com%2Fsaml%2Fsso%2Fresponse%3Fmessage_id%3D_9898b7b1-37cc-4660-950b-2f6f0c912eb4%26issuer%3Dhttps%253A%252F%252Fmyhealthhome.iqhealth.com%252Fsession-api%252Fprotocol%252Fsaml2%252Fmetadata&sign_in_only=on&client_id=ff0b09db809a42a8b121deb8b9ec7903"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/9366dc53-07b6-47b5-8809-6f7b8a082b2d",
-    "name": "MyHealthHome"
+    "name": "MyHealthHome",
+    "website": "https://cernerhealth.com/oauth/authenticate?redirect_uri=https%3A%2F%2Fcernerhealth.com%2Fsaml%2Fsso%2Fresponse%3Fmessage_id%3D_9898b7b1-37cc-4660-950b-2f6f0c912eb4%26issuer%3Dhttps%253A%252F%252Fmyhealthhome.iqhealth.com%252Fsession-api%252Fprotocol%252Fsaml2%252Fmetadata&sign_in_only=on&client_id=ff0b09db809a42a8b121deb8b9ec7903"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/62f3918e-1f4f-42f1-a374-2667f4059c19",
-    "name": "Lutheran Health Network MyHealthHome"
+    "name": "Lutheran Health Network MyHealthHome",
+    "website": "https://cernerhealth.com/oauth/authenticate?redirect_uri=https%3A%2F%2Fcernerhealth.com%2Fsaml%2Fsso%2Fresponse%3Fmessage_id%3D_f52a5b97-cf66-4fd1-9586-bb373a6704c7%26issuer%3Dhttps%253A%252F%252Flutheranhealth.patientportal.us-1.healtheintent.com%252Fsession-api%252Fprotocol%252Fsaml2%252Fmetadata&sign_in_only=on&client_id=aea0e1256ae6446ca3044b73a000324d"  
   },
   {
     "iss": "https://yrmccare1.yumaregional.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Yuma Regional Medical Center",
-    "website": "https://www.yumaregional.org/Home"
+    "website": "https://mycare.yumaregional.org/mycare"
   },
   {
     "iss": "https://surescripts.gmh.edu/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Grady Health",
-    "website": "https://www.gradyhealth.org/"
+    "website": "https://mychart.gradyhealth.org/mychart"
   },
   {
     "iss": "https://rjhislandhealth.us-southeast-1.linodeobjects.com",
@@ -2427,11 +2432,13 @@
   },
   {
     "iss": "https://epicproxyprd.solutionhealth.org/FHIR_PROD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "SolutionHealth"
+    "name": "SolutionHealth",
+    "website": "https://mychart.solutionhealth.org/mychartprd"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/16386a34-20a6-42d6-bf13-226b287a42a5",
-    "name": "Concord Hospital"
+    "name": "Concord Hospital",
+    "website": "https://www.concordhospital.org/patients-visitors/my-patient-connect/"  
   },
   {
     "iss": "https://my.pathology.health.nsw.gov.au",
@@ -2440,36 +2447,38 @@
   },
   {
     "iss": "https://accusense.health",
-    "name": "AccuSense Health"
+    "name": "AccuSense Health",
+    "website": "https://www.accusense.health/"  
   },
   {
     "iss": "https://epicarr.optum.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "OptumCare National"
+    "name": "OptumCare National",
+    "website": "https://www.optum.com/sign-in-info.html#members"  
   },
   {
     "iss": "https://rwebproxy.elcaminohospital.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "El Camino Hospital",
-    "website": "https://www.elcaminohealth.org/"
+    "website": "https://mycare.elcaminohospital.org/mychart"
   },
   {
     "iss": "https://sf1.rmcps.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Riverside Medical Clinic",
-    "website": "https://www.riversidemedicalclinic.com/"
+    "website": "https://myhealthyconnection.riversidemedicalclinic.com/mychart"
   },
   {
     "iss": "https://mychart.methodisthospitals.org/FHIR-ARR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Methodist Hospitals (IN)",
-    "website": "https://methodisthospitals.org/"
+    "website": "https://mychart.methodisthospitals.org/mychart"
   },
   {
     "iss": "https://hscsesoap.hscs.virginia.edu/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "UVA Health",
-    "website": "https://uvahealth.com/"
+    "website": "https://mychart.healthsystem.virginia.edu/mychart"
   },
   {
     "iss": "https://epicproxy.bhsi.com/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Baptist Healthcare System",
-    "website": "https://www.baptisthealth.com"
+    "website": "https://www.baptisthealth.com/mychart/"
   },
   {
     "iss": "https://kit-api.ihealthlabs.com/issuer",
@@ -2479,26 +2488,27 @@
   {
     "iss": "https://EPROXY1.chsomaha.org/FHIRPROXY/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Children's Hospital & Medical Center",
-    "website": "https://www.childrensomaha.org/"
+    "website": "https://connect.childrensomaha.org/mychart"
   },
   {
     "iss": "https://fhir.jefferson.edu/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Jefferson Health"
+    "name": "Jefferson Health",
+    "website": "https://my.jeffersonhealth.org"  
   },
   {
     "iss": "https://epic-ext.trinity-health.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Trinity Health",
-    "website": "https://www.trinity-health.org/"
+    "website": "https://www.trinity-health.org/patient-portals/"
   },
   {
     "iss": "https://epicprdext.stfranciscare.org/FhirProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Trinity Health of New England",
-    "website": "https://www.trinityhealthofne.org/"
+    "website": "https://www.trinityhealthofne.org/patient-portal/"
   },
   {
     "iss": "https://rmgpxy.riverbendmedical.com/fhir_proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Riverbend Medical Group",
-    "website": "https://www.trinityhealthofne.org/location/trinity-health-of-new-england-medical-group-springfield"
+    "website": "https://mychart.riverbendmedical.com/MyChart"
   },
   {
     "iss": "https://s3.us-east-2.amazonaws.com/shc.vaccine.cookcountyil.gov",
@@ -2508,11 +2518,11 @@
   {
     "iss": "https://ukepicproxy.mc.uky.edu/Interconnect-PRD-OAuth2/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "UK HealthCare",
-    "website": "https://ukhealthcare.uky.edu/"
+    "website": "https://mychart.uky.edu/MyChart"
   },
   {
     "iss": "https://epicproxy.et1094.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Cape Fear Valley Health",
-    "website": "https://www.capefearvalley.com/home/index.aspx"
+    "website": "https://www.capefearvalley.com/mychart"
   }
 ]
