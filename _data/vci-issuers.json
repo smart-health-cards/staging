@@ -300,175 +300,219 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/5b3de6b7-e81f-4297-bc82-78ac9e1083cc",
-    "name": "Roper St. Francis Healthcare"
+    "name": "Roper St. Francis Healthcare",
+    "website": "https://www.rsfh.com/myhealth/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/0e5efebe-b60c-458e-971a-ee39e08a2178",
-    "name": "Westchester Medical Center Health Network"
+    "name": "Westchester Medical Center Health Network",
+    "website": "https://cernerhealth.com/oauth/authenticate?redirect_uri=https%3A%2F%2Fcernerhealth.com%2Fsaml%2Fsso%2Fresponse%3Fmessage_id%3D_47ebb130-d6b0-4029-9f56-43ff111d9888%26issuer%3Dhttps%253A%252F%252Fmycare.wmchealth.org%252Fsession-api%252Fprotocol%252Fsaml2%252Fmetadata&sign_in_only=on&client_id=4e6edfdd19dc425fa968f4266d62adbe"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/70091b8b-c363-42f8-b4d5-3b99f0fb60f1",
-    "name": "Clara Barton Hospital"
+    "name": "Clara Barton Hospital",
+    "website": "https://www.clarabartonhospital.com/patient-portal-how-to"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/5bb47b8f-8587-42a0-80df-8d4eecf69db3",
-    "name": "Capital Health"
+    "name": "Capital Health",
+    "website": "https://www.capitalhealth.org/myportal"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/86c11601-5c46-46d5-a746-706bd2e9f00b",
-    "name": "East Jefferson General Hospital"
+    "name": "East Jefferson General Hospital",
+    "website": "https://mylcmchealth.org/MyChart/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/iNB6hL-tYJggf7je2gx1HftngxiOxAQ3",
-    "name": "Lawrence Memorial Hospital"
+    "name": "Lawrence Memorial Hospital",
+    "website": "https://www.lmh.org/my-patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/rbydrzVcVSCNsdQAe12aQKnP6ZixR1Uf",
-    "name": "MyNCH Health Portal"
+    "name": "MyNCH Health Portal",
+    "website": "https://nchmd.org/patients-and-visitors/health-portal/"   
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/2RN95TVx9sVNwZUXvBjAMhoPj5vjnRtA",
-    "name": "University Medical Center"
+    "name": "University Medical Center",
+    "website": "https://www.nextmd.com/ud2/Login/Login.aspx"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/8d555f5f-2441-4690-bfdd-d2697379c3d6",
-    "name": "University of South Alabama Medical Center"
+    "name": "University of South Alabama Medical Center",
+    "website": "https://cernerhealth.com/oauth/authenticate?redirect_uri=https%3A%2F%2Fcernerhealth.com%2Fsaml%2Fsso%2Fresponse%3Fmessage_id%3D_0f1fe98f-2df2-4961-a115-db4d5cce0908%26issuer%3Dhttps%253A%252F%252Fmyusahealth.iqhealth.com%252Fsession-api%252Fprotocol%252Fsaml2%252Fmetadata&sign_in_only=on&client_id=427a49fe62c843b0b5222b2d44568fbd"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/4517c430-03bf-4e32-b324-1387cc4e73f3",
-    "name": "Central Maine Healthcare"
+    "name": "Central Maine Healthcare",
+    "website": "https://www.cmhc.org/patients-visitors/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/R0BnjtS1Cg4P990d7iegvoMVqlnOQ9OI",
-    "name": "Billings Clinic"
+    "name": "Billings Clinic",
+    "website": "https://www.billingsclinic.com/patientconnect/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/fca878a1-6c97-4ecb-b6e7-eb5d7cde15ab",
-    "name": "Huntsville Hospital Health System"
+    "name": "Huntsville Hospital Health System",
+    "website": "https://www.huntsvillehospital.org/patient-portal"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/46286911-5e07-45f3-b3ed-613a98a13430",
-    "name": "Logansport Memorial Hospital"
+    "name": "Logansport Memorial Hospital",
+    "website": "https://www.logansportmemorial.org/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/e4a5b337-4c87-45bf-ab09-077b7fc19e84",
-    "name": "Monongalia General Hospital"
+    "name": "Monongalia General Hospital",
+    "website": "https://cernerhealth.com/oauth/re-authenticate?client_id=174937a2c69b4010beba117baab5e205&redirect_uri=https://mymongen.iqhealth.com/login/cerner-health/authenticated&locale=en-us&sign_in_only=on"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/a1e8a0f5-46c8-471e-b8cc-601e5d91f41a",
-    "name": "Tenet HealthSystem Medical Inc."
+    "name": "Tenet HealthSystem Medical Inc.",
+    "website": "https://www.tenethealth.com/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/977e949f-0f0b-4a36-bf59-4f0819b90ab8",
-    "name": "Kaleida Health"
+    "name": "Kaleida Health",
+    "website": "https://www.kaleidahealth.org/MyKaleida/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/1ea8551e-0fb1-4703-8c98-94d25868feac",
-    "name": "Emory Healthcare GOLD Patient Portal"
+    "name": "Emory Healthcare GOLD Patient Portal",
+    "website": "https://www.emoryhealthcare.org/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/1031a3cd-9903-4995-baa5-734895a3e2a2",
-    "name": "Indiana Regional Medical Center"
+    "name": "Indiana Regional Medical Center",
+    "website": "https://www.irmc.org/patients-and-visitors/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/19553296-f85a-48c6-9c93-313791e9f18b",
-    "name": "Magruder Hospital"
+    "name": "Magruder Hospital",
+    "website": "https://www.magruderhospital.com/patient-portal" 
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/AhjJMjQtLMWypw5HhAKlG2VQs9XvM676",
-    "name": "Methodist Le Bonheur Healthcare"
+    "name": "Methodist Le Bonheur Healthcare",
+    "website": "https://www.methodisthealth.org/My-Account/Patient-Portal-Access/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/6f43d0e7-6ff2-489b-abdc-44e8a5e0ca0a",
-    "name": "Rutland Regional Medical Center"
+    "name": "Rutland Regional Medical Center",
+    "website": "https://cernerhealth.com/oauth/re-authenticate?client_id=3c2a2cf5e54942a7acf7b071755d8127&redirect_uri=https://myrrmchealthsite.iqhealth.com/login/cerner-health/authenticated&locale=en-us&sign_in_only=on"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/049ba866-b2ee-406b-80ed-16b97b5d67e5",
-    "name": "Tenet HealthSystem Medical Inc."
+    "name": "Tenet HealthSystem Medical Inc.",
+    "website": "https://www.tenethealth.com/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/6f63686c-7a35-4489-8caf-615a181cb733",
-    "name": "Tenet HealthSystem Medical Inc."
+    "name": "Tenet HealthSystem Medical Inc.",
+    "website": "https://www.tenethealth.com/"   
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/325e1759-f94c-41b9-87e4-ef568789898b",
-    "name": "Yavapai Regional Medical Center"
+    "name": "Yavapai Regional Medical Center",
+    "website": "https://www.yrmc.org/health-information-management/yrmc-careconnect"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/0affe579-9d95-4ec1-b178-1df7328cc0a1",
-    "name": "Blanchard Valley Health System"
+    "name": "Blanchard Valley Health System",
+    "website": "https://www.bvhealthsystem.org/im-a-patient/patient-portal/myhealth-patient-portal/myhealth-patient-portal"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/3N1pCmlUG0710nvlzCuO977VaU0tztwr",
-    "name": "Cabell Huntington Hospital and Marshall Health"
+    "name": "Cabell Huntington Hospital and Marshall Health",
+    "website": "https://cabellhuntington.org/patients-and-visitors/my-health-file/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/ab208292-75a1-4788-9fc7-1e9a40a7eee3",
-    "name": "Centra Health"
+    "name": "Centra Health",
+    "website": "https://www.centrahealth.com/HealthyU"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/TtBa6m0CO2ykz03C9oGIAfs1lSi1ZBkp",
-    "name": "Riverside Medical Group"
+    "name": "Riverside Medical Group",
+    "website": "https://www.riversidemedgroup.com/myhealth-at-riverside/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/ynC9J_dODQE9MboiEOzSXwBNhdrTWHFe",
-    "name": "Detroit Medical Center"
+    "name": "Detroit Medical Center",
+    "website": "https://www.dmc.org/portal"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/Frl5JaixaVfSFyjwSToZ4YMYtvsBctDq",
-    "name": "Lakeland Regional Health"
+    "name": "Lakeland Regional Health",
+    "website": "https://www.mylrh.org/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/5ad9a857-21fb-4664-ba2a-5c537d9921b6",
-    "name": "Medical Associates Clinic"
+    "name": "Medical Associates Clinic",
+    "website": "https://www.mahealthcare.com/patient-care-health-info/patient-station"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/0d93d980-a159-4c3e-9a19-131175682196",
-    "name": "Margaret Mary Health"
+    "name": "Margaret Mary Health",
+    "website": "https://www.mmhealth.org/for-patients/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/7771e67c-eed3-4c07-8b39-4ee1de7dfb76",
-    "name": "Pagosa Springs Medical Center"
+    "name": "Pagosa Springs Medical Center",
+    "website": "https://pagosaspringsmedicalcenter.org/patients-families/healthelife/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/b60a46b6-a3df-4cb6-983c-dfcc9a0589e1",
-    "name": "Sarah Bush Lincoln Health Center"
+    "name": "Sarah Bush Lincoln Health Center",
+    "website": "https://www.sarahbush.org/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/11ea0cbd-06f9-4ba7-9e47-64230780fa06",
-    "name": "Silver Cross Hospital"
+    "name": "Silver Cross Hospital",
+    "website": "https://www.silvercross.org/mysilvercross/mysilvercross-faqs/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/4ff3b259-e48d-4066-8b35-a6a051f2802a",
-    "name": "My Ascension Seton"
+    "name": "My Ascension Seton",
+    "website": "https://www.seton.net/mysetonhealth/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/0857bd9d-3fb8-4b0a-9180-f75d160828c9",
-    "name": "Charleston Area Medical Center"
+    "name": "Charleston Area Medical Center",
+    "website": "https://www.camc.org/patients-and-visitors/patient-information/patientlink"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/d5d04c85-2e0a-49b7-a0e9-5d5feaebb4a4",
-    "name": "Conway Medical Center"
+    "name": "Conway Medical Center",
+    "website": "https://www.conwaymedicalcenter.com/patients-visitors/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/d0607508-3922-4bbc-924a-d608b5ffe3b7",
-    "name": "United Medical Physicians"
+    "name": "United Medical Physicians",
+    "website": "https://tvddc.mygportal.com/PP72/Account/LogOn"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/3fe59471-3589-4f65-b447-b92822bfc057",
-    "name": "Doctors Hospital at Renaissance"
+    "name": "Doctors Hospital at Renaissance",
+    "website": "https://cernerhealth.com/oauth/authenticate?redirect_uri=https%3A%2F%2Fcernerhealth.com%2Fsaml%2Fsso%2Fresponse%3Fmessage_id%3D_df595312-aad7-4327-9ea6-77eb1ee048d2%26issuer%3Dhttps%253A%252F%252Fmydhr.iqhealth.com%252Fsession-api%252Fprotocol%252Fsaml2%252Fmetadata&sign_in_only=on&client_id=525f51c3d7254f3fbd9227400dd2c70b"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/caa256dd-47f1-49dc-8288-dfc601f2ffbb",
-    "name": "Midwest Medical Center"
+    "name": "Midwest Medical Center",
+    "website": "https://midwestmedicalcenter.consumeridp.us-1.healtheintent.com/saml2/sso/login?authenticationRequestId=9435c209-8ded-446f-b9cb-e7b835598b63"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/f1bb4645-ebf5-4d16-800a-fd209b7f9cb1",
-    "name": "Henry Community Health"
+    "name": "Henry Community Health",
+    "website": "https://www.hchcares.org/about/myhealthelife/"  
+      
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/52bd19c6-70df-487b-85b8-29be7abf17a1",
-    "name": "Pomona Valley Hospital Medical Center"
+    "name": "Pomona Valley Hospital Medical Center",
+    "website": "https://www.pvhmc.org/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/ab796338-ac9c-40c5-863d-ce75caaa302c",
