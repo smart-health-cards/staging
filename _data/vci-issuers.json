@@ -516,11 +516,13 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/ab796338-ac9c-40c5-863d-ce75caaa302c",
-    "name": "Regional Medical Center"
+    "name": "Regional Medical Center",
+    "website": "https://www.trmchealth.org/patients-visitors/my-patient-record/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/2c98a2ec-4d1e-465a-85ea-978418d9b03d",
-    "name": "South Central Regional Medical Center"
+    "name": "South Central Regional Medical Center",
+    "website": "https://scrmc.com/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/dfb1cd74-983a-49dc-aede-abe989223110",
@@ -528,7 +530,8 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/a1e03df3-d2c1-4196-a5dc-f9fb4460babe",
-    "name": "Doctors Care"
+    "name": "Doctors Care",
+    "website": "https://doctorscare.com/patientportal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/42a1ed53-a9ac-42b2-918f-be592f726951",
@@ -536,23 +539,28 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/18f5d65c-83f0-435a-868c-70ce5a6de90a",
-    "name": "Urology Partners of North Texas"
+    "name": "Urology Partners of North Texas",
+    "website": "https://cernerhealth.com/oauth/authenticate?redirect_uri=https%3A%2F%2Fcernerhealth.com%2Fsaml%2Fsso%2Fresponse%3Fmessage_id%3D_0c20fd87-f766-4248-93d0-9d0c74f34305%26issuer%3Dhttps%253A%252F%252F100864.iqhealth.com%252Fsession-api%252Fprotocol%252Fsaml2%252Fmetadata&sign_in_only=on&client_id=621f5d0ff53c43bba807b8c29f048657"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/44449a6c-e014-4a84-b9a2-5f63676d31de",
-    "name": "Ellis Medicine"
+    "name": "Ellis Medicine",
+    "website": "http://www.ellismedicine.org/portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/64706c27-8401-4242-8ca4-f0b7c493efc2",
-    "name": "Fairfield Memorial Hospital"
+    "name": "Fairfield Memorial Hospital",
+    "website": "https://www.yourcareeverywhere.com/account/fairfield-memorial-hospital.html"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/30ec54bc-d6f1-41e4-8f29-88104e9b8ee6",
-    "name": "San Juan Regional Medical Center"
+    "name": "San Juan Regional Medical Center",
+    "website": "https://www.sanjuanregional.com/patientportal"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/AdmVvrbHriE7AWDLGoyfeuamNXOy9O_a",
-    "name": "Trinity Health North Dakota"
+    "name": "Trinity Health North Dakota",
+    "website": "https://www.trinityhealth.org/patients-visitors/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/870ba945-f258-4fb9-a3f5-2c79586392b9",
@@ -560,23 +568,28 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/xYxhuXIFsLg59PaSNJv_x-piAtPKX3W8",
-    "name": "Barnabas Health"
+    "name": "Barnabas Health",
+    "website": "https://www.rwjbh.org/patients-visitors/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/QvKCOrGcsj2hJ6sASbt18oYJYaBlOEXZ",
-    "name": "Children's National Hospital"
+    "name": "Children's National Hospital",
+    "website": "https://childrensnational.org/specialty-care-patients/manage-your-care/patient-portals"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/4680ff74-0924-406e-b918-8a3dc5ea07ee",
-    "name": "Boca Raton Regional Hospital"
+    "name": "Boca Raton Regional Hospital",
+    "website": "https://www.brrh.com/Patient-Connect.aspx"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/969307fb-b249-4208-b0b4-56a6e3889e8c",
-    "name": "Columbus Regional Healthcare System"
+    "name": "Columbus Regional Healthcare System",
+    "website": "https://www.crhealthcare.org/mycolumbushealth/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/00bf2f08-38fe-4c4c-8207-96dbe42a9302",
-    "name": "CarolinaEast Medical Center"
+    "name": "CarolinaEast Medical Center",
+    "website": "https://www.carolinaeasthealth.com/patients-and-visitors/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/xGC8us00w6i72tkLoWiE0pdWD5WWsJe5",
@@ -584,31 +597,38 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/2e044b81-e4a1-4dfe-8ce3-5d982e938db0",
-    "name": "First Choice Community HealthCare"
+    "name": "First Choice Community HealthCare",
+    "website": "https://www.fcch.com/index.php?page=patient-portal"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/175c9c17-1687-46b3-a9fa-8603ef5296b5",
-    "name": "Hamilton Health Care System"
+    "name": "Hamilton Health Care System",
+    "website": "https://www.hamiltonhealth.com/patients-visitors/patient-portal-portal-el-paciente/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/b7350dfb-b26c-45d0-a644-be758c7d66ad",
-    "name": "Holland Hospital"
+    "name": "Holland Hospital",
+    "website": "https://www.hollandhospital.org/hh/holland-hospital-patient-portal.aspx"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/43b952fe-d2a5-473b-b04a-92c422b758a3",
-    "name": "Katherine Shaw Bethea Hospital"
+    "name": "Katherine Shaw Bethea Hospital",
+    "website": "https://www.ksbhospital.com/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/80babf0e-2f7d-4b87-9cc1-ea74c9b22a40",
-    "name": "Missouri Delta Medical Center"
+    "name": "Missouri Delta Medical Center",
+    "website": "https://www.missouridelta.com/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/cFBfzd-nLQ_NltNZvtkZioY0NCqOE2kf",
-    "name": "NewYork-Presbyterian Brooklyn Methodist Hospital"
+    "name": "NewYork-Presbyterian Brooklyn Methodist Hospital",
+    "website": "https://weillcornell.org/weill-cornell-connect"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/d09b5303-02b3-4cca-b4b2-ddf355d54e88",
-    "name": "Plumas District Hospital"
+    "name": "Plumas District Hospital",
+    "website": "https://www.pdh.org/patients/healthelife"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/624a554a-fb79-4703-86d3-5d635620055e",
@@ -616,7 +636,8 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/3518be8a-ee50-46dd-887a-a3e6e4fc9294",
-    "name": "Sturdy Memorial Hospital and Sturdy Memorial Associates"
+    "name": "Sturdy Memorial Hospital and Sturdy Memorial Associates",
+    "website": "https://www.sturdymemorial.org/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/Jst2t4B3tQ_LvMKd5zgnH8scFXxFjMAP",
