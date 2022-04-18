@@ -641,7 +641,8 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/Jst2t4B3tQ_LvMKd5zgnH8scFXxFjMAP",
-    "name": "Children's Mercy Hospital"
+    "name": "Children's Mercy Hospital",
+    "website": "https://www.childrensmercy.org/your-visit/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/94fb32bd-11fc-46c8-aef4-90035a0718bb",
@@ -649,19 +650,23 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/792eb4ff-2422-4781-8cdc-7969fda08ada",
-    "name": "Asquam Community Health Collaborative"
+    "name": "Asquam Community Health Collaborative",
+    "website": "https://spearehospital.com/patientportal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/h-wugRRmXDZkm9_GMtf9rhlhb3aHTbV5",
-    "name": "Winona Health Services"
+    "name": "Winona Health Services",
+    "website": "https://www.winonahealth.org/patient-information/my-winona-health/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/37f6d032-7bca-45b8-891c-69b79d7f4de8",
-    "name": "Mineola District Hospital"
+    "name": "Mineola District Hospital",
+    "website": "https://minneolahealth.consumeridp.us-1.healtheintent.com/saml2/sso/login?authenticationRequestId=28186ce5-6a57-49b5-a2bb-8e4a829b6aa3"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/487b1ee3-44e2-439f-85f0-68e5e235e27a",
-    "name": "University Medical Center of El Paso"
+    "name": "University Medical Center of El Paso",
+    "website": "https://cernerhealth.com/oauth/authenticate?redirect_uri=https%3A%2F%2Fcernerhealth.com%2Fsaml%2Fsso%2Fresponse%3Fmessage_id%3D_8dff90a9-ed61-426c-a68d-5ba86c83a7eb%26issuer%3Dhttps%253A%252F%252Fmyhealthep.iqhealth.com%252Fsession-api%252Fprotocol%252Fsaml2%252Fmetadata&sign_in_only=on&client_id=308ae31baf564559ab04f60a45b3a730"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/12e6e189-04bb-431f-917c-32d5c1bc83d5",
@@ -669,31 +674,38 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/d1e1772a-df16-459e-9e9d-ac11507ad967",
-    "name": "Fisher-Titus Medical Center"
+    "name": "Fisher-Titus Medical Center",
+    "website": "https://www.fishertitus.org/patients-guests/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/101c0869-4f3e-4fdb-af79-02ba9f712e30",
-    "name": "Chinese Hospital"
+    "name": "Chinese Hospital",
+    "website": "https://chinesehospital-sf.org/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/1014839d-07f9-4c12-a617-3f1d8afea267",
-    "name": "San Joaquin General Hospital"
+    "name": "San Joaquin General Hospital",
+    "website": "https://www.sanjoaquingeneral.org/portals-patient" 
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/8bbd570d-db8f-4e0a-abe5-48b447c735fb",
-    "name": "Union General Hospital"
+    "name": "Union General Hospital",
+    "website": "https://www.uniongeneralhealthsystem.com/patients/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/66620725-6ef3-4a7f-a15f-88b48c4af7dd",
-    "name": "Penn State Health St. Joseph"
+    "name": "Penn State Health St. Joseph",
+    "website": "https://cernerhealth.com/oauth/authenticate?redirect_uri=https%3A%2F%2Fcernerhealth.com%2Fsaml%2Fsso%2Fresponse%3Fmessage_id%3D_e5152f71-2f8e-46d1-bfc3-b48d59c0fd54%26issuer%3Dhttps%253A%252F%252Fmypennstatehershey.iqhealth.com%252Fsession-api%252Fprotocol%252Fsaml2%252Fmetadata&sign_in_only=on&client_id=7a5c43bd406a47e0977750f9fc35cee9"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/m6q718FZg_-IH-imjhHk1P9jJGSwQzGK",
-    "name": "Wood County Hospital"
+    "name": "Wood County Hospital",
+    "website": "https://www.woodcountyhospital.org/patients-visitors/my-health-records-information/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/b673e6c7-c87b-498f-86b2-99b24c52c924",
-    "name": "West Tennessee Healthcare"
+    "name": "West Tennessee Healthcare",
+    "website": "https://www.wth.org/patient-portal/"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/bef96e27-b3e6-4b62-ab3e-78a9a16c8040",
@@ -701,7 +713,8 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/WKlSSS89qvhKmD7tJUsOt0whh7EBmDD-",
-    "name": "San Antonio Regional Hospital"
+    "name": "San Antonio Regional Hospital",
+    "website": "https://cernerhealth.com/oauth/authenticate?redirect_uri=https%3A%2F%2Fcernerhealth.com%2Fsaml%2Fsso%2Fresponse%3Fmessage_id%3D_a8c17ce8-2847-4ab7-8465-a339755d9814%26issuer%3Dhttps%253A%252F%252F4myhealth.iqhealth.com%252Fsession-api%252Fprotocol%252Fsaml2%252Fmetadata&sign_in_only=on&client_id=3b12fc8a734b4c36b2ad8bf307180e3a"  
   },
   {
     "iss": "https://ekeys.ny.gov/epass/doh/dvc/2021",
