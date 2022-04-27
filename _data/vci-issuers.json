@@ -535,7 +535,8 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/42a1ed53-a9ac-42b2-918f-be592f726951",
-    "name": "Hudson Physicians, S.C"
+    "name": "Hudson Physicians, S.C",
+    "website": "https://hudsonphysicians.com/iqhealth-patient-portal/"
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/18f5d65c-83f0-435a-868c-70ce5a6de90a",
@@ -593,7 +594,8 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/xGC8us00w6i72tkLoWiE0pdWD5WWsJe5",
-    "name": "Marcus Daly Memorial Hospital"
+    "name": "Marcus Daly Memorial Hospital",
+    "website": "https://www.bitterroothealth.org/patients-and-visitors/patient-portal/"
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/2e044b81-e4a1-4dfe-8ce3-5d982e938db0",
@@ -743,11 +745,13 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/e6f9b4bf-142e-47be-8246-33cebe5229b6",
-    "name": "Keck Medicine of USC"
+    "name": "Keck Medicine of USC",
+    "website": "https://www.keckmedicine.org/my-usc-chart/"
   },
   {
     "iss": "https://s.bilh.org/healthcard/issuer",
-    "name": "Beth Israel Lahey Health"
+    "name": "Beth Israel Lahey Health",
+    "website": "https://www.bilh.org/patient-portal"
   },
   {
     "iss": "https://epicfe.unch.unc.edu/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -772,7 +776,8 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/c2a9aaad-29f4-4d5d-87b0-388c13a9b433",
-    "name": "MedStar Health"
+    "name": "MedStar Health",
+    "website": "https://www.medstarhealth.org/mymedstar-patient-portal"
   },
   {
     "iss": "https://healthy.kaiserpermanente.org/public-keys/shc/v1",
@@ -821,7 +826,8 @@
   },
   {
     "iss": "https://epproxy.texashealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Texas Health Resources"
+    "name": "Texas Health Resources",
+    "website": "https://mychart.texashealth.org/mychart"
   },
   {
     "iss": "https://hie.hcmed.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -831,7 +837,7 @@
   {
     "iss": "https://epicproxy.et0978.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "UMass Memorial Health",
-    "webiste": "https://mychartonline.umassmemorial.org/MyChart/"
+    "website": "https://mychartonline.umassmemorial.org/MyChart/"
   },
   {
     "iss": "https://ccpintconfg.ohiohealth.com/Interconnect-PRD-MUAPI/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -859,15 +865,18 @@
   },
   {
     "iss": "https://haikuwa.providence.org/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Providence St. Joseph Health"
+    "name": "Providence St. Joseph Health",
+    "website": "https://mychartwa.providence.org/mychart"
   },
   {
     "iss": "https://haikuor.providence.org/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Providence St. Joseph Health"
+    "name": "Providence St. Joseph Health",
+    "website": "https://mychartwa.providence.org/mychart"
   },
   {
     "iss": "https://haikuak.providence.org/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Providence St. Joseph Health"
+    "name": "Providence St. Joseph Health",
+    "website": "https://mychartwa.providence.org/mychart"
   },
   {
     "iss": "https://minerva.northmemorial.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1035,11 +1044,13 @@
   },
   {
     "iss": "https://skphr.prd.telushealthspace.com",
-    "name": "eHealth Saskatchewan"
+    "name": "eHealth Saskatchewan",
+    "website": "https://www.ehealthsask.ca/MySaskHealthRecord/MySaskHealthRecord/Pages/default.aspx"
   },
   {
     "iss": "https://commons.ehealthsask.ca",
-    "name": "eHealth Saskatchewan"
+    "name": "eHealth Saskatchewan",
+    "website": "https://www.ehealthsask.ca/MySaskHealthRecord/MySaskHealthRecord/Pages/default.aspx"
   },
   {
     "iss": "https://moc.beaumont.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1167,7 +1178,8 @@
   },
   {
     "iss": "https://reports.bioreference.com/fhir",
-    "name": "BioReference Laboratories"
+    "name": "BioReference Laboratories",
+    "website": "https://www.bioreference.com/patient-portal"
   },
   {
     "iss": "https://erx.aspirus.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1211,7 +1223,8 @@
   },
   {
     "iss": "https://www.hss.gov.nt.ca/covax",
-    "name": "Government of the Northwest Territories"
+    "name": "Government of the Northwest Territories",
+    "website": "https://www.hss.gov.nt.ca/en/services/covid-19/request-electronic-proof-vaccination"
   },
   {
     "iss": "https://epicproxy.et1052.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1324,11 +1337,13 @@
   },
   {
     "iss": "https://www.express-scripts.com/frontendservice/mobilepatient-proxy/1/shc",
-    "name": "Express Scripts"
+    "name": "Express Scripts",
+    "website": "https://www.express-scripts.com/login?routingPage=/frontend/consumer/%23/user/profile"
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/82392e44-ab37-416a-9704-84edeee58386",
-    "name": "Emory BLUE Patient Portal"
+    "name": "Emory BLUE Patient Portal",
+    "website": "https://www.emoryhealthcare.org/patient-portal/"
   },
   {
     "iss": "https://healthcard.walgreens.com",
@@ -1433,7 +1448,7 @@
   {
     "iss": "https://epicproxy.et0958.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Mayo Clinic",
-    "webiste": "https://mayoclinichealthsystem.org/patient-online-services"
+    "website": "https://mayoclinichealthsystem.org/patient-online-services"
   },
   {
     "iss": "https://fhir.genesishcs.org/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1472,7 +1487,8 @@
   },
   {
     "iss": "https://arr.thedacare.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "ThedaCare, Bellin Health, and Affiliates"
+    "name": "ThedaCare, Bellin Health, and Affiliates",
+    "website": "https://my.thedacare.org/MyChart"
   },
   {
     "iss": "https://emerge-soap1.bmc.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1566,7 +1582,8 @@
   },
   {
     "iss": "https://mcproxyprd.med.umich.edu/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Michigan Medicine"
+    "name": "Michigan Medicine",
+    "website": "https://www.myuofmhealth.org/MyChart-PRD"
   },
   {
     "iss": "https://health-apis.duke.edu/FHIR/patient/DSTU2/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1856,7 +1873,8 @@
   },
   {
     "iss": "https://pvc.gov.nu.ca/pvc",
-    "name": "Department of Health, Government of Nunavut"
+    "name": "Department of Health, Government of Nunavut",
+    "website": "https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/vaccine-proof/get-canadian.html"
   },
   {
     "iss": "https://rpprod.riversidehealthcare.net/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1865,7 +1883,8 @@
   },
   {
     "iss": "https://rproxy.novohtg.com/OAUTHPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "NOVO Health Technology Group"
+    "name": "NOVO Health Technology Group",
+    "website": "https://novohealth.com/patient-app/"
   },
   {
     "iss": "https://sfd.fairview.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1907,19 +1926,23 @@
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/5c7467fb-60f9-4172-add4-57667a5dfcfa",
-    "name": "ChristianaCare"
+    "name": "ChristianaCare",
+    "website": "https://christianacare.org/patients/myhealth/"
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/9NRYwNOTpYhpe-Vh6-aSWRYPlx02SAgP",
-    "name": "Jackson Health System"
+    "name": "Jackson Health System",
+    "website": "https://jacksonhealth.org/patient-tools/myjacksonhealth/"
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/QGFlV8qKdgYu-vPpMAoQW5U4Jb7riiI2",
-    "name": "Cayman Islands Health Services Authority"
+    "name": "Cayman Islands Health Services Authority",
+    "website": "https://www.hsa.ky/our-services/patient-portal-info/"
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/TGXOUQhhs7VZuyPcDzWX45Uza-YlRb29",
-    "name": "Penn State Health"
+    "name": "Penn State Health",
+    "website": "https://www.pennstatehealth.org/patients-visitors/billing-medical-records/my-health-patient-portal"
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/U23aYKs_PV7Hmhkg4hb3eaygsqW71fRD",
@@ -1931,7 +1954,8 @@
   },
   {
     "iss": "https://www.cedars-sinai.org",
-    "name": "Cedars-Sinai Health System"
+    "name": "Cedars-Sinai Health System",
+    "website": "https://www.cedars-sinai.org/mycslink.html"
   },
   {
     "iss": "https://www.walmart.com/health/vaccinerecords",
@@ -1945,7 +1969,8 @@
   },
   {
     "iss": "https://shc.primaryhealth.com",
-    "name": "Primary Health Medical Group"
+    "name": "Primary Health Medical Group",
+    "website": "https://mycw3.eclinicalweb.com/phmg/jsp/100mp/login_otp.jsp"
   },
   {
     "iss": "https://pvc.cloud.forces.gc.ca",
@@ -1954,7 +1979,8 @@
   },
   {
     "iss": "https://prd.pkey.dhdp.ontariohealth.ca",
-    "name": "Government of Ontario"
+    "name": "Government of Ontario",
+    "website": "https://covid-19.ontario.ca/proof-covid-19-vaccination"
   },
   {
     "iss": "https://epicproxy.lghealth.org/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -2006,11 +2032,13 @@
   },
   {
     "iss": "https://epicproxy.et1197.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Hoag Clinic"
+    "name": "Hoag Clinic",
+    "website": "https://www.hoagconnect.org/mychart/"
   },
   {
     "iss": "https://www.gnb.ca/smarthealth",
-    "name": "Government of New Brunswick"
+    "name": "Government of New Brunswick",
+    "website": "https://myhealth.gnb.ca/en"
   },
   {
     "iss": "https://health.ri.gov/sh.cards/production",
@@ -2063,7 +2091,8 @@
   },
   {
     "iss": "https://fhir.conemaugh.org/arr-fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Conemaugh"
+    "name": "Conemaugh",
+    "website": "https://www.conemaugh.org/patients-and-visitors/patients-and-visitors/conemaugh-mychart-patient-portal"
   },
   {
     "iss": "https://ocsoapprd.nebraskamed.com/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -2077,7 +2106,8 @@
   },
   {
     "iss": "https://arrprod.midmichigan.net/ProdFHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "MyMichigan Health"
+    "name": "MyMichigan Health",
+    "website": "https://www.midmichigan.org/mychart/"
   },
   {
     "iss": "https://epicproxy.et1193.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -2170,8 +2200,7 @@
   },
   {
     "iss": "https://dashboard.au.accredify.io/shc/4cyte",
-    "name": "4Cyte Pathology",
-    "website": "https://www.4cyte.com.au/"
+    "name": "4Cyte Pathology"
   },
   {
     "iss": "https://epicsoap.altru.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -2330,7 +2359,8 @@
   },
   {
     "iss": "https://cookicfg.cookchildrens.org/CookFHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Cook Children's"
+    "name": "Cook Children's",
+    "website": "https://www.cookchildrens.org/mycookchildrens/"
   },
   {
     "iss": "https://vc.vrs.digital.go.jp/issuer",
@@ -2339,7 +2369,8 @@
   },
   {
     "iss": "https://epicproxy.et1220.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Reid Health"
+    "name": "Reid Health",
+    "website": "https://myreidhealth.org/mychart"
   },
   {
     "iss": "https://webproxy.comhs.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -2395,7 +2426,8 @@
   },
   {
     "iss": "https://haiku.bshsi.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Bon Secours Health System"
+    "name": "Bon Secours Health System",
+    "website": "https://www.bonsecours.com/patient-resources/mychart"
   },
   {
     "iss": "https://vaccinerecord.dc.gov",
@@ -2578,13 +2610,11 @@
   },
   {
     "iss": "https://accusense.health",
-    "name": "AccuSense Health",
-    "website": "https://www.accusense.health/"
+    "name": "AccuSense Health"
   },
   {
     "iss": "https://epicarr.optum.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "OptumCare National",
-    "website": "https://www.optum.com/sign-in-info.html#members"
+    "name": "OptumCare National"
   },
   {
     "iss": "https://rwebproxy.elcaminohospital.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -2659,36 +2689,36 @@
   {
     "iss": "https://epicproxy.et1296.epichosted.com/APIProxyPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Duly Health and Care",
-    "website": "https://www.dulyhealthandcare.com/"
+    "website": "https://mychart.dupagemd.com/MyChart"
   },
   {
     "iss": "https://www.testdirectly.com/KeyPublisher/0000500020/SHC",
     "name": "Laborant LLC",
-    "website": "https://www.arcpointcs.com/"
+    "website": "https://arcpointlabs.com/coral-springs/covid-testing-options/"
   },
   {
     "iss": "https://treat.com/shc-issuer",
-    "name": "Treat",
-    "website": "https://treat.com/"
+    "name": "Treat"
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/zRBZsbKdoME7HivKpjAL4ZEb8JQBD9Cn",
-    "name": "Genesis Health System"
+    "name": "Genesis Health System",
+    "website": "https://www.genesishealth.com/mygenesis-home/"
   },
   {
     "iss": "https://epicproxy.et1098.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Tanner Health System",
-    "website": "https://www.tanner.org/"
+    "website": "https://www.tannermychart.org"
   },
   {
     "iss": "https://fhir.tmcaz.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Tucson Medical Center",
-    "website": "https://www.tmcaz.com/"
+    "website": "https://mychart.tmcaz.com/MyChart"
   },
   {
     "iss": "https://epx1.chsli.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Catholic Health",
-    "website": "https://www.chsli.org/"
+    "website": "https://www.chsli.org/catholic-health-mychart"
   },
   {
     "iss": "https://labtools.curativeinc.com/api",
@@ -2698,16 +2728,17 @@
   {
     "iss": "https://hy-vee.com/my-pharmacy/static",
     "name": "Hy-Vee",
-    "website": "https://www.hy-vee.com/"
+    "website": "https://www.hy-vee.com/my-pharmacy/digital-vaccine-records"
   },
   {
     "iss": "https://myelectronicvaccinecard.oregon.gov/creds",
     "name": "Oregon Health Authority",
-    "website": "https://www.oregon.gov/oha/pages/index.aspx"
+    "website": "https://myelectronicvaccinecard.oregon.gov/"
   },
   {
     "iss": "https://epicproxy.et1131.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "Orlando Health and Bayfront Health St. Petersburg"
+    "name": "Orlando Health and Bayfront Health St. Petersburg",
+    "website": "https://www.orlandohealth.com/patient-portal"
   },
   {
     "iss": "https://ssbdiagnosticshc.com",
