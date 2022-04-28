@@ -1040,7 +1040,8 @@
   },
   {
     "iss": "https://ovc-api.optum.com/imm/ocm/issuer",
-    "name": "United Healthcare Services, Inc."
+    "name": "United Healthcare Services, Inc.",
+    "website": "https://www.uhc.com/sign-in"
   },
   {
     "iss": "https://skphr.prd.telushealthspace.com",
@@ -1323,7 +1324,8 @@
   },
   {
     "iss": "https://soap.uhcs.org/IC-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "University Health Care System"
+    "name": "University Health Care System",
+    "website": "https://www.universityhealth.org/patient-visitor-information/for-patients/medical-records-online-charts/mychart"
   },
   {
     "iss": "https://epicproxy.et1055.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1854,7 +1856,8 @@
   },
   {
     "iss": "https://fhir.kansashealthsystem.com/interconnect-PRD_FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "University of Kansas"
+    "name": "University of Kansas",
+    "website": "https://mychart.kansashealthsystem.com/mychart"
   },
   {
     "iss": "https://epicrpx.shannonhealth.org/FHIR_ARR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1989,7 +1992,8 @@
   },
   {
     "iss": "https://interconapps.uchospitals.edu/PRD-FHIR-Proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "University of Chicago Medical Center"
+    "name": "University of Chicago Medical Center",
+    "website": "https://www.uchicagomedicine.org/patients-visitors/patient-information/mychart"
   },
   {
     "iss": "https://soap.crmcwy.org/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -1998,7 +2002,8 @@
   },
   {
     "iss": "https://myepicapps.uihealthcare.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-    "name": "University of Iowa and our Community Connect Hospitals and Clinics: Cass Health, ISH, JCHC, MMC, VBCH and WMC"
+    "name": "University of Iowa and our Community Connect Hospitals and Clinics: Cass Health, ISH, JCHC, MMC, VBCH and WMC",
+    "website": "https://mychart.uihealthcare.com/mychart"
   },
   {
     "iss": "https://esoap.mihs.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
