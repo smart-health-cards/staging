@@ -2774,5 +2774,15 @@
     "iss": "https://fhir-myrecord.cerner.com/r4/4ek42qnrCibOKYPH3Swwzqc3pT1bonJw",
     "name": "Indiana University Health",
     "website": "https://myiuhealth.org/?_ga=2.30318335.1930817085.1505420414-161027848.1490886421"
+  },
+  {
+    "iss": "https://dvc.mohw.gov.tw",
+    "name": "Government of Taiwan",
+    "website": "https://www.mohw.gov.tw/mp-2.html"
+  },
+  {
+    "iss": "https://senegal.tbi.ohms.oracle.com",
+    "name": "République du Sénégal",
+    "website": "https://vaccincorona.sec.gouv.sn/webforms/view.php?id=18762"
   }
 ]
