@@ -36,7 +36,7 @@
   {
     "iss": "https://mychart.uchealth.org",
     "name": "UCHealth",
-    "website": "https://my.uchealth.com/myuchealth"
+    "website": "https://www.uchealth.org/access-my-health-connection/"
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/11e960ca-465e-403d-a8ac-dfa9be65dd83",
@@ -151,7 +151,7 @@
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/2ae7d625-833b-4a4d-a216-8fc7be3f9894",
     "name": "Methodist Health System",
-    "website": "https://nmhs.consumeridp.us-1.healtheintent.com/saml2/sso/login?authenticationRequestId=0ebcd58f-1f6d-459c-973e-750f1c17ba16"  
+    "website": "https://bestcare.org/patient-resources/methodist-my-care"  
   },
   {
     "iss": "https://fhir-myrecord.cerner.com/r4/6f2341d3-c614-4a71-9cef-bdca1a222d48",
@@ -1220,7 +1220,7 @@
   {
     "iss": "https://epcapp.mhd.com/arr-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
     "name": "Methodist Health System",
-    "website": "https://www.methodisthealthsystem.org/"
+    "website": "https://bestcare.org/patient-resources/methodist-my-care/"
   },
   {
     "iss": "https://www.hss.gov.nt.ca/covax",
@@ -2774,5 +2774,15 @@
     "iss": "https://fhir-myrecord.cerner.com/r4/4ek42qnrCibOKYPH3Swwzqc3pT1bonJw",
     "name": "Indiana University Health",
     "website": "https://myiuhealth.org/?_ga=2.30318335.1930817085.1505420414-161027848.1490886421"
+  },
+  {
+    "iss": "https://dvc.mohw.gov.tw",
+    "name": "Government of Taiwan",
+    "website": "https://www.mohw.gov.tw/mp-2.html"
+  },
+  {
+    "iss": "https://senegal.tbi.ohms.oracle.com",
+    "name": "République du Sénégal",
+    "website": "https://vaccincorona.sec.gouv.sn/webforms/view.php?id=18762"
   }
 ]
