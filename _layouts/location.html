@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/Assets/Images/favicon.ico">
+
+    <title>{{ page.title }}</title>
+    <script src="../redirects.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/nav.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+  </head>
+
+  <body>
+    {% include navigation.html %}
+
+    <section class="subSection  pt-5 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-12 text-left">
+
+            <!-- Back link -->
+            <a href="./issuers.html">Find my issuer</a>
+
+          </div>
+        </div> <!-- / .row -->
+
+        <div class="row">
+          <div class="col-12 col-lg-12 text-left">
+
+            <!-- Heading -->
+            <h1>
+              {{ page.location }}
+            </h1>
+
+          </div>
+        </div> <!-- / .row -->
+
+        <div class="row pt-2">
+          <div class="col-12">
+            <div class="row pt-4">
+              <div class="col-12 pb-4">
+                <h2 class="font-weight-normal">
+                    {{ page.location }} is a SMART Health Card issuer.
+                </h2>
+
+                <div class="row pt-4">
+                  <div class="col-12 col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <p class="card-text">
+                          Proident do consequat laboris commodo culpa occaecat commodo eiusmod labore.
+                        </p>
+
+                        <a href="{{ page.deeplink }}" target="_blank">{{ page.location }} Vaccine Portal</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div> <!-- / .row -->
+          </div>
+        </div> <!-- / .row -->
+
+        <div class="row pt-3 pb-3">
+          <div class="col-12">
+              <hr class="hr-yellow">
+          </div>
+        </div>
+      </div> <!-- / .container -->
+    </section>
+
+    {{ content }}
+
+    {% include footer.html %}
+  </body>
+</html>
+
+
+
+
