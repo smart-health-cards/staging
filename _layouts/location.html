@@ -1,91 +1,177 @@
 <!doctype html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/Assets/Images/favicon.ico">
 
-    <title>{{ page.title }}</title>
-    <script src="../redirects.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="/Assets/Images/favicon.ico">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>{{ page.title }}</title>
+  <script src="../redirects.js"></script>
 
-    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/main.css" rel="stylesheet">
-    <link href="../css/nav.css" rel="stylesheet">
-    <link href="../css/footer.css" rel="stylesheet">
-  </head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <body>
-    {% include navigation.html %}
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/nav.css" rel="stylesheet">
+  <link href="../css/footer.css" rel="stylesheet">
+</head>
 
-    <section class="subSection  pt-5 pb-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-12 text-left">
+<body>
+  {% include navigation.html %}
 
-            <!-- Back link -->
-            <a href="./issuers.html">Find my issuer</a>
+  <!-- State Links -->
+  <section class="subSection py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-12 text-left">
 
-          </div>
-        </div> <!-- / .row -->
+          <!-- Back link -->
+          <a href="issuers.html">Find my issuer</a>
 
-        <div class="row">
-          <div class="col-12 col-lg-12 text-left">
+        </div>
+      </div> <!-- / .row -->
 
-            <!-- Heading -->
-            <h1>
-              {{ page.location }}
-            </h1>
+      <!-- TODO: logic for whether state is/isn't a SMART issuer -->
+      <div class="row">
+        <div class="col-12 col-lg-12 text-left">
 
-          </div>
-        </div> <!-- / .row -->
+          <!-- Heading -->
+          <h1>
+            {{ page.location }}
+          </h1>
 
-        <div class="row pt-2">
-          <div class="col-12">
-            <div class="row pt-4">
-              <div class="col-12 pb-4">
-                <h2 class="font-weight-normal">
-                    {{ page.location }} is a SMART Health Card issuer.
-                </h2>
+        </div>
+      </div> <!-- / .row -->
 
-                <div class="row pt-4">
-                  <div class="col-12 col-md-4">
-                    <div class="card">
-                      <div class="card-body">
-                        <p class="card-text">
-                          Proident do consequat laboris commodo culpa occaecat commodo eiusmod labore.
-                        </p>
+      <div class="row pt-2">
+        <div class="col-12">
+          <div class="row pt-4">
+            <div class="col-12 pb-4">
+              <h2 class="font-weight-normal">
+                {{ page.location }} is a SMART Health Card issuer.
+              </h2>
 
-                        <a href="{{ page.deeplink }}" target="_blank">{{ page.location }} Vaccine Portal</a>
-                      </div>
+              <div class="row pt-4">
+                <div class="col-12 col-md-4">
+                  <div class="card shadow-sm">
+                    <div class="card-body">
+                      <p class="card-text">
+                        Proident do consequat laboris commodo culpa occaecat commodo eiusmod labore.
+                      </p>
+
+                      <a class="card-link" href={{ page.deeplink }} target="_blank">{{ page.location }} Vaccine Portal</a>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="row pt-4">
+                <div class="col-12 col-md-4">
+                  <div class="card shadow-sm">
+                    <div class="card-body">
+                      <p class="card-text">
+                        Proident do consequat laboris commodo culpa occaecat commodo eiusmod labore.
+                      </p>
 
-            </div> <!-- / .row -->
-          </div>
-        </div> <!-- / .row -->
+                      <a class="card-link" href={{ page.registry }} target="_blank">{{ page.location }} Immunization Registry</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <div class="row pt-3 pb-3">
-          <div class="col-12">
-              <hr class="hr-yellow">
-          </div>
+          </div> <!-- / .row -->
         </div>
-      </div> <!-- / .container -->
-    </section>
+      </div> <!-- / .row -->
 
-    {{ content }}
+      <div class="row pt-3 pb-3">
+        <div class="col-12">
+          <hr class="hr-yellow">
+        </div>
+      </div>
+    </div> <!-- / .container -->
+  </section>
+  <!-- /State Links -->
 
-    {% include footer.html %}
-  </body>
+  <!-- Pharmacy Links -->
+  <section class="subSection pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12 pb-4">
+              <h2 class="font-weight-normal">
+                Pharmacies issuer SMART Health Cards in {{ page.location }}
+              </h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <!-- Text -->
+              <p class="text-md-start mb-0">
+                Cupidatat non aliqua enim voluptate irure qui dolor.
+              </p>
+            </div>
+          </div> <!-- / .row -->
+
+          <!-- TODO: logic to pull in pharmacies -->
+          <div class="row pt-4">
+            <div class="col-12 col-md-4">
+              <p><a class="font-weight-bold" href="#" target="_blank">Pharmacy Name</a></p>
+              <p><a class="font-weight-bold" href="#" target="_blank">Pharmacy Name</a></p>
+              <p><a class="font-weight-bold" href="#" target="_blank">Pharmacy Name</a></p>
+              <p><a class="font-weight-bold" href="#" target="_blank">Pharmacy Name</a></p>
+              <p><a class="font-weight-bold" href="#" target="_blank">Pharmacy Name</a></p>
+              <p><a class="font-weight-bold" href="#" target="_blank">Pharmacy Name</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div> <!-- / .row -->
+
+    </div> <!-- / .container -->
+  </section>
+  <!-- /Pharmacy Links -->
+
+  <section class="bg-lightgrey subSection pt-4 pt-lg-5 pb-lg-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-7 offset-lg-1 text-left pb-4">
+          <div class="row">
+            <div class="col-12 text-left">
+
+              <!-- Heading -->
+              <h2>
+                Need more help?
+              </h2>
+            </div>
+          </div> <!-- / .row -->
+
+          <div class="row pt-2 pt-lg-3">
+            <div class="col-12 text-left">
+              <!-- Text -->
+              <p class="mb-md-9">
+                Veniam cupidatat duis deserunt dolore incididunt in laborum.
+              </p>
+              <p class="text-left pt-2 pb-3">
+                <a class="btn btn-primary btn-block py-3 px-5" href="#" role="button"><span>Support</span></a>
+              </p>
+            </div>
+          </div> <!-- / .row -->
+        </div>
+      </div>
+
+    </div> <!-- / .container -->
+  </section>
+
+  {{ content }}
+
+  {% include footer.html %}
+</body>
+
 </html>
-
-
-
-
