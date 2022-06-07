@@ -31,26 +31,26 @@
         <div class="col-12 col-lg-12 text-left">
 
           <!-- Back link -->
-          <a href="issuers.html">Find my issuer</a>
+          <a class="link-no-underline link-arrow" href="issuers.html"><span class="left-arrow"></span>Find my issuer</a>
 
         </div>
       </div> <!-- / .row -->
 
       <!-- TODO: logic for whether state is/isn't a SMART issuer -->
-      <div class="row">
+      <div class="row my-3">
         <div class="col-12 col-lg-12 text-left">
 
           <!-- Heading -->
-          <h1>
+          <h1 class="h2 color-teal font-weight-normal">
             {{ page.location }}
           </h1>
 
         </div>
       </div> <!-- / .row -->
 
-      <div class="row pt-2">
+      <div class="row">
         <div class="col-12">
-          <div class="row pt-4">
+          <div class="row">
             <div class="col-12 pb-4">
               <h2 class="font-weight-normal">
                 {{ page.location }} is a SMART Health Card issuer.
@@ -64,7 +64,7 @@
                         Proident do consequat laboris commodo culpa occaecat commodo eiusmod labore.
                       </p>
 
-                      <a class="card-link" href={{ page.deeplink }} target="_blank">{{ page.location }} Vaccine Portal</a>
+                      <a class="card-link link-no-underline link-arrow" href={{ page.deeplink }} target="_blank">{{ page.location }} Vaccine Portal<span class="right-arrow"></span></a>
                     </div>
                   </div>
                 </div>
@@ -77,7 +77,7 @@
                         Proident do consequat laboris commodo culpa occaecat commodo eiusmod labore.
                       </p>
 
-                      <a class="card-link" href={{ page.registry }} target="_blank">{{ page.location }} Immunization Registry</a>
+                      <a class="card-link link-no-underline link-arrow" href={{ page.registry }} target="_blank">{{ page.location }} Immunization Registry<span class="right-arrow"></span></a>
                     </div>
                   </div>
                 </div>
