@@ -2784,5 +2784,10 @@
     "iss": "https://senegal.tbi.ohms.oracle.com",
     "name": "République du Sénégal",
     "website": "https://vaccincorona.sec.gouv.sn/webforms/view.php?id=18762"
+  },
+  {
+    "iss": "https://rxhub.luhs.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+    "name": "Loyola Medicine",
+    "website": "https://myloyola.luhs.org/mychart"
   }
 ]
