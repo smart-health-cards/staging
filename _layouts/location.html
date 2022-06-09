@@ -24,6 +24,9 @@
 <body>
   {% include navigation.html %}
 
+  {% assign issuers = site.data.vci-issuers.participating_issuers %}
+  {% assign metadata = site.data.vci-issuers-metadata.issuer_metadata %}
+
   <!-- State Links -->
   <section class="subSection py-3">
     <div class="container">
@@ -31,7 +34,7 @@
         <div class="col-12 col-lg-12 text-left">
 
           <!-- Back link -->
-          <a class="link-no-underline link-arrow" href="issuers.html"><span class="left-arrow"></span>Find my issuer</a>
+          <a class="link-no-underline link-arrow font-weight-bold" href="issuers.html"><span class="left-arrow"></span>Find my issuer</a>
 
         </div>
       </div> <!-- / .row -->
@@ -48,6 +51,20 @@
         </div>
       </div> <!-- / .row -->
 
+      {% comment %} If the location is a SMART Health Card issuer, return their deeplink. Otherwise, return the text referring them to the pharmacies and healthcare providers {% endcomment %}
+      {% if page.smart_issuer %}
+
+      {% comment %} Assign the vaccine portal deeplink from the metadata if it exists, otherwise look in the location md file {% endcomment %}
+      {% for issuer in metadata %}
+
+        {% if issuer.label == page.location %}
+          {% assign deeplink = issuer.website %}
+        {% elsif page.deeplink %}
+          {% assign deeplink = page.deeplink %}
+        {% endif %}
+
+      {% endfor %}
+
       <div class="row">
         <div class="col-12">
           <div class="row">
@@ -59,24 +76,12 @@
               <div class="row pt-4">
                 <div class="col-12 col-md-4">
                   <div class="card shadow-sm mb-3">
-                    <div class="card-body">
-                      <p class="card-text h5">
-                        Proident do consequat laboris commodo culpa occaecat commodo eiusmod labore.
+                    <div class="card-body py-4">
+                      <p class="card-text h5 mb-3">
+                        To get your SMART Health Card, visit {{ page.location }}'s vaccination portal.
                       </p>
 
-                      <a class="card-link link-no-underline link-arrow" href={{ page.deeplink }} target="_blank">{{ page.location }} Vaccine Portal<span class="right-arrow"></span></a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-md-4">
-                  <div class="card shadow-sm mb-3">
-                    <div class="card-body">
-                      <p class="card-text h5">
-                        Proident do consequat laboris commodo culpa occaecat commodo eiusmod labore.
-                      </p>
-
-                      <a class="card-link link-no-underline link-arrow" href={{ page.registry }} target="_blank">{{ page.location }} Immunization Registry<span class="right-arrow"></span></a>
+                      <a class="card-link link-no-underline link-arrow font-weight-bold" href={{ deeplink }} target="_blank">{{ page.location }} Vaccine Portal<span class="right-arrow"></span></a>
                     </div>
                   </div>
                 </div>
@@ -87,11 +92,29 @@
         </div>
       </div> <!-- / .row -->
 
+      {% else %}
+
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12">
+              <p class="font-weight-bold">
+                {{ page.location }} does not issue SMART Health Cards directly, but you might be able to get a SMART Health Card from the pharmacy or healthcare organization where you got your vaccination.
+              </p>
+            </div>
+
+          </div> <!-- / .row -->
+        </div>
+      </div> <!-- / .row -->
+
+      {% endif %}
+
       <div class="row pt-3 pb-3">
         <div class="col-12">
           <hr class="hr-yellow">
         </div>
       </div>
+
     </div> <!-- / .container -->
   </section>
   <!-- /State Links -->
@@ -104,7 +127,7 @@
           <div class="row">
             <div class="col-12 pb-4">
               <h2 class="font-weight-normal">
-                Pharmacies issuer SMART Health Cards in {{ page.location }}
+                Pharmacies issuing SMART Health Cards in {{ page.location }}
               </h2>
             </div>
           </div>
@@ -113,20 +136,84 @@
             <div class="col-12">
               <!-- Text -->
               <p class="text-md-start mb-0">
-                Cupidatat non aliqua enim voluptate irure qui dolor.
+                There also are pharmacies issuing SMART Health Cards in {{ page.location }}. You might also be able to get your SMART Health Card if you were vaccinated at one or more of these pharmacies:
               </p>
             </div>
           </div> <!-- / .row -->
 
-          <!-- TODO: logic to pull in pharmacies -->
+          <!-- TODO: add logic for multiple columns -->
           <div class="row pt-4">
             <div class="col-12 col-md-4">
-              <p><a class="font-weight-bold" href="#" target="_blank">Pharmacy Name</a></p>
-              <p><a class="font-weight-bold" href="#" target="_blank">Pharmacy Name</a></p>
-              <p><a class="font-weight-bold" href="#" target="_blank">Pharmacy Name</a></p>
-              <p><a class="font-weight-bold" href="#" target="_blank">Pharmacy Name</a></p>
-              <p><a class="font-weight-bold" href="#" target="_blank">Pharmacy Name</a></p>
-              <p><a class="font-weight-bold" href="#" target="_blank">Pharmacy Name</a></p>
+
+            {% comment %} Create a variable to hold the sorted metadata for pharmacies and build an array from the issuers list from where the canonical_iss values match {% endcomment %}
+            {% assign pharmacy_issuers = "" | split: "" %}
+            {% assign pharmacies = metadata | where: "issuer_type", "organizational.pharmacy" | where: "website", string %}
+            {% for issuer in pharmacies %}
+              {% assign pharmacy_issuer = issuers | where: "iss", issuer.canonical_iss | last %}
+              {% assign pharmacy_issuers = pharmacy_issuers | push: pharmacy_issuer | sort_natural: "name" %}
+            {% endfor %}
+
+            {% for pharmacy in pharmacy_issuers %}
+              {% if pharmacy.name %}
+                <p><a class="font-weight-bold link-no-underline link-arrow" href={{ pharmacy.website }} target="_blank">{{ pharmacy.name }}<span class="right-arrow"></span></a></p>
+              {% endif %}
+            {% endfor %}
+
+            </div>
+          </div>
+
+        </div>
+      </div> <!-- / .row -->
+
+      <div class="row pt-3 pb-3">
+        <div class="col-12">
+          <hr class="hr-yellow">
+        </div>
+      </div>
+    </div> <!-- / .container -->
+  </section>
+  <!-- /Pharmacy Links -->
+
+  <!-- Healthcare Provider Links -->
+  <section class="subSection pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12 pb-4">
+              <h2 class="font-weight-normal">
+                Healthcare providers issuing SMART Health Cards in {{ page.location }}
+              </h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <!-- Text -->
+              <p class="text-md-start mb-0">
+                Additionally, these providers are issuing SMART Health Cards via their patient portals:
+              </p>
+            </div>
+          </div> <!-- / .row -->
+
+          <div class="row pt-4">
+            <div class="col-12 col-md-4">
+
+              <!-- TODO: filter by the location array data in metadata -->
+            {% comment %} Create a variable to hold the sorted metadata for healthcare providers and build an array from the issuers list from where the canonical_iss values match {% endcomment %}
+            {% assign hc_issuers = "" | split: "" %}
+            {% assign hc_providers = metadata | where: "issuer_type", "organizational.health_sytsem" | where: "website", string %}
+            {% for issuer in hc_providers %}
+              {% assign hc_issuer = issuers | where: "iss", issuer.canonical_iss | last %}
+              {% assign hc_issuers = hc_issuers | push: hc_issuer | sort_natural: "name" %}
+            {% endfor %}
+
+            {% for hc_issuer in hc_issuers %}
+              {% if hc_issuer.name %}
+                <p><a class="font-weight-bold link-no-underline link-arrow" href={{ hc_issuer.website }} target="_blank">{{ hc_issuer.name }}<span class="right-arrow"></span></a></p>
+              {% endif %}
+            {% endfor %}
+
             </div>
           </div>
 
@@ -135,7 +222,7 @@
 
     </div> <!-- / .container -->
   </section>
-  <!-- /Pharmacy Links -->
+  <!-- /Healthcare Provider Links -->
 
   <section class="bg-lightgrey subSection pt-4 pt-lg-5 pb-lg-5">
     <div class="container">
@@ -155,11 +242,13 @@
             <div class="col-12 text-left">
               <!-- Text -->
               <p class="mb-md-9">
-                Veniam cupidatat duis deserunt dolore incididunt in laborum.
+                See our Issuer Support Page for more information.
               </p>
               <p class="text-left pt-2 pb-3">
-                <a class="btn btn-primary btn-block py-3 px-5" href="#" role="button"><span>Support</span></a>
+                <a class="btn btn-primary btn-block py-3 px-5" href="support.html" role="button"><span>Support</span></a>
               </p>
+              <p class="text-left"><strong>Note:</strong> If there is an error in your data, please contact your location's immunization registry for support.</p>
+              <p><a href={{ page.registry }} target="_blank">{{ page.location }} immunization registry</a></p>
             </div>
           </div> <!-- / .row -->
         </div>
