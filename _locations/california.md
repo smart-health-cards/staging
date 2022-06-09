@@ -2,8 +2,11 @@
 layout: location
 title: Find an Issuer | California
 nav: none
-location: California
+label: California
+location:
+  - state: CA
+    country: US
+category: us
 smart_issuer: true
-# deeplink: https://myvaccinerecord.cdph.ca.gov/
 registry: https://cairweb.org/
 ---
