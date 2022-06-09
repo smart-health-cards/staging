@@ -484,9 +484,6 @@ span.left-arrow {
 
 span.right-arrow {
     margin-left: 5px;
-}
-
-span.right-arrow::before {
     transform: rotate(180deg);
 }
 /* /Location Page */
