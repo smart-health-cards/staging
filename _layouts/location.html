@@ -27,6 +27,10 @@
   {% assign issuers = site.data.vci-issuers.participating_issuers %}
   {% assign metadata = site.data.vci-issuers-metadata.issuer_metadata %}
 
+  {% comment %} Convert the location .md file's location array to a string to be compatible with how the metadata json handles the locations subarrays. Also isolate the country code and build a searchable string from it. {% endcomment %}
+  {% assign location_string = page.location[0] | join %}
+  {% assign country_string = '{"country"=>"' | append: page.location[0].country | append: '"}' %}
+
   <!-- State Links -->
   <section class="subSection py-3">
     <div class="container">
@@ -34,7 +38,7 @@
         <div class="col-12 col-lg-12 text-left">
 
           <!-- Back link -->
-          <a class="link-no-underline link-arrow font-weight-bold" href="issuers.html"><span class="left-arrow"></span>Find my issuer</a>
+          <a class="link-no-underline link-arrow font-weight-bold" href="find-my-issuer.html"><span class="left-arrow"></span>Find my issuer</a>
 
         </div>
       </div> <!-- / .row -->
@@ -54,9 +58,9 @@
       {% if page.smart_issuer %}
 
       {% comment %} Assign the vaccine portal deeplink from the metadata if it exists, otherwise look in the location md file {% endcomment %}
-      {% for issuer in metadata %}
+      {% for issuer in issuers %}
 
-        {% if issuer.label == page.label %}
+        {% if issuer.name == page.label %}
           {% assign deeplink = issuer.website %}
         {% elsif page.deeplink %}
           {% assign deeplink = page.deeplink %}
@@ -80,7 +84,7 @@
                         To get your SMART Health Card, visit {{ page.label }}'s vaccination portal.
                       </p>
 
-                      <a class="card-link link-no-underline link-arrow font-weight-bold" href={{ deeplink }} target="_blank">{{ page.label }} Vaccine Portal<span class="right-arrow"></span></a>
+                      <a class="card-link link-no-underline link-arrow font-weight-bold" href="{{ deeplink }}" target="_blank">{{ page.label }} Vaccine Portal<span class="right-arrow"></span></a>
                     </div>
                   </div>
                 </div>
@@ -140,12 +144,16 @@
             </div>
           </div> <!-- / .row -->
 
+          <!-- TODO: account for national pharmacies vs state pharmacies -->
+          <!-- FIXME: pharmacies not being added to new array -->
           {% comment %} Create a variable to hold the sorted metadata for pharmacies and build an array from the issuers list from where the canonical_iss values match {% endcomment %}
           {% assign pharmacy_issuers = "" | split: "" %}
           {% assign pharmacies = metadata | where: "issuer_type", "organizational.pharmacy" | where: "website", string %}
           {% for issuer in pharmacies %}
-            {% assign pharmacy_issuer = issuers | where: "iss", issuer.canonical_iss %}
-            {% assign pharmacy_issuers = pharmacy_issuers | push: pharmacy_issuer | sort_natural: "name" %}
+            {% if issuer.locations contains country_string or issuer.locations contains location_string %}
+              {% assign pharmacy_issuer = issuers | where: "iss", issuer.canonical_iss | last %}
+              {% assign pharmacy_issuers = pharmacy_issuers | push: pharmacy_issuer | sort_natural: "name" %}
+            {% endif %}
           {% endfor %}
 
           {% assign pharmloop2 = pharmacy_issuers.size | divided_by: 3 %}
@@ -161,7 +169,7 @@
               {% if pharmacy.name == pharm_name %}
                 {% continue %}
               {% elsif pharmacy.name and pharmacy.website %}
-                <p><a class="font-weight-bold link-no-underline link-arrow" href={{ pharmacy.website }} target="_blank">{{ pharmacy.name }}<span class="right-arrow"></span></a></p>
+                <p><a class="font-weight-bold link-no-underline link-arrow" href="{{ pharmacy.website }}" target="_blank">{{ pharmacy.name }}<span class="right-arrow"></span></a></p>
               {% endif %}
               {% assign pharm_name = pharmacy.name %}
             {% endfor %}
@@ -174,7 +182,7 @@
                 {% if pharmacy.name == pharm_name %}
                   {% continue %}
                 {% elsif pharmacy.name and pharmacy.website %}
-                  <p><a class="font-weight-bold link-no-underline link-arrow" href={{ pharmacy.website }} target="_blank">{{ pharmacy.name }}<span class="right-arrow"></span></a></p>
+                  <p><a class="font-weight-bold link-no-underline link-arrow" href="{{ pharmacy.website }}" target="_blank">{{ pharmacy.name }}<span class="right-arrow"></span></a></p>
                 {% endif %}
                 {% assign pharm_name = pharmacy.name %}
               {% endfor %}
@@ -187,7 +195,7 @@
                 {% if pharmacy.name == pharm_name %}
                   {% continue %}
                 {% elsif pharmacy.name and pharmacy.website %}
-                  <p><a class="font-weight-bold link-no-underline link-arrow" href={{ pharmacy.website }} target="_blank">{{ pharmacy.name }}<span class="right-arrow"></span></a></p>
+                  <p><a class="font-weight-bold link-no-underline link-arrow" href="{{ pharmacy.website }}" target="_blank">{{ pharmacy.name }}<span class="right-arrow"></span></a></p>
                 {% endif %}
                 {% assign pharm_name = pharmacy.name %}
               {% endfor %}
@@ -229,12 +237,9 @@
             </div>
           </div> <!-- / .row -->
 
-          {% comment %} Convert the location .md file's location array to a string to be compatible with how the metadata json handles the locations subarrays {% endcomment %}
-          {% assign location_string = page.location[0] | join %}
-
           {% comment %} Create a variable to hold the sorted metadata for healthcare providers and build an array from the issuers list from where the canonical_iss values match {% endcomment %}
           {% assign hc_issuers = "" | split: "" %}
-          {% assign hc_providers = metadata | where: "locations", location_string | where: "website", string %}
+          {% assign hc_providers = metadata | where: "issuer_type", "organizational.health_system" | where: "locations", location_string | where: "website", string %}
 
           {% for issuer in hc_providers %}
             {% assign hc_issuer = issuers | where: "iss", issuer.canonical_iss | last %}
@@ -255,7 +260,7 @@
                 {% continue %}
               {% elsif hc_issuer.name and hc_issuer.website %}
                 <p>
-                  <a class="font-weight-bold link-no-underline link-arrow" href={{ hc_issuer.website }} target="_blank">{{ hc_issuer.name }}<span class="right-arrow"></span></a>
+                  <a class="font-weight-bold link-no-underline link-arrow" href="{{ hc_issuer.website }}" target="_blank">{{ hc_issuer.name }}<span class="right-arrow"></span></a>
                 </p>
               {% endif %}
               {% assign hc_name = hc_issuer.name %}
@@ -270,7 +275,7 @@
                   {% continue %}
                 {% elsif hc_issuer.name and hc_issuer.website %}
                   <p>
-                    <a class="font-weight-bold link-no-underline link-arrow" href={{ hc_issuer.website }} target="_blank">{{ hc_issuer.name }}<span class="right-arrow"></span></a>
+                    <a class="font-weight-bold link-no-underline link-arrow" href="{{ hc_issuer.website }}" target="_blank">{{ hc_issuer.name }}<span class="right-arrow"></span></a>
                   </p>
                 {% endif %}
                 {% assign hc_name = hc_issuer.name %}
@@ -285,7 +290,7 @@
                   {% continue %}
                 {% elsif hc_issuer.name and hc_issuer.website %}
                   <p>
-                    <a class="font-weight-bold link-no-underline link-arrow" href={{ hc_issuer.website }} target="_blank">{{ hc_issuer.name }}<span class="right-arrow"></span></a>
+                    <a class="font-weight-bold link-no-underline link-arrow" href="{{ hc_issuer.website }}" target="_blank">{{ hc_issuer.name }}<span class="right-arrow"></span></a>
                   </p>
                 {% endif %}
                 {% assign hc_name = hc_issuer.name %}
@@ -325,7 +330,7 @@
                 <a class="btn btn-primary btn-block py-3 px-5" href="support.html" role="button"><span>Support</span></a>
               </p>
               <p class="text-left"><strong>Note:</strong> If there is an error in your data, please contact your location's immunization registry for support.</p>
-              <p><a href={{ page.registry }} target="_blank">{{ page.label }} immunization registry</a></p>
+              <p><a href="{{ page.registry }}" target="_blank">{{ page.label }} immunization registry</a></p>
             </div>
           </div> <!-- / .row -->
         </div>
