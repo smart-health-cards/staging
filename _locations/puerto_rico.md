@@ -1,10 +1,10 @@
 ---
 layout: location
-title: Find an Issuer | New Jersey
+title: Find an Issuer | Puerto Rico
 nav: none
-label: New Jersey
+label: Puerto Rico
 location:
-  - state: NJ
+  - state: PR
     country: US
 category: us
 smart_issuer: true

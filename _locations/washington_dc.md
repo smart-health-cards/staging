@@ -1,10 +1,10 @@
 ---
 layout: location
-title: Find an Issuer | New Jersey
+title: Find an Issuer | Washington, D.C.
 nav: none
-label: New Jersey
+label: Washington, D.C.
 location:
-  - state: NJ
+  - state: DC
     country: US
 category: us
 smart_issuer: true

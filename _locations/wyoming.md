@@ -1,11 +1,12 @@
 ---
 layout: location
-title: Find an Issuer | California
+title: Find an Issuer | Wyoming
 nav: none
-label: California
+label: Wyoming
 location:
-  - state: CA
+  - state: WY
     country: US
 smart_issuer: true
+category: us
 registry: https://cairweb.org/
 ---

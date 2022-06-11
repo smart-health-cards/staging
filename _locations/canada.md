@@ -4,8 +4,7 @@ title: Find an Issuer | Canada
 nav: none
 label: Canada
 location:
-    country: CA
+    - country: CA
 category: world
 smart_issuer: true
-registry: https://cairweb.org/
 ---

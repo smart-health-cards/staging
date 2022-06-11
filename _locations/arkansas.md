@@ -1,11 +1,11 @@
 ---
 layout: location
-title: Find an Issuer | Texas
+title: Find an Issuer | Arkansas
 nav: none
-label: Texas
+label: Arkansas
 location:
-  - state: TX
+  - state: AR
     country: US
+category: us
 smart_issuer: false
-registry: https://dshs.texas.gov/immunize/immtrac/default.shtm
 ---

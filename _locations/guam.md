@@ -1,10 +1,10 @@
 ---
 layout: location
-title: Find an Issuer | New Jersey
+title: Find an Issuer | Guam
 nav: none
-label: New Jersey
+label: Guam
 location:
-  - state: NJ
+  - state: GU
     country: US
 category: us
 smart_issuer: true
