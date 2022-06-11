@@ -2097,7 +2097,12 @@
     {
       "canonical_iss": "https://www.riteaid.com",
       "issuer_type": "organizational.pharmacy",
-      "website": "https://www.riteaid.com/pharmacy/vaccination-digital-proof"
+      "website": "https://www.riteaid.com/pharmacy/vaccination-digital-proof",
+      "locations": [
+        {
+          "country": "US"
+        }
+      ]
     },
     {
       "canonical_iss": "https://epicproxy.et1134.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -3840,7 +3845,13 @@
     {
       "canonical_iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
       "issuer_type": "organizational.pharmacy",
-      "website": "https://www.skriptspharmacy.com/immunizations"
+      "website": "https://www.skriptspharmacy.com/immunizations",
+      "locations": [
+        {
+          "state": "ND",
+          "country": "US"
+        }
+      ]
     },
     {
       "canonical_iss": "https://api.myirmobile.com/la/issuer",
