@@ -5,6 +5,7 @@ const remaps = [
   {"page": "", "id": "covid19", "target": `${targetOrigin}/vocabulary`},
   {"page": "", "id": "laboratory", "target": `${targetOrigin}/vocabulary`},
   {"page": "", "id": "immunization", "target": `${targetOrigin}/vocabulary`},
+  {"page": "", "id": "ial", "target": `${targetOrigin}/ial`},
   {"page": "", "id": "overview"}, 
   {"page": "", "id": "status"}, 
   {"page": "", "id": "contributing"}, 
@@ -100,4 +101,6 @@ if (needRedirect.length > 0) {
   } else {
     window.location.href = `${targetOrigin}${window.location.pathname}${window.location.hash}`;
   }
+} else if(window.location.pathname == "/" || window.location.pathname == "/index.html") {
+  window.location.href = `${window.location.origin}/en/${hash}`;
 }
