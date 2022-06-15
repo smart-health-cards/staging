@@ -482,66 +482,53 @@ ul#FAQTOC
 /* /Find an Issuer Page */
 
 /* How They Work Page */
-.lifecycle-graphic {
-    margin-top: 6rem;
-}
-
 .lifecycle-graphic__column {
     position: relative;
     border: 0 dashed #0A8E97;
 }
 
-@media (min-width: 992px) {
-    .lifecycle-graphic__column:nth-of-type(1) {
-        border-top-width: 2px;
-        border-right-width: 2px;
-    }
-
-    .lifecycle-graphic__column:nth-of-type(2) {
-        border-bottom-width: 2px;
-        border-right-width: 2px;
-    }
-
-    .lifecycle-graphic__column:nth-of-type(3) {
-        border-top-width: 2px;
-        border-right-width: 2px;
-    }
-
-    .lifecycle-graphic__column:nth-of-type(4) {
-        border-bottom-width: 2px;
-        border-right-width: 2px;
-    }
+.lifecycle-graphic__column:nth-of-type(1) {
+    border-right-width: 2px;
+    border-bottom-width: 2px;
 }
 
-.lifecycle-graphic__heading {
-    position: absolute;
-    top: -6rem;
-    width: 100%;
+.lifecycle-graphic__column:nth-of-type(2) {
+    border-bottom-width: 2px;
+    border-left-width: 2px;
 }
 
-.lifecycle-graphic__heading::before {
-    content: '';
-    position: absolute;
-    top: calc(175% - 3px);
-    left: 50%;
-    right: 50%;
+.lifecycle-graphic__column:nth-of-type(3) {
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+}
+
+.lifecycle-graphic__column:nth-of-type(4) {
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+}
+
+.lifecycle-graphic__column:nth-of-type(1)::after,
+.lifecycle-graphic__column:nth-of-type(2)::after,
+.lifecycle-graphic__column:nth-of-type(3)::after {
+    content: url('/Assets/Images/chevron.png');
     display: block;
-    height: 3px;
-    width: 3px;
-    background: lightgrey;
-    border-radius: 100%;
+    position: absolute;
+    width: 30px;
+    height: 29px;
+    z-index: 2;
 }
 
-.lifecycle-graphic__heading::after {
-    content: '';
-    position: absolute;
-    top: 175%;
-    left: calc(50% + 1px);
-    right: calc(50% - 1px);
-    display: block;
-    height: 50px;
-    width: 0;
-    border-left: 1px solid lightgrey;
+.lifecycle-graphic__column:nth-of-type(1)::after,
+.lifecycle-graphic__column:nth-of-type(2)::after,
+.lifecycle-graphic__column:nth-of-type(3)::after {
+    bottom: -15px;
+    left: calc(50% - 15px);
+    right: calc(50% + 15px);
+    transform: rotate(90deg);
+}
+
+.lifecycle-graphic__column:nth-of-type(2)::after {
+    transform: rotate(-90deg);
 }
 
 .lifecycle-graphic__image {
@@ -552,8 +539,77 @@ ul#FAQTOC
     width: 100%;
 }
 
-.lifecycle-graphic__text {
+@media (min-width: 992px) {
+    .lifecycle-graphic {
+        margin-top: 6rem;
+    }
 
+    .lifecycle-graphic__column:nth-of-type(1) {
+        border-top-width: 2px;
+        border-bottom-width: 0;
+    }
+
+    .lifecycle-graphic__column:nth-of-type(2) {
+        border-right-width: 2px;
+        border-left-width: 0;
+    }
+
+    .lifecycle-graphic__column:nth-of-type(3) {
+        border-top-width: 2px;
+        border-bottom-width: 0;
+    }
+
+    .lifecycle-graphic__column:nth-of-type(4) {
+        border-right-width: 2px;
+        border-left-width: 0;
+    }
+
+    .lifecycle-graphic__column:nth-of-type(1)::after,
+    .lifecycle-graphic__column:nth-of-type(3)::after {
+        top: 50%;
+        bottom: unset;
+        left: unset;
+        right: -15px;
+        transform: unset;
+    }
+
+    /* .lifecycle-graphic__column:nth-of-type(2)::after {
+        bottom: -15px;
+        left: calc(50% - 15px);
+        right: calc(50% + 15px);
+        transform: rotate(-90deg);
+    } */
+
+    .lifecycle-graphic__heading {
+        position: absolute;
+        top: -6rem;
+        width: 100%;
+    }
+
+    .lifecycle-graphic__heading::before {
+        content: '';
+        position: absolute;
+        top: calc(175% - 3px);
+        left: 50%;
+        right: 50%;
+        display: block;
+        height: 3px;
+        width: 3px;
+        background: #CDCDCD;
+        border-radius: 100%;
+    }
+
+    .lifecycle-graphic__heading::after {
+        content: '';
+        position: absolute;
+        top: 175%;
+        left: calc(50% + 1px);
+        right: calc(50% - 1px);
+        display: block;
+        height: 50px;
+        width: 0;
+        border-left: 1px solid #CDCDCD;
+    }
 }
 /* /How They Work Page */
 
