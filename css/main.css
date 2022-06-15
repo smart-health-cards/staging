@@ -573,13 +573,6 @@ ul#FAQTOC
         transform: unset;
     }
 
-    /* .lifecycle-graphic__column:nth-of-type(2)::after {
-        bottom: -15px;
-        left: calc(50% - 15px);
-        right: calc(50% + 15px);
-        transform: rotate(-90deg);
-    } */
-
     .lifecycle-graphic__heading {
         position: absolute;
         top: -6rem;
@@ -610,6 +603,11 @@ ul#FAQTOC
         width: 0;
         border-left: 1px solid #CDCDCD;
     }
+}
+
+#verificationGraphic img {
+    height: 200px;
+    width: auto;
 }
 /* /How They Work Page */
 
