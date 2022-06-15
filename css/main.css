@@ -481,6 +481,82 @@ ul#FAQTOC
 }
 /* /Find an Issuer Page */
 
+/* How They Work Page */
+.lifecycle-graphic {
+    margin-top: 6rem;
+}
+
+.lifecycle-graphic__column {
+    position: relative;
+    border: 0 dashed #0A8E97;
+}
+
+@media (min-width: 992px) {
+    .lifecycle-graphic__column:nth-of-type(1) {
+        border-top-width: 2px;
+        border-right-width: 2px;
+    }
+
+    .lifecycle-graphic__column:nth-of-type(2) {
+        border-bottom-width: 2px;
+        border-right-width: 2px;
+    }
+
+    .lifecycle-graphic__column:nth-of-type(3) {
+        border-top-width: 2px;
+        border-right-width: 2px;
+    }
+
+    .lifecycle-graphic__column:nth-of-type(4) {
+        border-bottom-width: 2px;
+        border-right-width: 2px;
+    }
+}
+
+.lifecycle-graphic__heading {
+    position: absolute;
+    top: -6rem;
+    width: 100%;
+}
+
+.lifecycle-graphic__heading::before {
+    content: '';
+    position: absolute;
+    top: calc(175% - 3px);
+    left: 50%;
+    right: 50%;
+    display: block;
+    height: 3px;
+    width: 3px;
+    background: lightgrey;
+    border-radius: 100%;
+}
+
+.lifecycle-graphic__heading::after {
+    content: '';
+    position: absolute;
+    top: 175%;
+    left: calc(50% + 1px);
+    right: calc(50% - 1px);
+    display: block;
+    height: 50px;
+    width: 0;
+    border-left: 1px solid lightgrey;
+}
+
+.lifecycle-graphic__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.lifecycle-graphic__text {
+
+}
+/* /How They Work Page */
+
 /* Location Page */
 /* TODO: arrow alignment & accessibility */
 .link-arrow {
@@ -529,6 +605,10 @@ a.link-no-underline:hover {
 
 .color-teal {
     color: #0A8E97;
+}
+
+.color-yellow {
+    color: #FFC749;
 }
 
 .grid-cols {
