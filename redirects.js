@@ -5,6 +5,7 @@ const remaps = [
   {"page": "", "id": "covid19", "target": `${targetOrigin}/vocabulary`},
   {"page": "", "id": "laboratory", "target": `${targetOrigin}/vocabulary`},
   {"page": "", "id": "immunization", "target": `${targetOrigin}/vocabulary`},
+  {"page": "", "id": "ial", "target": `${targetOrigin}/ial`},
   {"page": "", "id": "overview"}, 
   {"page": "", "id": "status"}, 
   {"page": "", "id": "contributing"}, 
