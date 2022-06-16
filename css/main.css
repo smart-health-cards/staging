@@ -612,25 +612,31 @@ ul#FAQTOC
 /* /How They Work Page */
 
 /* Location Page */
-/* TODO: arrow alignment & accessibility */
-.link-arrow {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+span[class$="arrow"] {
+    white-space: nowrap;
 }
 
 span[class$="arrow"]::before {
     content: url('/assets/Images/chevron-rounded.svg');
+    display: inline-block;
     height: 16px;
     width: 9px;
+    vertical-align: middle;
 }
 
 span.left-arrow {
     margin-right: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(2px);
 }
 
 span.right-arrow {
     margin-left: 5px;
+}
+
+span.right-arrow::before {
     transform: rotate(180deg);
 }
 /* /Location Page */
@@ -669,11 +675,11 @@ a.link-no-underline:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    column-gap: 2.3rem;
 }
 
 .grid-cols > * {
-    flex: 1 1 50%;
-    max-width: calc(50% - 1.15rem);
+    flex: 1 1 calc(50% - 1.15rem);
 }
 
 @media (min-width: 768px) {

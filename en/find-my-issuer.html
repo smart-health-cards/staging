@@ -22,9 +22,6 @@ nav: find-my-issuer
         <p class="text-md-start">
           Select one of the locations where you were vaccinated to see SMART Health Cards issuers in your area.
         </p>
-        <p class="text-md-start mb-0">
-          Note: If you were vaccinated in more than one state, territory, or country and only one of them is a SMART Health Card issuer, please select that location.
-        </p>
       </div>
     </div> <!-- / .row -->
     <hr class="hr-yellow">
@@ -35,22 +32,13 @@ nav: find-my-issuer
           <div class="col-12 pb-4">
             <h2 class="font-weight-light">US States and Territories</h2>
 
-            <!-- Text -->
-            <p class="text-md-start mb-0">
-              <span class="shc-issuer mr-2"></span>&nbsp;SHC-issuing government
-            </p>
-
             {% assign us_locations = site.locations | where: "category", "us" %}
 
             <div class="row pt-4">
               <div class="grid-cols col-12 locations-us">
                 {% for location in us_locations %}
-                  {% assign smart_icon = '' %}
-                  {% if location.smart_issuer %}
-                    {% assign link_class = '&nbsp;<span class="shc-issuer"></span>' %}
-                  {% endif %}
-                  <p><a href="{{ location.url }}" class="font-weight-bold link-no-underline">
-                    {{ location.label }}{% if location.smart_issuer %}&nbsp;<span class="shc-issuer ml-1"></span>{% endif %}
+                  <p><a href="{{ location.url }}" class="font-weight-bold">
+                    {{ location.label }}
                   </a></p>
                 {% endfor %}
               </div>
@@ -65,20 +53,16 @@ nav: find-my-issuer
             <div class="row pt-4">
               <div class="grid-cols col-12 locations-world">
                 {% for location in world_locations %}
-                  {% assign link_class = '' %}
-                  {% if location.smart_issuer %}
-                    {% assign link_class = ' shc-issuer ' %}
-                  {% endif %}
-                  <p><a href="{{ location.url }}" class="font-weight-bold link-no-underline">
-                    {{ location.label }}{% if location.smart_issuer %}&nbsp;<span class="shc-issuer ml-1"></span>{% endif %}
+                  <p><a href="{{ location.url }}" class="font-weight-bold">
+                    {{ location.label }}
                   </a></p>
                 {% endfor %}
               </div>
             </div>
 
-            <div class="row text-left pt-4">
-              <div class="col-12 col-xl-6 offset-xl-5">
-                <p><a class="font-weight-bold link-no-underline link-arrow" href="#pharmacies">For a full list of issuers, click here<span class="right-arrow"></span></a></p>
+            <div class="row text-left pt-5">
+              <div class="col-12 col-xl-6">
+                <p><a class="font-weight-bold link-no-underline link-arrow" href="issuers.html">For a full list of issuers, click here<span class="right-arrow"></span></a></p>
               </div>
             </div>
           </div>
