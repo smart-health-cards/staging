@@ -122,6 +122,18 @@
   </section>
   <!-- /State Links -->
 
+  {% comment %} Create a variable to hold the sorted metadata for pharmacies and build an array from the issuers list from where the canonical_iss values match {% endcomment %}
+  {% assign pharmacy_issuers = "" | split: "" %}
+  {% assign pharmacies = metadata | where: "issuer_type", "organizational.pharmacy" | where: "website", string %}
+  {% for issuer in pharmacies %}
+    {% assign issuer_string = issuer.locations | join %}
+    {% if issuer_string contains country_string or issuer_string contains location_string %}
+      {% assign pharmacy_issuer = issuers | where: "iss", issuer.canonical_iss | last %}
+      {% assign pharmacy_issuers = pharmacy_issuers | push: pharmacy_issuer | sort_natural: "name" %}
+    {% endif %}
+  {% endfor %}
+
+  {% unless pharmacy_issuers == empty %}
   <!-- Pharmacy Links -->
   <section class="subSection pb-4">
     <div class="container">
@@ -144,61 +156,14 @@
             </div>
           </div> <!-- / .row -->
 
-          <!-- TODO: account for national pharmacies vs state pharmacies -->
-          <!-- FIXME: pharmacies not being added to new array -->
-          {% comment %} Create a variable to hold the sorted metadata for pharmacies and build an array from the issuers list from where the canonical_iss values match {% endcomment %}
-          {% assign pharmacy_issuers = "" | split: "" %}
-          {% assign pharmacies = metadata | where: "issuer_type", "organizational.pharmacy" | where: "website", string %}
-          {% for issuer in pharmacies %}
-            {% if issuer.locations contains country_string or issuer.locations contains location_string %}
-              {% assign pharmacy_issuer = issuers | where: "iss", issuer.canonical_iss | last %}
-              {% assign pharmacy_issuers = pharmacy_issuers | push: pharmacy_issuer | sort_natural: "name" %}
-            {% endif %}
-          {% endfor %}
-
-          {% assign pharmloop2 = pharmacy_issuers.size | divided_by: 3 %}
-          {% assign pharmoffset = pharmacy_issuers.size | minus: pharmloop2 %}
-          {% assign pharmloop = pharmoffset | minus: pharmloop2 %}
-
-          {% assign pharm_name = "" %}
-
           <div class="row pt-4">
-            <div class="col-12 col-md-4">
+            <div class="grid-cols col-12 issuers-pharmacies">
 
-            {% for pharmacy in pharmacy_issuers limit: pharmloop %}
-              {% if pharmacy.name == pharm_name %}
-                {% continue %}
-              {% elsif pharmacy.name and pharmacy.website %}
+            {% for pharmacy in pharmacy_issuers %}
+              {% if pharmacy.name and pharmacy.website %}
                 <p><a class="font-weight-bold link-no-underline link-arrow" href="{{ pharmacy.website }}" target="_blank">{{ pharmacy.name }}<span class="right-arrow"></span></a></p>
               {% endif %}
-              {% assign pharm_name = pharmacy.name %}
             {% endfor %}
-
-            </div>
-
-            <div class="col-12 col-md-4">
-
-              {% for pharmacy in pharmacy_issuers limit: pharmloop2 offset: pharmloop %}
-                {% if pharmacy.name == pharm_name %}
-                  {% continue %}
-                {% elsif pharmacy.name and pharmacy.website %}
-                  <p><a class="font-weight-bold link-no-underline link-arrow" href="{{ pharmacy.website }}" target="_blank">{{ pharmacy.name }}<span class="right-arrow"></span></a></p>
-                {% endif %}
-                {% assign pharm_name = pharmacy.name %}
-              {% endfor %}
-
-            </div>
-
-            <div class="col-12 col-md-4">
-
-              {% for pharmacy in pharmacy_issuers limit: pharmloop2 offset: pharmoffset %}
-                {% if pharmacy.name == pharm_name %}
-                  {% continue %}
-                {% elsif pharmacy.name and pharmacy.website %}
-                  <p><a class="font-weight-bold link-no-underline link-arrow" href="{{ pharmacy.website }}" target="_blank">{{ pharmacy.name }}<span class="right-arrow"></span></a></p>
-                {% endif %}
-                {% assign pharm_name = pharmacy.name %}
-              {% endfor %}
 
             </div>
           </div>
@@ -214,7 +179,20 @@
     </div> <!-- / .container -->
   </section>
   <!-- /Pharmacy Links -->
+  {% endunless %}
 
+  {% comment %} Create a variable to hold the sorted metadata for healthcare providers and build an array from the issuers list from where the canonical_iss values match {% endcomment %}
+  {% assign hc_issuers = "" | split: "" %}
+  {% assign hc_providers = metadata | where: "issuer_type", "organizational.health_system" | where: "locations", location_string | where: "website", string %}
+  {% for issuer in hc_providers %}
+    {% assign issuer_string = issuer.locations | join %}
+    {% if issuer_string contains country_string or issuer_string contains location_string %}
+      {% assign hc_issuer = issuers | where: "iss", issuer.canonical_iss | last %}
+      {% assign hc_issuers = hc_issuers | push: hc_issuer | sort_natural: "name" %}
+      {% endif %}
+  {% endfor %}
+
+  {% unless hc_issuers == empty %}
   <!-- Healthcare Provider Links -->
   <section class="subSection pb-4">
     <div class="container">
@@ -237,25 +215,10 @@
             </div>
           </div> <!-- / .row -->
 
-          {% comment %} Create a variable to hold the sorted metadata for healthcare providers and build an array from the issuers list from where the canonical_iss values match {% endcomment %}
-          {% assign hc_issuers = "" | split: "" %}
-          {% assign hc_providers = metadata | where: "issuer_type", "organizational.health_system" | where: "locations", location_string | where: "website", string %}
-
-          {% for issuer in hc_providers %}
-            {% assign hc_issuer = issuers | where: "iss", issuer.canonical_iss | last %}
-            {% assign hc_issuers = hc_issuers | push: hc_issuer | sort_natural: "name" %}
-          {% endfor %}
-
-          {% assign hcloop2 = hc_issuers.size | divided_by: 3 %}
-          {% assign hcoffset = hc_issuers.size | minus: hcloop2 %}
-          {% assign hcloop = hcoffset | minus: hcloop2 %}
-
-          {% assign hc_name = "" %}
-
           <div class="row pt-4">
-            <div class="col-12 col-md-4">
+            <div class="grid-cols col-12 issuers-healthcare">
 
-            {% for hc_issuer in hc_issuers limit: hcloop %}
+            {% for hc_issuer in hc_issuers %}
               {% if hc_issuer.name == hc_name %}
                 {% continue %}
               {% elsif hc_issuer.name and hc_issuer.website %}
@@ -265,36 +228,6 @@
               {% endif %}
               {% assign hc_name = hc_issuer.name %}
             {% endfor %}
-
-            </div>
-
-            <div class="col-12 col-md-4">
-
-              {% for hc_issuer in hc_issuers limit: hcloop2 offset: hcloop %}
-                {% if hc_issuer.name == hc_name %}
-                  {% continue %}
-                {% elsif hc_issuer.name and hc_issuer.website %}
-                  <p>
-                    <a class="font-weight-bold link-no-underline link-arrow" href="{{ hc_issuer.website }}" target="_blank">{{ hc_issuer.name }}<span class="right-arrow"></span></a>
-                  </p>
-                {% endif %}
-                {% assign hc_name = hc_issuer.name %}
-              {% endfor %}
-
-            </div>
-
-            <div class="col-12 col-md-4">
-
-              {% for hc_issuer in hc_issuers limit: hcloop2 offset: hcoffset %}
-                {% if hc_issuer.name == hc_name %}
-                  {% continue %}
-                {% elsif hc_issuer.name and hc_issuer.website %}
-                  <p>
-                    <a class="font-weight-bold link-no-underline link-arrow" href="{{ hc_issuer.website }}" target="_blank">{{ hc_issuer.name }}<span class="right-arrow"></span></a>
-                  </p>
-                {% endif %}
-                {% assign hc_name = hc_issuer.name %}
-              {% endfor %}
 
             </div>
           </div>
@@ -338,6 +271,7 @@
 
     </div> <!-- / .container -->
   </section>
+  {% endunless %}
 
   {{ content }}
 
