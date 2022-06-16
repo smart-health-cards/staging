@@ -11,5 +11,5 @@ jobs:
         uses: enflo/curl-action@v1.2
         with:
           # curl arguments
-          curl: https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json > vci-issuers.json
+          curl: https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json
           
