@@ -57,16 +57,25 @@
       {% comment %} If the location is a SMART Health Card issuer, return their deeplink. Otherwise, return the text referring them to the pharmacies and healthcare providers {% endcomment %}
       {% if page.smart_issuer %}
 
-      {% comment %} Assign the vaccine portal deeplink from the metadata if it exists, otherwise look in the location md file {% endcomment %}
-      {% for issuer in issuers %}
-
-        {% if issuer.name == page.label %}
-          {% assign deeplink = issuer.website %}
-        {% elsif page.deeplink %}
-          {% assign deeplink = page.deeplink %}
+      {% comment %} Assign the vaccine portal deeplink from the metadata if it exists, otherwise look in the issuers file {% endcomment %}
+      {% assign deeplinks = "" | split: "" %}
+      {% assign issuer_name = issuers | where: "name", page.label | last %}
+      {% for issuer in metadata %}
+        {% if issuer.label == page.label %}
+          {% if issuer.website %}
+            {% assign deeplink = issuer.website %}
+          {% else %}
+            {% assign deeplink_result = issuers | where: "iss", issuer.canonical_iss | last %}
+            {% assign deeplinks = deeplink_result | push: deeplink_result | sort_natural: "name" %}
+          {% endif %}
+        {% elsif issuer_name.name == page.label %}
+          {% assign deeplink = issuer_name.website %}
         {% endif %}
-
       {% endfor %}
+
+      {% unless deeplink %}
+        {% assign deeplink = deeplinks[0].website %}
+      {% endunless %}
 
       <div class="row">
         <div class="col-12">
