@@ -2834,7 +2834,7 @@
     {
       "canonical_iss": "https://SMART.slhd.nsw.gov.au/health-card",
       "issuer_type": "governmental.city_county",
-      "label": "Sydney, Austrailia",
+      "label": "Sydney, Australia",
       "locations": [
         {
           "state": "NS",
@@ -4601,7 +4601,7 @@
       "canonical_iss": "https://senegal.tbi.ohms.oracle.com",
       "issuer_type": "governmental.nation",
       "website": "https://www.sante.gouv.sn/",
-      "label": "République du Sénégal",
+      "label": "Republic of Senegal",
       "locations": [
         {
           "country": "SN"
