@@ -617,7 +617,7 @@ span[class$="arrow"] {
 }
 
 span[class$="arrow"]::before {
-    content: url('/assets/Images/chevron-rounded.svg');
+    content: url('/Assets/Images/chevron-rounded.svg');
     display: inline-block;
     height: 16px;
     width: 9px;
