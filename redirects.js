@@ -5,7 +5,6 @@ const remaps = [
   {"page": "", "id": "covid19", "target": `${targetOrigin}/vocabulary`},
   {"page": "", "id": "laboratory", "target": `${targetOrigin}/vocabulary`},
   {"page": "", "id": "immunization", "target": `${targetOrigin}/vocabulary`},
-  {"page": "", "id": "ial", "target": `${targetOrigin}/ial`},
   {"page": "", "id": "overview"}, 
   {"page": "", "id": "status"}, 
   {"page": "", "id": "contributing"}, 
@@ -88,7 +87,8 @@ const remaps = [
   {"page": "changelog", "id": "005"}, 
   {"page": "changelog", "id": "004"}, 
   {"page": "changelog", "id": "003"}, 
-  {"page": "changelog", "id": "002"}
+  {"page": "changelog", "id": "002"},
+  {"page": "ial", "id": "", "target": `${targetOrigin}/ial`},
 ];
 
 const path = window.location.pathname.replace(/\//g, "");
