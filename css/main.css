@@ -474,10 +474,9 @@ ul#FAQTOC
     content: '';
     display: inline-block;
     width: 16px;
-    height: 10px;
-    background: linear-gradient(180deg, rgba(255, 193, 58, 0) 0%, #FFC13A 100%);
-    border: 1px solid #205F5F;
-    border-radius: 2px;
+    height: 13px;
+    background: url('../Assets/Images/smart-health-card-icon.svg') center / contain no-repeat;
+    vertical-align: middle;
 }
 /* /Find an Issuer Page */
 
