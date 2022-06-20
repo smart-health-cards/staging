@@ -541,7 +541,7 @@ ul#FAQTOC
 
 @media (min-width: 992px) {
     .lifecycle-graphic {
-        margin-top: 6rem;
+        margin-top: 3rem;
     }
 
     .lifecycle-graphic__column:nth-of-type(1) {
@@ -575,33 +575,8 @@ ul#FAQTOC
 
     .lifecycle-graphic__heading {
         position: absolute;
-        top: -6rem;
+        top: -3rem;
         width: 100%;
-    }
-
-    .lifecycle-graphic__heading::before {
-        content: '';
-        position: absolute;
-        top: calc(175% - 3px);
-        left: 50%;
-        right: 50%;
-        display: block;
-        height: 3px;
-        width: 3px;
-        background: #CDCDCD;
-        border-radius: 100%;
-    }
-
-    .lifecycle-graphic__heading::after {
-        content: '';
-        position: absolute;
-        top: 175%;
-        left: calc(50% + 1px);
-        right: calc(50% - 1px);
-        display: block;
-        height: 50px;
-        width: 0;
-        border-left: 1px solid #CDCDCD;
     }
 }
 
