@@ -685,10 +685,8 @@ a.link-no-underline:hover {
     }
 
     .grid-cols > * {
-        /* flex: 1 1 calc(100% / 3); */
-        display: block;
+        display: inline-block;
         width: 100%;
         max-width: 100%;
-        /* max-width: calc(100% / 3 - 1rem) */
     }
 }
