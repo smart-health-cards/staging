@@ -349,6 +349,8 @@ ul#FAQTOC {
     position: relative;
     overflow-y: hidden;
     max-height: 224px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 
@@ -358,10 +360,14 @@ ul#FAQTOC {
     position: absolute;
     top: 0;
     left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, transparent), to(#fff));
+    background: -o-linear-gradient(transparent 40%, #fff);
     background: linear-gradient(transparent 40%, #fff);
     height: 100%;
     width: 100%;
     z-index: 2;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 
@@ -378,11 +384,15 @@ ul#FAQTOC {
 }
 
 .rotate-90 {
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
 }
 
 .rotate-270 {
-    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+            transform: rotate(270deg);
 }
 
 /* /Issuers Page */
@@ -484,17 +494,27 @@ ul#FAQTOC {
     bottom: -15.75px;
     left: calc(50% - 15px);
     right: calc(50% + 15px);
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
 }
 
 .lifecycle-graphic__column:nth-of-type(2)::after {
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
 }
 
 .lifecycle-graphic__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100px;
     width: 100%;
 }
@@ -530,7 +550,9 @@ ul#FAQTOC {
         bottom: unset;
         left: unset;
         right: -15.75px;
-        transform: unset;
+        -webkit-transform: unset;
+            -ms-transform: unset;
+                transform: unset;
     }
 
     .lifecycle-graphic__heading {
@@ -562,10 +584,18 @@ span[class$="arrow"]::before {
 
 span.left-arrow {
     margin-right: 5px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(2px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translateY(2px);
+        -ms-transform: translateY(2px);
+            transform: translateY(2px);
 }
 
 span.right-arrow {
@@ -573,7 +603,9 @@ span.right-arrow {
 }
 
 span.right-arrow::before {
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 
 /* /Location Page */
@@ -630,21 +662,36 @@ a.link-no-underline:hover {
 }
 
 .grid-cols {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    column-gap: 2.3rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-column-gap: 2.3rem;
+       -moz-column-gap: 2.3rem;
+            column-gap: 2.3rem;
 }
 
 .grid-cols>* {
-    flex: 1 1 calc(50% - 1.15rem);
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 calc(50% - 1.15rem);
+            flex: 1 1 calc(50% - 1.15rem);
 }
 
 @media (min-width: 768px) {
     .grid-cols {
         display: block;
-        columns: 3;
-        column-gap: 2rem;
+        -webkit-columns: 3;
+           -moz-columns: 3;
+                columns: 3;
+        -webkit-column-gap: 2rem;
+           -moz-column-gap: 2rem;
+                column-gap: 2rem;
     }
 
     .grid-cols>* {
