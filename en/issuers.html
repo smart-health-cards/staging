@@ -6,28 +6,22 @@ nav: issuers
 <section class="mainSectionHome py-3">
   <div class="container">
     <div class="row align-items-stretch">
-      <div class="col-12 col-md-6 col-lg-5 d-flex flex-column justify-content-center pt-3 py-md-5">
+      <div class="col-12 col-md-6 col-xl-7 d-flex flex-column pt-3 py-md-5">
 
         <!-- Heading -->
-        <h1 class="text-left text-md-start">
+        <h1 class="text-left text-md-start mb-3">
           SMART Health Card Issuers
         </h1>
 
         <!-- Text -->
-        <p class="text-left text-md-start text-intro-small mb-lg-8">
-          Proof of vaccination is important to be able to get back to life safely, which is why there are hundreds of clinical and government entities in the United States and worldwide issuing SMART Health Cards…and the list is growing every day.
-        </p>
-        <p class="text-left text-md-start text-intro-small mb-lg-8">
-          But for all of us to have confidence in each other's vaccination status, it is critical that we trust these issuers, which is why there needs to be a publicly available list of approved <a href="/en/faq.html#What-is-an-issuer">issuers</a>. The <a href="/en/faq.html#What-are-the-VCI-Directory-and-the-CommonTrust-Network">VCI Directory</a> does just that. The SMART Health Cards team has worked with the VCI coalition to prepare this directory. Its sole purpose is to make sure organizations accepting SMART Health Cards have a reliable source they can trust when they are verifying these cards.
-        </p>
-        <p class="text-left text-md-start text-intro-small mb-lg-8">
-          The following organizations have been validated and all are approved as SMART Health Cards issuers in the VCI Directory, including pharmacies, labs, hospitals, clinicians, and public health departments.
+        <p class="text-left text-md-start text-intro mb-lg-8">
+          The following organizations have been validated and all are approved as SMART Health Cards issuers in the <a href="https://vci.org" target="_blank">VCI Directory</a>, including pharmacies, labs, hospitals, clinicians, and public health departments. More information about the importance of issuer vetting is available <a href="how-they-work.html#how-verification-works">here</a>.
         </p>
 
       </div>
 
-      <div class="col-12 col-md-6 col-lg-7 d-flex flex-column justify-content-center">
-        <img src="../Assets/Images/image005-1.png" class="d-block img-fluid" alt="Photograph of digital and paper SMART Health Cards">
+      <div class="col-12 col-md-6 col-xl-4 offset-xl-1 d-flex flex-column justify-content-center">
+        <img src="/Assets/Images/image005-1.png" class="d-block img-fluid" alt="Photograph of digital and paper SMART Health Cards">
       </div>
     </div> <!-- / .row -->
   </div> <!-- / .container -->
@@ -73,13 +67,14 @@ nav: issuers
                 <p><a class="font-weight-bold" href="https://dphss.guam.gov/" target="_blank">Guam</a></p>
                 <p><a class="font-weight-bold" href="https://hawaiicovid19.com/smart-health-card/" target="_blank" title="Not currently issuing new SMART Health Cards.">Hawaii*</a></p>
                 <p><a class="font-weight-bold" href="https://idphportal.illinois.gov/s/?language=en_US" target="_blank">Illinois</a></p>
+                <p><a class="font-weight-bold" href="https://kyir.chfs.ky.gov/webiznet_kyir/Login.aspx" target="_blank">Kentucky</a></p>
               </div>
               <div class="col-12 col-md-4">
-                <p><a class="font-weight-bold" href="https://kyir.chfs.ky.gov/webiznet_kyir/Login.aspx" target="_blank">Kentucky</a></p>
                 <p><a class="font-weight-bold" href="https://lawallet.com/covid-19/" target="_blank">Louisiana</a></p>
                 <p><a class="font-weight-bold" href="https://health.maryland.gov/phpa/OIDEOR/IMMUN/Pages/immunet-for-public.aspx" target="_blank">Maryland</a></p>
                 <p><a class="font-weight-bold" href="https://myvaxrecords.mass.gov/" target="_blank">Massachusetts</a></p>
                 <p><a class="font-weight-bold" href="https://msdh.ms.gov/msdhsite/_static/14,0,71,969.html" target="_blank">Mississippi</a></p>
+                <p><a class="font-weight-bold" href="https://www.mycynchealth.org/login" target="_blank">Nebraska</a></p>
                 <p><a class="font-weight-bold" href="https://izrecord.nv.gov/public/Application/PublicPortal" target="_blank">Nevada</a></p>
                 <p><a class="font-weight-bold" href="https://covid19.nj.gov/pages/vaxrecords" target="_blank">New Jersey</a></p>
                 <p><a class="font-weight-bold" href="https://nmsiis.health.state.nm.us/webiznet_nm_public/Application/PublicPortal" target="_blank">New Mexico</a></p>
@@ -213,7 +208,7 @@ nav: issuers
 
           {% comment %} Create a variable of the sorted list from the JSON file {% endcomment %}
           {% assign issuers = '' | split: '' %}
-          {% assign issuers_grouped = site.data.vci-issuers | group_by: 'name' | sort_natural: 'name' %}
+          {% assign issuers_grouped = site.data.vci-issuers.participating_issuers | group_by: 'name' | sort_natural: 'name' %}
           {% for issuer_entry in issuers_grouped %}
               {% assign best_entry_for_issuer = issuer_entry.items | sort: "website" | last %}
               {% assign issuers = issuers | push: best_entry_for_issuer %}
@@ -282,8 +277,8 @@ nav: issuers
     </div> <!-- / .row -->
     <div class="row py-3" aria-hidden="true">
       <div class="col-12 text-center">
-        <button class="btn btn-primary btn btn-primary pt-2 pb-2 pl-4 pr-4 text-uppercase list-toggle"><span class="float-left mr-3"></span>Show All {{ num }} Issuers <img src="../Assets/Images/MIC21224_Icon_Link_v01_DS_2021_06_28.png" class="float-right mx-auto rotate-90" width="21" height="21" alt=""></button>
-        <button class="btn btn-primary btn btn-primary pt-2 pb-2 pl-4 pr-4 text-uppercase list-toggle toggle-hide"><span class="float-left mr-3"></span>See Less <img src="../Assets/Images/MIC21224_Icon_Link_v01_DS_2021_06_28.png" class="float-right mx-auto rotate-270" width="21" height="21" alt=""></button>
+        <button class="btn btn-primary btn btn-primary pt-2 pb-2 pl-4 pr-4 text-uppercase list-toggle"><span class="float-left mr-3"></span>Show All {{ num }} Issuers <img src="/Assets/Images/MIC21224_Icon_Link_v01_DS_2021_06_28.png" class="float-right mx-auto rotate-90" width="21" height="21" alt=""></button>
+        <button class="btn btn-primary btn btn-primary pt-2 pb-2 pl-4 pr-4 text-uppercase list-toggle toggle-hide"><span class="float-left mr-3"></span>See Less <img src="/Assets/Images/MIC21224_Icon_Link_v01_DS_2021_06_28.png" class="float-right mx-auto rotate-270" width="21" height="21" alt=""></button>
       </div>
     </div>
   </div> <!-- / .container -->
@@ -310,7 +305,7 @@ nav: issuers
               Visit our Frequently Asked Questions page to learn more about how to use your SMART Health Card and the benefits of SMART Health Cards.
             </p>
             <p class="text-left pt-2 pb-3">
-              <a class="btn btn-primary pt-2 pb-2 pl-2 pr-2" href="faq.html" role="button"><span class="float-left mr-3"></span>Visit our FAQ</span> <img src="../Assets/Images/MIC21224_Icon_Link_v01_DS_2021_06_28.png" class="float-right mx-auto" style=" width:21px; height:21px;" alt=""></a>
+              <a class="btn btn-primary pt-2 pb-2 pl-2 pr-2" href="faq.html" role="button"><span class="float-left mr-3"></span>Visit our FAQ</span> <img src="/Assets/Images/MIC21224_Icon_Link_v01_DS_2021_06_28.png" class="float-right mx-auto" style=" width:21px; height:21px;" alt=""></a>
             </p>
           </div>
         </div> <!-- / .row -->
