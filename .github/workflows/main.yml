@@ -1,0 +1,27 @@
+name: Fetch json files
+on: [push]
+jobs:
+ cURL:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - name: Fetch vci-issuers.json
+        uses: enflo/curl-action@v1.2
+        with:
+          # curl arguments
+          curl: -o _data/vci-issuers.json https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json
+      - name: Fetch vci-issuers-metadata.json
+        uses: enflo/curl-action@v1.2
+        with:
+          # curl arguments
+          curl: -o _data/vci-issuers-metadata.json https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers-metadata.json
+      - name: Commit files
+        run: |
+         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+         git config --local user.name "github-actions[bot]"
+         git add ./_data/*
+         git commit -m "Fetch JSON file(s) from VCI directory"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+         branch: ${{ github.ref }}
