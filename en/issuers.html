@@ -214,61 +214,27 @@ nav: issuers
               {% assign issuers = issuers | push: best_entry_for_issuer %}
           {% endfor %}
 
-          {% comment %} Create offset numbers to break the list up into 3 roughly equal groups {% endcomment %}
-          {% assign looplength = issuers.size | divided_by: 3 %}
-          {% assign looplength2 = looplength | plus: looplength %}
-
           {% comment %} Setup a variable to track the most recently iterated name. If that name comes up more than once, skip the duplicate(s) {% endcomment %}
           {% assign name = '' %}
           {% assign num = 0 %}
 
+          <!-- TODO: defer to label value -->
+
           {% comment %} Iterate through the sorted array into three columns, offsetting by the items we've already listed. Add each entry together to get the total of non-duplicate entries. {% endcomment %}
-          <div class="col-12 col-md-4">
-            {% for issuer in issuers limit: looplength %}
-            {% if issuer.name == name %}
-            {% continue %}
-            {% endif %}
-            {% if issuer.website %}
-            <a href={{ issuer.website }} target="_blank">
-            {% endif %}
-            <p class="font-weight-bold">{{ issuer.name }}</p>
-            {% if issuer.website %}
-            </a>
-            {% endif %}
-            {% assign name = issuer.name %}
-            {% assign num = num | plus: 1 %}
-            {% endfor %}
-          </div>
-          <div class="col-12 col-md-4">
-            {% for issuer in issuers limit: looplength offset: looplength %}
-            {% if issuer.name == name %}
-            {% continue %}
-            {% endif %}
-            {% if issuer.website %}
-            <a href={{ issuer.website }} target="_blank">
-            {% endif %}
-            <p class="font-weight-bold">{{ issuer.name }}</p>
-            {% if issuer.website %}
-            </a>
-            {% endif %}
-            {% assign name = issuer.name %}
-            {% assign num = num | plus: 1 %}
-            {% endfor %}
-          </div>
-          <div class="col-12 col-md-4">
-            {% for issuer in issuers limit: looplength2 offset: looplength2  %}
-            {% if issuer.name == name %}
-            {% continue %}
-            {% endif %}
-            {% if issuer.website %}
-            <a href={{ issuer.website }} target="_blank">
-            {% endif %}
-            <p class="font-weight-bold">{{ issuer.name }}</p>
-            {% if issuer.website %}
-            </a>
-            {% endif %}
-            {% assign name = issuer.name %}
-            {% assign num = num | plus: 1 %}
+          <div class="col-12 grid-cols all-issuers">
+            {% for issuer in issuers %}
+              {% if issuer.name == name %}
+                {% continue %}
+              {% endif %}
+              {% if issuer.website %}
+                <a href={{ issuer.website }} target="_blank">
+              {% endif %}
+              <p class="font-weight-bold">{{ issuer.name }}</p>
+              {% if issuer.website %}
+                </a>
+              {% endif %}
+              {% assign name = issuer.name %}
+              {% assign num = num | plus: 1 %}
             {% endfor %}
           </div>
 
