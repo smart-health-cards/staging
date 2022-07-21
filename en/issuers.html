@@ -3,6 +3,9 @@ layout: page
 title: SMART Health Issuers
 nav: issuers
 ---
+{% assign issuers = site.data.vci-issuers.participating_issuers %}
+{% assign metadata = site.data.vci-issuers-metadata.issuer_metadata %}
+
 <section class="mainSectionHome py-3">
   <div class="container">
     <div class="row align-items-stretch">
@@ -57,37 +60,35 @@ nav: issuers
           <div class="col-12 pb-4">
             <h2 class="font-weight-light">US States and Territories</h2>
 
+            {% assign pubhealth = metadata | where_exp: "item", "item.issuer_type contains 'governmental'" | sort_natural: "label" %}
+            {% assign pubhealth_grouped = metadata | where_exp: "item", "item.issuer_type contains 'governmental'" | group_by: "label" | sort_natural: "label" %}
+
+            {% assign us_string = '"country"=>"US"' %}
+            {% assign us_issuers = "" | split: "" %}
+
+            {% for issuer in pubhealth_grouped %}
+              {% assign location_string = issuer.items[0].locations | join %}
+              {% if issuer.items[0].issuer_type == "governmental.state_province_territory" %}
+                {% if location_string == us_string or location_string contains us_string %}
+                  {% assign us_issuers = us_issuers | push: issuer.items[0] | sort_natural: "label" %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+
             <div class="row pt-4">
-              <div class="col-12 col-md-4">
-                <p><a class="font-weight-bold" href="https://azdhs.gov/preparedness/epidemiology-disease-control/immunization/azmyir/index.php" target="_blank">Arizona</a></p>
-                <p><a class="font-weight-bold" href="https://myvaccinerecord.cdph.ca.gov/" target="_blank">California</a></p>
-                <p><a class="font-weight-bold" href="https://mycolorado.state.co.us/myvaccine-record" target="_blank">Colorado</a></p>
-                <p><a class="font-weight-bold" href="https://portal.ct.gov/DPH/Immunizations/CT-WiZ-Access-My-Immunization-Record" target="_blank">Connecticut</a></p>
-                <p><a class="font-weight-bold" href="https://delvax.dhss.delaware.gov/delvax_public/Application/PublicPortal" target="_blank">Delaware</a></p>
-                <p><a class="font-weight-bold" href="https://dphss.guam.gov/" target="_blank">Guam</a></p>
-                <p><a class="font-weight-bold" href="https://hawaiicovid19.com/smart-health-card/" target="_blank" title="Not currently issuing new SMART Health Cards.">Hawaii*</a></p>
-                <p><a class="font-weight-bold" href="https://idphportal.illinois.gov/s/?language=en_US" target="_blank">Illinois</a></p>
-                <p><a class="font-weight-bold" href="https://kyir.chfs.ky.gov/webiznet_kyir/Login.aspx" target="_blank">Kentucky</a></p>
-              </div>
-              <div class="col-12 col-md-4">
-                <p><a class="font-weight-bold" href="https://lawallet.com/covid-19/" target="_blank">Louisiana</a></p>
-                <p><a class="font-weight-bold" href="https://health.maryland.gov/phpa/OIDEOR/IMMUN/Pages/immunet-for-public.aspx" target="_blank">Maryland</a></p>
-                <p><a class="font-weight-bold" href="https://myvaxrecords.mass.gov/" target="_blank">Massachusetts</a></p>
-                <p><a class="font-weight-bold" href="https://msdh.ms.gov/msdhsite/_static/14,0,71,969.html" target="_blank">Mississippi</a></p>
-                <p><a class="font-weight-bold" href="https://www.mycynchealth.org/login" target="_blank">Nebraska</a></p>
-                <p><a class="font-weight-bold" href="https://izrecord.nv.gov/public/Application/PublicPortal" target="_blank">Nevada</a></p>
-                <p><a class="font-weight-bold" href="https://covid19.nj.gov/pages/vaxrecords" target="_blank">New Jersey</a></p>
-                <p><a class="font-weight-bold" href="https://nmsiis.health.state.nm.us/webiznet_nm_public/Application/PublicPortal" target="_blank">New Mexico</a></p>
-              </div>
-              <div class="col-12 col-md-4">
-                <p><a class="font-weight-bold" href="https://covid19vaccine.health.ny.gov/excelsior-pass-and-excelsior-pass-plus" target="_blank">New York</a></p>
-                <p><a class="font-weight-bold" href="https://myelectronicvaccinecard.oregon.gov/" target="_blank">Oregon</a></p>
-                <p><a class="font-weight-bold" href="https://www.prits.pr.gov/vacu-id" target="_blank">Puerto Rico</a></p>
-                <p><a class="font-weight-bold" href="https://covid.ri.gov/covid-19-prevention/401health-app" target="_blank">Rhode Island</a></p>
-                <p><a class="font-weight-bold" href="https://immunize.utah.gov/usiis/" target="_blank">Utah</a></p>
-                <p><a class="font-weight-bold" href="https://vase.vdh.virginia.gov/vacapps/f?p=545:1" target="_blank">Virginia</a></p>
-                <p><a class="font-weight-bold" href="https://waverify.doh.wa.gov/" target="_blank">Washington</a></p>
-                <p><a class="font-weight-bold" href="https://vaccinerecord.dc.gov/" target="_blank">Washington, D.C.</a></p>
+              <div class="col-12 grid-cols publichealth-issuers--us">
+
+                {% for usissuer in us_issuers %}
+                  {% if usissuer.label %}
+                    {% assign issuer_data = issuers | where: "iss", usissuer.canonical_iss | last %}
+                    <p>
+                      <a class="font-weight-bold" href="{{ issuer_data.website }}" target="_blank">
+                        {{ usissuer.label }}
+                      </a>
+                    </p>
+                  {% endif %}
+                {% endfor %}
+
               </div>
             </div>
           </div>
@@ -95,20 +96,31 @@ nav: issuers
           <div class="col-12">
             <h2 class="font-weight-light">Worldwide</h2>
 
+            {% assign world_issuers = "" | split: "" %}
+
+            {% for issuer in pubhealth_grouped %}
+              {% assign location_string = issuer.items[0].locations | join %}
+              {% unless issuer.items[0].issuer_type == "governmental.state_province_territory" %}
+                {% unless location_string == us_string or location_string contains us_string  %}
+                  {% assign world_issuers = world_issuers | push: issuer.items[0] | sort_natural: "label" %}
+                {% endunless %}
+              {% endunless %}
+            {% endfor %}
+
             <div class="row pt-4">
-              <div class="col-12 col-md-4">
-                <p><a class="font-weight-bold" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-covid-19-proof-vaccination/get-proof.html" target="_blank">Canada</a></p>
-                <p><a class="font-weight-bold" href="https://www.hsa.ky/our-services/patient-portal-info/" target="_blank">Cayman Islands</a></p>
-                <p><a class="font-weight-bold" href="https://hsa.gov.fm/" target="_blank">Federated States of Micronesia</a></p>
-              </div>
-              <div class="col-12 col-md-4">
-                <p><a class="font-weight-bold" href="https://www.mohw.gov.tw/mp-2.html" target="_blank">Government of Taiwan</a></p>
-                <p><a class="font-weight-bold" href="https://www.mhlw.go.jp/stf/covid-19/certificate.html" target="_blank">Japan</a></p>
-                <p><a class="font-weight-bold" href="https://vaccincorona.sec.gouv.sn/webforms/view.php?id=18762" target="_blank">Republic of Senegal</a></p>
-              </div>
-              <div class="col-12 col-md-4">
-                <p><a class="font-weight-bold" href="http://nsw.gov.au/" target="_blank">Sydney, Australia</a></p>
-                <p><a class="font-weight-bold" href="https://webiz.rmihealth.org/webiznet_rmi/Login.aspx/" target="_blank">Marshall Islands</a></p>
+              <div class="col-12 grid-cols publichealth-issuers--world">
+
+                {% for worldissuer in world_issuers %}
+                  {% if worldissuer.label %}
+                    {% assign issuer_data = issuers | where: "iss", worldissuer.canonical_iss | last %}
+                    <p>
+                      <a class="font-weight-bold" href="{{ issuer_data.website }}" target="_blank">
+                        {{ worldissuer.label }}
+                      </a>
+                    </p>
+                  {% endif %}
+                {% endfor %}
+
               </div>
             </div>
             <div class="row text-right pt-3">
@@ -155,6 +167,8 @@ nav: issuers
       <div class="col-12">
         <div class="row pt-4r">
           <div class="col-12 pb-3">
+
+            <!-- TODO: pharmcies/labs -->
 
             <div class="row pt-4">
               <div class="col-12 col-md-4">
