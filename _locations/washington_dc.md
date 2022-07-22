@@ -7,5 +7,4 @@ location:
   - state: DC
     country: US
 category: us
-smart_issuer: true
 ---

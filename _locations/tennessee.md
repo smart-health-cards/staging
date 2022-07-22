@@ -7,5 +7,4 @@ location:
   - state: TN
     country: US
 category: us
-smart_issuer: false
 ---

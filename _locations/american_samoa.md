@@ -7,5 +7,4 @@ location:
   - state: AS
     country: US
 category: us
-smart_issuer: false
 ---

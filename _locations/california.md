@@ -7,6 +7,5 @@ location:
   - state: CA
     country: US
 category: us
-smart_issuer: true
-registry: https://cairweb.org/
----
+
+registry: https://cairweb.org/---

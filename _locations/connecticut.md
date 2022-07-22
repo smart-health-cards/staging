@@ -7,5 +7,4 @@ location:
   - state: CT
     country: US
 category: us
-smart_issuer: true
 ---

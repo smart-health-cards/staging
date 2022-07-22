@@ -6,5 +6,4 @@ label: Republic of Senegal
 location:
     - country: SN
 category: world
-smart_issuer: true
 ---

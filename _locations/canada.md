@@ -6,5 +6,4 @@ label: Canada
 location:
     - country: CA
 category: world
-smart_issuer: true
 ---

@@ -7,5 +7,4 @@ location:
   - state: LA
     country: US
 category: us
-smart_issuer: true
 ---

@@ -7,5 +7,4 @@ location:
   - state: SC
     country: US
 category: us
-smart_issuer: false
 ---

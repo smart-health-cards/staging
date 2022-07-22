@@ -6,5 +6,4 @@ label: Federated States of Micronesia
 location:
     - country: FM
 category: world
-smart_issuer: true
 ---

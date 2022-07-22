@@ -7,5 +7,4 @@ location:
   - state: AZ
     country: US
 category: us
-smart_issuer: true
 ---

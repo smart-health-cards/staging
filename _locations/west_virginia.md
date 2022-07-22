@@ -7,5 +7,4 @@ location:
   - state: WV
     country: US
 category: us
-smart_issuer: false
 ---

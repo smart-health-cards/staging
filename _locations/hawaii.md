@@ -7,5 +7,4 @@ location:
   - state: HI
     country: US
 category: us
-smart_issuer: true
 ---

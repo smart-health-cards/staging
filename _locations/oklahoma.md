@@ -7,5 +7,4 @@ location:
   - state: OK
     country: US
 category: us
-smart_issuer: false
 ---

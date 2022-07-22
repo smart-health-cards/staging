@@ -7,5 +7,4 @@ location:
   - state: NY
     country: US
 category: us
-smart_issuer: true
 ---

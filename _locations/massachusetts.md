@@ -7,5 +7,4 @@ location:
   - state: MA
     country: US
 category: us
-smart_issuer: true
 ---

@@ -6,5 +6,4 @@ label: Government of Taiwan
 location:
     - country: TW
 category: world
-smart_issuer: true
 ---

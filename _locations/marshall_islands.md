@@ -6,5 +6,4 @@ label: Marshall Islands
 location:
     - country: MH
 category: world
-smart_issuer: true
 ---

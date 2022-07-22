@@ -7,5 +7,4 @@ location:
   - state: NV
     country: US
 category: us
-smart_issuer: true
 ---

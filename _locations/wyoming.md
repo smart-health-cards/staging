@@ -6,7 +6,6 @@ label: Wyoming
 location:
   - state: WY
     country: US
-smart_issuer: false
+
 category: us
-registry: https://cairweb.org/
----
+registry: https://cairweb.org/---
