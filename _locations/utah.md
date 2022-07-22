@@ -6,5 +6,4 @@ label: Utah
 location:
   - state: UT
     country: US
-category: us
 ---

@@ -5,5 +5,4 @@ nav: none
 label: Republic of Senegal
 location:
     - country: SN
-category: world
 ---

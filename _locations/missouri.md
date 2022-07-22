@@ -6,5 +6,4 @@ label: Missouri
 location:
   - state: MO
     country: US
-category: us
 ---

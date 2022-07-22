@@ -6,5 +6,4 @@ label: Montana
 location:
   - state: MT
     country: US
-category: us
 ---

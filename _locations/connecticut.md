@@ -6,5 +6,4 @@ label: Connecticut
 location:
   - state: CT
     country: US
-category: us
 ---

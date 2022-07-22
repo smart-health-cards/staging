@@ -5,5 +5,4 @@ nav: none
 label: Marshall Islands
 location:
     - country: MH
-category: world
 ---

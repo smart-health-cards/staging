@@ -6,5 +6,4 @@ label: Arizona
 location:
   - state: AZ
     country: US
-category: us
 ---

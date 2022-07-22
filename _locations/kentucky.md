@@ -6,5 +6,4 @@ label: Kentucky
 location:
   - state: KY
     country: US
-category: us
 ---

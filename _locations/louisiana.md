@@ -6,5 +6,4 @@ label: Louisiana
 location:
   - state: LA
     country: US
-category: us
 ---

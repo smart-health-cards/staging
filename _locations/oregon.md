@@ -6,5 +6,4 @@ label: Oregon
 location:
   - state: OR
     country: US
-category: us
 ---

@@ -6,5 +6,4 @@ label: Virginia
 location:
   - state: VA
     country: US
-category: us
 ---

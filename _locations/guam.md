@@ -6,5 +6,4 @@ label: Guam
 location:
   - state: GU
     country: US
-category: us
 ---

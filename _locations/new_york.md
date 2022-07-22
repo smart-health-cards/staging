@@ -6,5 +6,4 @@ label: New York
 location:
   - state: NY
     country: US
-category: us
 ---

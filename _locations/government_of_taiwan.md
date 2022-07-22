@@ -5,5 +5,4 @@ nav: none
 label: Government of Taiwan
 location:
     - country: TW
-category: world
 ---

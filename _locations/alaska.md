@@ -6,5 +6,4 @@ label: Alaska
 location:
   - state: AK
     country: US
-category: us
 ---

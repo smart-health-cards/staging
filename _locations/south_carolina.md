@@ -6,5 +6,4 @@ label: South Carolina
 location:
   - state: SC
     country: US
-category: us
 ---

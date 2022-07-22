@@ -6,5 +6,4 @@ label: West Virginia
 location:
   - state: WV
     country: US
-category: us
 ---

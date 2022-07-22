@@ -6,6 +6,4 @@ label: Texas
 location:
   - state: TX
     country: US
-category: us
-
-registry: https://dshs.texas.gov/immunize/immtrac/default.shtm---
+---

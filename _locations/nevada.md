@@ -6,5 +6,4 @@ label: Nevada
 location:
   - state: NV
     country: US
-category: us
 ---

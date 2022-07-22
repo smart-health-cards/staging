@@ -6,5 +6,4 @@ label: Oklahoma
 location:
   - state: OK
     country: US
-category: us
 ---

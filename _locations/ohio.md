@@ -6,5 +6,4 @@ label: Ohio
 location:
   - state: OH
     country: US
-category: us
 ---

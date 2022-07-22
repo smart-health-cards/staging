@@ -6,5 +6,4 @@ label: Rhode Island
 location:
   - state: RI
     country: US
-category: us
 ---

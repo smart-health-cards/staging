@@ -5,5 +5,4 @@ nav: none
 label: Canada
 location:
     - country: CA
-category: world
 ---

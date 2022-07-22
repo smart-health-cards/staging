@@ -6,5 +6,4 @@ label: Delaware
 location:
   - state: DE
     country: US
-category: us
 ---

@@ -6,5 +6,4 @@ label: Michigan
 location:
   - state: MI
     country: US
-category: us
 ---

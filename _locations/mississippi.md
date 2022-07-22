@@ -6,5 +6,4 @@ label: Mississippi
 location:
   - state: MS
     country: US
-category: us
 ---

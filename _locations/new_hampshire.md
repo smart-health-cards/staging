@@ -6,5 +6,4 @@ label: New Hampshire
 location:
   - state: NH
     country: US
-category: us
 ---

@@ -6,5 +6,4 @@ label: Illinois
 location:
   - state: IL
     country: US
-category: us
 ---

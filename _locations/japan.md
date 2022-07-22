@@ -5,5 +5,4 @@ nav: none
 label: Japan
 location:
     - country: JPN
-category: world
 ---

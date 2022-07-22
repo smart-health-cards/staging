@@ -6,5 +6,4 @@ label: Nebraska
 location:
   - state: NE
     country: US
-category: us
 ---

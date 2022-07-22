@@ -6,5 +6,4 @@ label: South Dakota
 location:
   - state: SD
     country: US
-category: us
 ---

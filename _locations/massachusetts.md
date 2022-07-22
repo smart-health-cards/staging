@@ -6,5 +6,4 @@ label: Massachusetts
 location:
   - state: MA
     country: US
-category: us
 ---

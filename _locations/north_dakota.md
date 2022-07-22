@@ -6,5 +6,4 @@ label: North Dakota
 location:
   - state: ND
     country: US
-category: us
 ---

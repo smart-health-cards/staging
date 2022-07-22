@@ -6,5 +6,4 @@ label: Minnesota
 location:
   - state: MN
     country: US
-category: us
 ---

@@ -6,5 +6,4 @@ label: Florida
 location:
   - state: TX
     country: US
-category: us
 ---

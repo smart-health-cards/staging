@@ -6,5 +6,4 @@ label: Arkansas
 location:
   - state: AR
     country: US
-category: us
 ---

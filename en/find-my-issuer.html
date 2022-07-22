@@ -38,7 +38,7 @@ nav: find-my-issuer
           <div class="col-12 pb-4">
             <h2 class="font-weight-light">US States and Territories</h2>
 
-            {% assign us_locations = site.locations | where: "category", "us" %}
+            {% assign us_locations = site.locations | where_exp: "item", "item.location[0].country == 'US'" | sort_natural: "label" %}
 
             <div class="row pt-4">
               <div class="grid-cols col-12 locations-us">
@@ -57,7 +57,7 @@ nav: find-my-issuer
           <div class="col-12">
             <h2 class="font-weight-light">Worldwide</h2>
 
-            {% assign world_locations = site.locations | where: "category", "world" %}
+            {% assign world_locations = site.locations | where_exp: "item", "item.location[0].country != 'US'" | sort_natural: "label" %}
 
             <div class="row pt-4">
               <div class="grid-cols col-12 locations-world">

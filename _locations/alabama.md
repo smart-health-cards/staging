@@ -6,5 +6,4 @@ label: Alabama
 location:
   - state: AL
     country: US
-category: us
 ---

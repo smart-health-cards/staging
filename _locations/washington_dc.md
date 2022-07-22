@@ -6,5 +6,4 @@ label: Washington, D.C.
 location:
   - state: DC
     country: US
-category: us
 ---

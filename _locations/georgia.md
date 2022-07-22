@@ -6,5 +6,4 @@ label: Georgia
 location:
   - state: GA
     country: US
-category: us
 ---

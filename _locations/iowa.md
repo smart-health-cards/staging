@@ -6,5 +6,4 @@ label: Iowa
 location:
   - state: IA
     country: US
-category: us
 ---

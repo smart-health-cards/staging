@@ -6,5 +6,4 @@ label: American Samoa
 location:
   - state: AS
     country: US
-category: us
 ---
