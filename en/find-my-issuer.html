@@ -64,7 +64,7 @@ nav: find-my-issuer
                 {% for location in world_locations %}
                 <p>
                   <a href="{{ location.url }}" class="font-weight-bold link-no-underline">
-                    {{ location.label }}{% if location.smart_issuer %}&nbsp;<span class="shc-issuer ml-1" aria-label="SMART Health Card issuer indicator"></span>{% endif %}
+                    {{ location.label }}&nbsp;<span class="shc-issuer ml-1" aria-label="SMART Health Card issuer indicator"></span>
                   </a>
                 </p>
                 {% endfor %}
