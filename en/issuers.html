@@ -60,8 +60,10 @@ nav: issuers
           <div class="col-12 pb-4">
             <h2 class="font-weight-light">US States and Territories</h2>
 
+            {% comment %}Get all issuers with a governmental issuer_type{% endcomment %}
             {% assign pubhealth_grouped = metadata | where_exp: "item", "item.issuer_type contains 'governmental'" | group_by: "label" | sort_natural: "label" %}
 
+            {% comment %}Convert the US country array to a string. Iterate over US governmental issuers and return only the ones currently issuing SMART Health Cards{% endcomment %}
             {% assign us_string = '"country"=>"US"' %}
             {% assign us_issuers = "" | split: "" %}
 
@@ -95,6 +97,7 @@ nav: issuers
           <div class="col-12">
             <h2 class="font-weight-light">Worldwide</h2>
 
+            {% comment %}Iterate over worldwide governmental issuers and return only the ones currently issuing SMART Health Cards{% endcomment %}
             {% assign world_issuers = "" | split: "" %}
 
             {% for issuer in pubhealth_grouped %}
@@ -167,6 +170,7 @@ nav: issuers
         <div class="row pt-4r">
           <div class="col-12 pb-3">
 
+            {% comment %}Set up an array of pharmacies and labs in the US. Iterate over ones that either only have the country: US tag set or that have 35 or more state locations listed{% endcomment %}
             {% assign country_string = '{"country"=>"US"}' %}
             {% assign pharmlab_issuers = "" | split: "" %}
             {% assign pharmacies = metadata | where_exp: "item", "item.issuer_type == 'organizational.pharmacy'" %}

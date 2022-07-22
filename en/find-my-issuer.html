@@ -38,6 +38,7 @@ nav: find-my-issuer
           <div class="col-12 pb-4">
             <h2 class="font-weight-light">US States and Territories</h2>
 
+            {% comment %}Get the location .md files that have the US country code and iterate over them, adding the SMART Health Card icon to the ones currently issuing.{% endcomment %}
             {% assign us_locations = site.locations | where_exp: "item", "item.location[0].country == 'US'" | sort_natural: "label" %}
 
             <div class="row pt-4">
@@ -57,6 +58,7 @@ nav: find-my-issuer
           <div class="col-12">
             <h2 class="font-weight-light">Worldwide</h2>
 
+            {% comment %}Get the location .md files that do not have the US country code and iterate over them. All of these locations will by default show the SMART Health Card icon{% endcomment %}
             {% assign world_locations = site.locations | where_exp: "item", "item.location[0].country != 'US'" | sort_natural: "label" %}
 
             <div class="row pt-4">
