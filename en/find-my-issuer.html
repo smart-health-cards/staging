@@ -3,6 +3,9 @@ layout: page
 title: Find My Issuer
 nav: find-my-issuer
 ---
+{% assign issuers = site.data.vci-issuers.participating_issuers %}
+{% assign metadata = site.data.vci-issuers-metadata.issuer_metadata | where_exp: "item", "item.issuer_type contains 'governmental'" %}
+
 <section class="subSection pt-3 pb-5">
   <div class="container">
     <div class="row">
@@ -40,9 +43,10 @@ nav: find-my-issuer
             <div class="row pt-4">
               <div class="grid-cols col-12 locations-us">
                 {% for location in us_locations %}
+                {% assign location_data = metadata | where: "locations", location.location[0] | where: "label", location.label %}
                 <p>
                   <a href="{{ location.url }}" class="font-weight-bold link-no-underline">
-                    {{ location.label }}{% if location.smart_issuer %}&nbsp;<span class="shc-issuer ml-1" aria-label="SMART Health Card issuer indicator"></span>{% endif %}
+                    {{ location.label }}{% unless location_data[0].currently_issuing == false or location_data == empty %}&nbsp;<span class="shc-issuer ml-1" aria-label="SMART Health Card issuer indicator"></span>{% endunless %}
                   </a>
                 </p>
                 {% endfor %}
