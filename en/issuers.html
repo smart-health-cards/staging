@@ -102,10 +102,8 @@ nav: issuers
 
             {% for issuer in pubhealth_grouped %}
               {% assign location_string = issuer.items[0].locations | join %}
-              {% unless issuer.items[0].issuer_type == "governmental.state_province_territory" %}
-                {% unless location_string == us_string or location_string contains us_string  %}
-                  {% assign world_issuers = world_issuers | push: issuer.items[0] | sort_natural: "label" %}
-                {% endunless %}
+              {% unless location_string == us_string or location_string contains us_string  %}
+                {% assign world_issuers = world_issuers | push: issuer.items[0] | sort_natural: "label" %}
               {% endunless %}
             {% endfor %}
 
