@@ -60,7 +60,6 @@ nav: issuers
           <div class="col-12 pb-4">
             <h2 class="font-weight-light">US States and Territories</h2>
 
-            {% assign pubhealth = metadata | where_exp: "item", "item.issuer_type contains 'governmental'" | sort_natural: "label" %}
             {% assign pubhealth_grouped = metadata | where_exp: "item", "item.issuer_type contains 'governmental'" | group_by: "label" | sort_natural: "label" %}
 
             {% assign us_string = '"country"=>"US"' %}
@@ -168,21 +167,50 @@ nav: issuers
         <div class="row pt-4r">
           <div class="col-12 pb-3">
 
-            <!-- TODO: pharmcies/labs -->
+            {% assign country_string = '{"country"=>"US"}' %}
+            {% assign pharmlab_issuers = "" | split: "" %}
+            {% assign pharmacies = metadata | where_exp: "item", "item.issuer_type == 'organizational.pharmacy'" %}
+            {% assign labs = metadata | where_exp: "item", "item.issuer_type == 'organizational.laboratory'" %}
+            {% assign pharm_lab_arr = pharmacies | concat: labs %}
+
+
+            {% for issuer in pharm_lab_arr %}
+              {% assign location_string = issuer.locations | join %}
+              {% if location_string == country_string or issuer.locations.size >= 35  %}
+                {% assign pharmlab = issuers | where: "iss", issuer.canonical_iss | last %}
+                {% assign pharmlab_issuers = pharmlab_issuers | push: pharmlab | sort_natural: "name" %}
+              {% endif %}
+            {% endfor %}
 
             <div class="row pt-4">
-              <div class="col-12 col-md-4">
-                <p><a class="font-weight-bold" class="font-weight-bold" href="https://www.albertsons.com/pharmacy/covid-19.html" target="_blank" title="Including Acme, Albertsons, Albertsons Market, Amigos, Carrs, Haggen, Jewel-Osco, Lucky, Market Street, Osco, Pak 'N Save, Pavilions, Randalls, Sav-On, Shaw's, Safeway, Star Market, Tom Thumb, United, and Vons.">Albertsons</a></p>
-                <p><a class="font-weight-bold" class="font-weight-bold" href="https://www.bioreference.com/patient-portal" target="_blank">BioReference Laboratories</a></p>
-                <p><a class="font-weight-bold" class="font-weight-bold" href="https://care.cvs.com/care-navigation/#/home" target="_blank">CVS</a></p>
-              </div>
-              <div class="col-12 col-md-4">
-                <p><a class="font-weight-bold" class="font-weight-bold" href="https://ihealthlabs.com/account/login" target="_blank">iHealth Labs</a></p>
-                <p><a class="font-weight-bold" href="https://www.riteaid.com/pharmacy/vaccination-digital-proof" target="_blank">Rite Aid</a></p>
-              </div>
-              <div class="col-12 col-md-4">
-                <p><a class="font-weight-bold" href="https://www.walgreens.com/topic/promotion/covid-vaccine.jsp?cjevent=99e15928621a11ec825cbaf70a1c0e13&CID=5250933&ext=100357191&PID=100357191&AID=11020894&SID=oc5A05L8E%2FcFrofF6SHThCQtuY2mvZ5s56vpcp3zZPBRiw3IMC5Yy0TpqqiMWDE7" target="_blank">Walgreens</a></p>
-                <p><a class="font-weight-bold" href="https://www.walmart.com/cp/digital-vaccine-record/9508321" target="_blank">Walmart</a></p>
+              <div class="col-12 grid-cols pharm_lab-issuers-us">
+
+                {% assign used_name = "" %}
+                {% for pharmlab_issuer in pharmlab_issuers %}
+                  {% assign issuer_data = metadata | where: "canonical_iss", pharmlab_issuer.iss | last %}
+                  {% if issuer_data.website or pharmlab_issuer.website %}
+                    {% assign issuer_name = pharmlab_issuer.name %}
+                    {% if issuer_data.label %}
+                      {% assign issuer_name = issuer_data.label %}
+                    {% endif %}
+
+                    {% if issuer_name == used_name %}
+                      {% continue %}
+                    {% endif %}
+
+                    {% assign issuer_website = pharmlab_issuer.website %}
+                    {% if issuer_data.website %}
+                      {% assign issuer_website = issuer_data.website %}
+                    {% endif %}
+                    <p>
+                      <a class="font-weight-bold" href="{{ issuer_website }}" target="_blank">
+                        {{ issuer_name }}
+                      </a>
+                    </p>
+                    {% assign used_name = issuer_name %}
+                  {% endif %}
+                {% endfor %}
+
               </div>
             </div>
           </div>
