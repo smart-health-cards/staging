@@ -80,7 +80,7 @@ nav: issuers
               <div class="col-12 grid-cols publichealth-issuers--us">
 
                 {% for usissuer in us_issuers %}
-                  {% if usissuer.label %}
+                  {% if usissuer.label and usissuer.currently_issuing == nil %}
                     {% assign issuer_data = issuers | where: "iss", usissuer.canonical_iss | last %}
                     <p>
                       <a class="font-weight-bold" href="{{ issuer_data.website }}" target="_blank">
