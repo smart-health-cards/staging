@@ -3,7 +3,6 @@ layout: page
 title: Find My Issuer
 nav: find-my-issuer
 ---
-{% assign issuers = site.data.vci-issuers.participating_issuers %}
 {% assign metadata = site.data.vci-issuers-metadata.issuer_metadata | where_exp: "item", "item.issuer_type contains 'governmental'" %}
 
 <section class="subSection pt-3 pb-5">

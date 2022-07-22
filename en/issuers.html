@@ -127,9 +127,6 @@ nav: issuers
               <div class="col-12 col-xl-6 offset-xl-5">
                 <p><a href="#pharmacies">See more issuers, including pharmacies, below.</a></p>
               </div>
-              <div class="col-12 col-xl-6 offset-xl-5">
-                <p><em>*Not currently issuing new SMART Health Cards.</em></p>
-              </div>
             </div>
           </div>
 
@@ -174,7 +171,6 @@ nav: issuers
             {% assign pharmacies = metadata | where_exp: "item", "item.issuer_type == 'organizational.pharmacy'" %}
             {% assign labs = metadata | where_exp: "item", "item.issuer_type == 'organizational.laboratory'" %}
             {% assign pharm_lab_arr = pharmacies | concat: labs %}
-
 
             {% for issuer in pharm_lab_arr %}
               {% assign location_string = issuer.locations | join %}
@@ -261,8 +257,6 @@ nav: issuers
           {% comment %} Setup a variable to track the most recently iterated name. If that name comes up more than once, skip the duplicate(s) {% endcomment %}
           {% assign name = '' %}
           {% assign num = 0 %}
-
-          <!-- TODO: defer to label value -->
 
           {% comment %} Iterate through the sorted array into three columns, offsetting by the items we've already listed. Add each entry together to get the total of non-duplicate entries. {% endcomment %}
           <div class="col-12 grid-cols all-issuers">
