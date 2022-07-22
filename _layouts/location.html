@@ -55,31 +55,17 @@
       </div> <!-- / .row -->
 
       {% comment %} If the location is a SMART Health Card issuer, return their deeplink. Otherwise, return the text referring them to the pharmacies and healthcare providers {% endcomment %}
-      {% if page.smart_issuer %}
+      {% assign location_meta = metadata | where_exp: "item", "item.issuer_type contains 'governmental'" | where: 'locations', page.location[0] | last %}
+      {% if page.location[0].country != "US" or location_meta.currently_issuing == nil and location_meta.locations[0] contains '"US"' %}
 
-      {% comment %} Assign the vaccine portal deeplink from the metadata if it exists, otherwise look in the issuers file {% endcomment %}
-      {% assign deeplinks = "" | split: "" %}
-      {% assign issuer_name = issuers | where: "name", page.label | last %}
-      {% assign issuer_label = metadata | where: "label", page.label | last %}
-      {% assign issuers_gov = metadata | where_exp: "item", "item.issuer_type contains 'governmental'" %}
-      {% for issuer in issuers_gov %}
-        {% if issuer.locations == page.location %}
-          {% if issuer.website %}
-            {% assign deeplink = issuer.website %}
-          {% else %}
-            {% assign deeplink_result = issuers | where: "iss", issuer.canonical_iss | last %}
-            {% assign deeplinks = deeplink_result | push: deeplink_result | sort_natural: "name" %}
-          {% endif %}
-        {% elsif issuer_name.name == page.label %}
-          {% assign deeplink = issuer_name.website %}
-        {% elsif issuer_label.label == page.label %}
-          {% assign deeplink = issuer_label.website %}
-        {% endif %}
-      {% endfor %}
+      {% comment %} Assign the vaccine portal deeplink from the vci-issuers-metadata if it exists, otherwise look in the vci-issuers.json file {% endcomment %}
+      {% assign issuer = issuers | where: "iss", location_meta.canonical_iss | last %}
 
-      {% unless deeplink %}
-        {% assign deeplink = deeplinks[0].website %}
-      {% endunless %}
+      {% if location_meta.website %}
+        {% assign deeplink = location_meta.website %}
+      {% elsif issuer.website %}
+        {% assign deeplink = issuer.website %}
+      {% endif %}
 
       <div class="row">
         <div class="col-12">
