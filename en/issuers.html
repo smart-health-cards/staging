@@ -109,7 +109,7 @@ nav: issuers
             {% for issuer in world_grouped %}
               {% assign location_string = issuer.items[0].locations | join %}
               {% unless location_string == us_string or location_string contains us_string %}
-                {% unless issuer.items[0].issuer_type == 'governmental.state_province_territory' or issuer.items[0].issuer_type == 'governmental.city_county' and location_string contains ca_string %}
+                {% unless issuer.items[0].issuer_type != 'governmental.nation' and location_string contains ca_string %}
                   {% assign best_world_issuer = issuer.items | sort: "canonical_iss" | last %}
                   {% assign world_issuers = world_issuers | push: best_world_issuer | sort_natural: "label" %}
                 {% endunless %}
