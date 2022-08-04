@@ -2,7 +2,7 @@
 layout: location
 title: Find an Issuer | Government of Taiwan
 nav: none
-label: Government of Taiwan
+label: Taiwan
 location:
-    - country: TW
+    - country: null
 ---

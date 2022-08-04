@@ -61,7 +61,11 @@
       {% comment %} Assign the vaccine portal deeplink from the vci-issuers-metadata if it exists, otherwise look in the vci-issuers.json file {% endcomment %}
       {% assign issuer = issuers | where: "iss", location_meta.canonical_iss | last %}
 
-      {% if location_meta.website %}
+      {% comment %}Make a special exception for Taiwan since it cannot have location metadata{% endcomment %}
+      {% if page.label contains 'Taiwan' %}
+        {% assign taiwan = metadata | where_exp: "item", "item.issuer_type contains 'governmental'" | where_exp: "item", "item.label contains 'Taiwan'" | last %}
+        {% assign deeplink = taiwan.website %}
+      {% elsif location_meta.website %}
         {% assign deeplink = location_meta.website %}
       {% elsif issuer.website %}
         {% assign deeplink = issuer.website %}
