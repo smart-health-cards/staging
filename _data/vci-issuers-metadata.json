@@ -3165,7 +3165,7 @@
         {
             "canonical_iss":"https://SMART.slhd.nsw.gov.au/health-card",
             "issuer_type":"governmental.city_county",
-            "label":"Sydney, Austrailia",
+            "label":"Sydney, Australia",
             "locations":[
                 {
                     "state":"NS",
@@ -3878,6 +3878,7 @@
         {
             "canonical_iss":"https://smarthealthcard.iisregistry.net/palau/issuer",
             "issuer_type":"governmental.nation",
+            "label":"Palau",
             "locations":[
                 {
                     "country":"PW"
@@ -7377,13 +7378,14 @@
         {
             "canonical_iss":"https://dvc.mohw.gov.tw",
             "issuer_type":"governmental.health_jurisdiction",
+            "label":"Taiwan",
             "website":"https://www.mohw.gov.tw/mp-2.html"
         },
         {
             "canonical_iss":"https://senegal.tbi.ohms.oracle.com",
             "issuer_type":"governmental.nation",
             "website":"https://www.sante.gouv.sn/",
-            "label":"République du Sénégal",
+            "label":"Republic of Senegal",
             "locations":[
                 {
                     "country":"SN"
