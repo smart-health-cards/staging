@@ -131,15 +131,19 @@ nav: issuers
                     {% assign issuer_label = worldissuer.label %}
                   {% endif %}
 
-                  {% assign issuer_website = isuer_data.website %}
+                  {% assign issuer_website = issuer_data.website %}
                   {% if worldissuer.website %}
                     {% assign issuer_website = worldissuer.website %}
                   {% endif %}
-                    <p>
-                      <a class="font-weight-bold" href="{{ issuer_website }}" target="_blank">
+                    {% if issuer_website %}
+                      <a href="{{ issuer_website }}" target="_blank">
+                    {% endif %}
+                      <p class="font-weight-bold">
                         {{ issuer_label }}
-                      </a>
-                    </p>
+                      </p>
+                    {% if issuer_website %}
+                    </a>
+                    {% endif %}
                 {% endfor %}
 
               </div>
