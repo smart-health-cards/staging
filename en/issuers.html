@@ -61,20 +61,20 @@ nav: issuers
             <h2 class="font-weight-light">US States and Territories</h2>
 
             {% comment %}Get all issuers with a governmental issuer_type{% endcomment %}
-            {% assign pubhealth_grouped = metadata | where_exp: "item", "item.issuer_type contains 'governmental'" | group_by: "label" | sort_natural: "label" %}
+            {% assign us_string = '"country"=>"US"' %}
+            {% assign us_grouped = metadata | where: "issuer_type", "governmental.state_province_territory" | where_exp: "item", "item.locations[0] contains 'US'" | where_exp: "item", "item.locations[0] contains 'country'" | group_by: "label" | sort_natural: "label" %}
 
             {% comment %}Convert the US country array to a string. Iterate over US governmental issuers and return only the ones currently issuing SMART Health Cards{% endcomment %}
-            {% assign us_string = '"country"=>"US"' %}
             {% assign us_issuers = "" | split: "" %}
 
-            {% for issuer in pubhealth_grouped %}
+            {% for issuer in us_grouped %}
               {% assign location_string = issuer.items[0].locations | join %}
-              {% if issuer.items[0].issuer_type == "governmental.state_province_territory" %}
-                {% if location_string == us_string or location_string contains us_string %}
-                  {% assign us_issuers = us_issuers | push: issuer.items[0] | sort_natural: "label" %}
-                {% endif %}
+              {% if location_string == us_string or location_string contains us_string %}
+                {% assign us_issuers = us_issuers | push: issuer.items[0] %}
               {% endif %}
             {% endfor %}
+
+            {% assign us_issuers = us_issuers | sort_natural: "label" %}
 
             <div class="row pt-4">
               <div class="col-12 grid-cols publichealth-issuers--us">
@@ -82,11 +82,15 @@ nav: issuers
                 {% for usissuer in us_issuers %}
                   {% if usissuer.label and usissuer.currently_issuing == nil %}
                     {% assign issuer_data = issuers | where: "iss", usissuer.canonical_iss | last %}
-                    <p>
-                      <a class="font-weight-bold" href="{{ issuer_data.website }}" target="_blank">
-                        {{ usissuer.label }}
+                      {% if issuer_data.website %}
+                      <a href="{{ issuer_data.website }}" target="_blank">
+                      {% endif %}
+                        <p class="font-weight-bold">
+                          {{ usissuer.label }}
+                        </p>
+                      {% if issuer_data.website %}
                       </a>
-                    </p>
+                      {% endif %}
                   {% endif %}
                 {% endfor %}
 
@@ -97,28 +101,45 @@ nav: issuers
           <div class="col-12">
             <h2 class="font-weight-light">Worldwide</h2>
 
-            {% comment %}Iterate over worldwide governmental issuers and return only the ones currently issuing SMART Health Cards{% endcomment %}
+            {% comment %}Iterate over worldwide governmental issuers and return only the ones currently issuing SMART Health Cards that are not smaller entities within Canada.{% endcomment %}
+            {% assign world_grouped = metadata | where_exp: "item", "item.issuer_type contains 'governmental'" | group_by: "canonical_iss" | sort_natural: "canonical_iss" %}
             {% assign world_issuers = "" | split: "" %}
+            {% assign ca_string = '"country"=>"CA"' %}
 
-            {% for issuer in pubhealth_grouped %}
+            {% for issuer in world_grouped %}
               {% assign location_string = issuer.items[0].locations | join %}
-              {% unless location_string == us_string or location_string contains us_string  %}
-                {% assign world_issuers = world_issuers | push: issuer.items[0] | sort_natural: "label" %}
+              {% unless location_string == us_string or location_string contains us_string %}
+                {% unless issuer.items[0].issuer_type == 'governmental.state_province_territory' or issuer.items[0].issuer_type == 'governmental.city_county' and location_string contains ca_string %}
+                  {% assign best_world_issuer = issuer.items | sort: "canonical_iss" | last %}
+                  {% assign world_issuers = world_issuers | push: best_world_issuer | sort_natural: "label" %}
+                {% endunless %}
               {% endunless %}
             {% endfor %}
+
+            {%- comment -%}
+            {% assign world_issuers = world_issuers | sort_natural: "label" %}
+            {%- endcomment -%}
 
             <div class="row pt-4">
               <div class="col-12 grid-cols publichealth-issuers--world">
 
                 {% for worldissuer in world_issuers %}
+                  {% assign issuer_data = issuers | where: "iss", worldissuer.canonical_iss | last %}
+
+                  {% assign issuer_label = issuer_data.name %}
                   {% if worldissuer.label %}
-                    {% assign issuer_data = issuers | where: "iss", worldissuer.canonical_iss | last %}
+                    {% assign issuer_label = worldissuer.label %}
+                  {% endif %}
+
+                  {% assign issuer_website = isuer_data.website %}
+                  {% if worldissuer.website %}
+                    {% assign issuer_website = worldissuer.website %}
+                  {% endif %}
                     <p>
-                      <a class="font-weight-bold" href="{{ issuer_data.website }}" target="_blank">
-                        {{ worldissuer.label }}
+                      <a class="font-weight-bold" href="{{ issuer_website }}" target="_blank">
+                        {{ issuer_label }}
                       </a>
                     </p>
-                  {% endif %}
                 {% endfor %}
 
               </div>

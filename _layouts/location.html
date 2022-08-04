@@ -79,11 +79,13 @@
                 <div class="col-12 col-md-6">
                   <div class="card shadow-sm mb-3">
                     <div class="card-body py-4">
-                      <p class="card-text h5 mb-3">
+                      <p class="card-text h5 {% if deeplink %}mb-3{% endif %}">
                         To get your SMART Health Card, visit {{ page.label }}'s vaccination portal.
                       </p>
 
+                      {% if deeplink %}
                       <a class="btn btn-primary py-3 px-5" href="{{ deeplink }}" target="_blank">{{ page.label }} Vaccine Portal</a>
+                      {% endif %}
                     </div>
                   </div>
                 </div>
