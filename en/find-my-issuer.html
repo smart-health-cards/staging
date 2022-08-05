@@ -3,6 +3,8 @@ layout: page
 title: Find My Issuer
 nav: find-my-issuer
 ---
+{% assign metadata = site.data.vci-issuers-metadata.issuer_metadata | where_exp: "item", "item.issuer_type contains 'governmental'" %}
+
 <section class="subSection pt-3 pb-5">
   <div class="container">
     <div class="row">
@@ -35,14 +37,16 @@ nav: find-my-issuer
           <div class="col-12 pb-4">
             <h2 class="font-weight-light">US States and Territories</h2>
 
-            {% assign us_locations = site.locations | where: "category", "us" %}
+            {% comment %}Get the location .md files that have the US country code and iterate over them, adding the SMART Health Card icon to the ones currently issuing.{% endcomment %}
+            {% assign us_locations = site.locations | where_exp: "item", "item.location[0].country == 'US'" | sort_natural: "label" %}
 
             <div class="row pt-4">
               <div class="grid-cols col-12 locations-us">
                 {% for location in us_locations %}
+                {% assign location_data = metadata | where: "locations", location.location[0] | where: "label", location.label %}
                 <p>
                   <a href="{{ location.url }}" class="font-weight-bold link-no-underline">
-                    {{ location.label }}{% if location.smart_issuer %}&nbsp;<span class="shc-issuer ml-1" aria-label="SMART Health Card issuer indicator"></span>{% endif %}
+                    {{ location.label }}{% unless location_data[0].currently_issuing == false or location_data == empty %}&nbsp;<span class="shc-issuer ml-1" aria-label="SMART Health Card issuer indicator"></span>{% endunless %}
                   </a>
                 </p>
                 {% endfor %}
@@ -53,14 +57,15 @@ nav: find-my-issuer
           <div class="col-12">
             <h2 class="font-weight-light">Worldwide</h2>
 
-            {% assign world_locations = site.locations | where: "category", "world" %}
+            {% comment %}Get the location .md files that do not have the US country code and iterate over them. All of these locations will by default show the SMART Health Card icon{% endcomment %}
+            {% assign world_locations = site.locations | where_exp: "item", "item.location[0].country != 'US'" | sort_natural: "label" %}
 
             <div class="row pt-4">
               <div class="grid-cols col-12 locations-world">
                 {% for location in world_locations %}
                 <p>
                   <a href="{{ location.url }}" class="font-weight-bold link-no-underline">
-                    {{ location.label }}{% if location.smart_issuer %}&nbsp;<span class="shc-issuer ml-1" aria-label="SMART Health Card issuer indicator"></span>{% endif %}
+                    {{ location.label }}&nbsp;<span class="shc-issuer ml-1" aria-label="SMART Health Card issuer indicator"></span>
                   </a>
                 </p>
                 {% endfor %}

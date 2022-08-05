@@ -6,6 +6,4 @@ label: Nebraska
 location:
   - state: NE
     country: US
-category: us
-smart_issuer: true
 ---

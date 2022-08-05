@@ -6,6 +6,4 @@ label: Wisconsin
 location:
   - state: WI
     country: US
-category: us
-smart_issuer: false
 ---

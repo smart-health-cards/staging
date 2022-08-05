@@ -396,6 +396,11 @@ ul#FAQTOC {
             transform: rotate(270deg);
 }
 
+.publichealth-issuers--us .font-weight-bold {
+    font-size: 18px;
+    color: #003939;
+}
+
 /* /Issuers Page */
 
 /* Community Page */

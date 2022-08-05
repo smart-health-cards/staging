@@ -6,6 +6,4 @@ label: Mississippi
 location:
   - state: MS
     country: US
-category: us
-smart_issuer: true
 ---

@@ -6,6 +6,4 @@ label: Indiana
 location:
   - state: IN
     country: US
-category: us
-smart_issuer: false
 ---

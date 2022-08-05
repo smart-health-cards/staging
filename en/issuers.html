@@ -3,6 +3,9 @@ layout: page
 title: SMART Health Issuers
 nav: issuers
 ---
+{% assign issuers = site.data.vci-issuers.participating_issuers %}
+{% assign metadata = site.data.vci-issuers-metadata.issuer_metadata %}
+
 <section class="mainSectionHome py-3">
   <div class="container">
     <div class="row align-items-stretch">
@@ -57,37 +60,40 @@ nav: issuers
           <div class="col-12 pb-4">
             <h2 class="font-weight-light">US States and Territories</h2>
 
+            {% comment %}Get all issuers with a governmental issuer_type{% endcomment %}
+            {% assign us_string = '"country"=>"US"' %}
+            {% assign us_grouped = metadata | where: "issuer_type", "governmental.state_province_territory" | where_exp: "item", "item.locations[0] contains 'US'" | where_exp: "item", "item.locations[0] contains 'country'" | group_by: "label" | sort_natural: "label" %}
+
+            {% comment %}Convert the US country array to a string. Iterate over US governmental issuers and return only the ones currently issuing SMART Health Cards{% endcomment %}
+            {% assign us_issuers = "" | split: "" %}
+
+            {% for issuer in us_grouped %}
+              {% assign location_string = issuer.items[0].locations | join %}
+              {% if location_string == us_string or location_string contains us_string %}
+                {% assign us_issuers = us_issuers | push: issuer.items[0] %}
+              {% endif %}
+            {% endfor %}
+
+            {% assign us_issuers = us_issuers | sort_natural: "label" %}
+
             <div class="row pt-4">
-              <div class="col-12 col-md-4">
-                <p><a class="font-weight-bold" href="https://azdhs.gov/preparedness/epidemiology-disease-control/immunization/azmyir/index.php" target="_blank">Arizona</a></p>
-                <p><a class="font-weight-bold" href="https://myvaccinerecord.cdph.ca.gov/" target="_blank">California</a></p>
-                <p><a class="font-weight-bold" href="https://mycolorado.state.co.us/myvaccine-record" target="_blank">Colorado</a></p>
-                <p><a class="font-weight-bold" href="https://portal.ct.gov/DPH/Immunizations/CT-WiZ-Access-My-Immunization-Record" target="_blank">Connecticut</a></p>
-                <p><a class="font-weight-bold" href="https://delvax.dhss.delaware.gov/delvax_public/Application/PublicPortal" target="_blank">Delaware</a></p>
-                <p><a class="font-weight-bold" href="https://dphss.guam.gov/" target="_blank">Guam</a></p>
-                <p><a class="font-weight-bold" href="https://hawaiicovid19.com/smart-health-card/" target="_blank" title="Not currently issuing new SMART Health Cards.">Hawaii*</a></p>
-                <p><a class="font-weight-bold" href="https://idphportal.illinois.gov/s/?language=en_US" target="_blank">Illinois</a></p>
-                <p><a class="font-weight-bold" href="https://kyir.chfs.ky.gov/webiznet_kyir/Login.aspx" target="_blank">Kentucky</a></p>
-              </div>
-              <div class="col-12 col-md-4">
-                <p><a class="font-weight-bold" href="https://lawallet.com/covid-19/" target="_blank">Louisiana</a></p>
-                <p><a class="font-weight-bold" href="https://health.maryland.gov/phpa/OIDEOR/IMMUN/Pages/immunet-for-public.aspx" target="_blank">Maryland</a></p>
-                <p><a class="font-weight-bold" href="https://myvaxrecords.mass.gov/" target="_blank">Massachusetts</a></p>
-                <p><a class="font-weight-bold" href="https://msdh.ms.gov/msdhsite/_static/14,0,71,969.html" target="_blank">Mississippi</a></p>
-                <p><a class="font-weight-bold" href="https://www.mycynchealth.org/login" target="_blank">Nebraska</a></p>
-                <p><a class="font-weight-bold" href="https://izrecord.nv.gov/public/Application/PublicPortal" target="_blank">Nevada</a></p>
-                <p><a class="font-weight-bold" href="https://covid19.nj.gov/pages/vaxrecords" target="_blank">New Jersey</a></p>
-                <p><a class="font-weight-bold" href="https://nmsiis.health.state.nm.us/webiznet_nm_public/Application/PublicPortal" target="_blank">New Mexico</a></p>
-              </div>
-              <div class="col-12 col-md-4">
-                <p><a class="font-weight-bold" href="https://covid19vaccine.health.ny.gov/excelsior-pass-and-excelsior-pass-plus" target="_blank">New York</a></p>
-                <p><a class="font-weight-bold" href="https://myelectronicvaccinecard.oregon.gov/" target="_blank">Oregon</a></p>
-                <p><a class="font-weight-bold" href="https://www.prits.pr.gov/vacu-id" target="_blank">Puerto Rico</a></p>
-                <p><a class="font-weight-bold" href="https://covid.ri.gov/covid-19-prevention/401health-app" target="_blank">Rhode Island</a></p>
-                <p><a class="font-weight-bold" href="https://immunize.utah.gov/usiis/" target="_blank">Utah</a></p>
-                <p><a class="font-weight-bold" href="https://vase.vdh.virginia.gov/vacapps/f?p=545:1" target="_blank">Virginia</a></p>
-                <p><a class="font-weight-bold" href="https://waverify.doh.wa.gov/" target="_blank">Washington</a></p>
-                <p><a class="font-weight-bold" href="https://vaccinerecord.dc.gov/" target="_blank">Washington, D.C.</a></p>
+              <div class="col-12 grid-cols publichealth-issuers--us">
+
+                {% for usissuer in us_issuers %}
+                  {% if usissuer.label and usissuer.currently_issuing == nil %}
+                    {% assign issuer_data = issuers | where: "iss", usissuer.canonical_iss | last %}
+                      {% if issuer_data.website %}
+                      <a href="{{ issuer_data.website }}" target="_blank">
+                      {% endif %}
+                        <p class="font-weight-bold">
+                          {{ usissuer.label }}
+                        </p>
+                      {% if issuer_data.website %}
+                      </a>
+                      {% endif %}
+                  {% endif %}
+                {% endfor %}
+
               </div>
             </div>
           </div>
@@ -95,28 +101,56 @@ nav: issuers
           <div class="col-12">
             <h2 class="font-weight-light">Worldwide</h2>
 
+            {% comment %}Iterate over worldwide governmental issuers and return only the ones currently issuing SMART Health Cards that are not smaller entities within Canada.{% endcomment %}
+            {% assign world_grouped = metadata | where_exp: "item", "item.issuer_type contains 'governmental'" | group_by: "canonical_iss" | sort_natural: "canonical_iss" %}
+            {% assign world_issuers = "" | split: "" %}
+            {% assign ca_string = '"country"=>"CA"' %}
+
+            {% for issuer in world_grouped %}
+              {% assign location_string = issuer.items[0].locations | join %}
+              {% unless location_string == us_string or location_string contains us_string %}
+                {% unless issuer.items[0].issuer_type != 'governmental.nation' and location_string contains ca_string %}
+                  {% assign best_world_issuer = issuer.items | sort: "canonical_iss" | last %}
+                  {% assign world_issuers = world_issuers | push: best_world_issuer | sort_natural: "label" %}
+                {% endunless %}
+              {% endunless %}
+            {% endfor %}
+
+            {%- comment -%}
+            {% assign world_issuers = world_issuers | sort_natural: "label" %}
+            {%- endcomment -%}
+
             <div class="row pt-4">
-              <div class="col-12 col-md-4">
-                <p><a class="font-weight-bold" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-covid-19-proof-vaccination/get-proof.html" target="_blank">Canada</a></p>
-                <p><a class="font-weight-bold" href="https://www.hsa.ky/our-services/patient-portal-info/" target="_blank">Cayman Islands</a></p>
-                <p><a class="font-weight-bold" href="https://hsa.gov.fm/" target="_blank">Federated States of Micronesia</a></p>
-              </div>
-              <div class="col-12 col-md-4">
-                <p><a class="font-weight-bold" href="https://www.mohw.gov.tw/mp-2.html" target="_blank">Government of Taiwan</a></p>
-                <p><a class="font-weight-bold" href="https://www.mhlw.go.jp/stf/covid-19/certificate.html" target="_blank">Japan</a></p>
-                <p><a class="font-weight-bold" href="https://vaccincorona.sec.gouv.sn/webforms/view.php?id=18762" target="_blank">Republic of Senegal</a></p>
-              </div>
-              <div class="col-12 col-md-4">
-                <p><a class="font-weight-bold" href="http://nsw.gov.au/" target="_blank">Sydney, Australia</a></p>
-                <p><a class="font-weight-bold" href="https://webiz.rmihealth.org/webiznet_rmi/Login.aspx/" target="_blank">Marshall Islands</a></p>
+              <div class="col-12 grid-cols publichealth-issuers--world">
+
+                {% for worldissuer in world_issuers %}
+                  {% assign issuer_data = issuers | where: "iss", worldissuer.canonical_iss | last %}
+
+                  {% assign issuer_label = issuer_data.name %}
+                  {% if worldissuer.label %}
+                    {% assign issuer_label = worldissuer.label %}
+                  {% endif %}
+
+                  {% assign issuer_website = issuer_data.website %}
+                  {% if worldissuer.website %}
+                    {% assign issuer_website = worldissuer.website %}
+                  {% endif %}
+                    {% if issuer_website %}
+                      <a href="{{ issuer_website }}" target="_blank">
+                    {% endif %}
+                      <p class="font-weight-bold">
+                        {{ issuer_label }}
+                      </p>
+                    {% if issuer_website %}
+                    </a>
+                    {% endif %}
+                {% endfor %}
+
               </div>
             </div>
             <div class="row text-right pt-3">
               <div class="col-12 col-xl-6 offset-xl-5">
                 <p><a href="#pharmacies">See more issuers, including pharmacies, below.</a></p>
-              </div>
-              <div class="col-12 col-xl-6 offset-xl-5">
-                <p><em>*Not currently issuing new SMART Health Cards.</em></p>
               </div>
             </div>
           </div>
@@ -156,19 +190,50 @@ nav: issuers
         <div class="row pt-4r">
           <div class="col-12 pb-3">
 
+            {% comment %}Set up an array of pharmacies and labs in the US. Iterate over ones that either only have the country: US tag set or that have 35 or more state locations listed{% endcomment %}
+            {% assign country_string = '{"country"=>"US"}' %}
+            {% assign pharmlab_issuers = "" | split: "" %}
+            {% assign pharmacies = metadata | where_exp: "item", "item.issuer_type == 'organizational.pharmacy'" %}
+            {% assign labs = metadata | where_exp: "item", "item.issuer_type == 'organizational.laboratory'" %}
+            {% assign pharm_lab_arr = pharmacies | concat: labs %}
+
+            {% for issuer in pharm_lab_arr %}
+              {% assign location_string = issuer.locations | join %}
+              {% if location_string == country_string or issuer.locations.size >= 35  %}
+                {% assign pharmlab = issuers | where: "iss", issuer.canonical_iss | last %}
+                {% assign pharmlab_issuers = pharmlab_issuers | push: pharmlab | sort_natural: "name" %}
+              {% endif %}
+            {% endfor %}
+
             <div class="row pt-4">
-              <div class="col-12 col-md-4">
-                <p><a class="font-weight-bold" class="font-weight-bold" href="https://www.albertsons.com/pharmacy/covid-19.html" target="_blank" title="Including Acme, Albertsons, Albertsons Market, Amigos, Carrs, Haggen, Jewel-Osco, Lucky, Market Street, Osco, Pak 'N Save, Pavilions, Randalls, Sav-On, Shaw's, Safeway, Star Market, Tom Thumb, United, and Vons.">Albertsons</a></p>
-                <p><a class="font-weight-bold" class="font-weight-bold" href="https://www.bioreference.com/patient-portal" target="_blank">BioReference Laboratories</a></p>
-                <p><a class="font-weight-bold" class="font-weight-bold" href="https://care.cvs.com/care-navigation/#/home" target="_blank">CVS</a></p>
-              </div>
-              <div class="col-12 col-md-4">
-                <p><a class="font-weight-bold" class="font-weight-bold" href="https://ihealthlabs.com/account/login" target="_blank">iHealth Labs</a></p>
-                <p><a class="font-weight-bold" href="https://www.riteaid.com/pharmacy/vaccination-digital-proof" target="_blank">Rite Aid</a></p>
-              </div>
-              <div class="col-12 col-md-4">
-                <p><a class="font-weight-bold" href="https://www.walgreens.com/topic/promotion/covid-vaccine.jsp?cjevent=99e15928621a11ec825cbaf70a1c0e13&CID=5250933&ext=100357191&PID=100357191&AID=11020894&SID=oc5A05L8E%2FcFrofF6SHThCQtuY2mvZ5s56vpcp3zZPBRiw3IMC5Yy0TpqqiMWDE7" target="_blank">Walgreens</a></p>
-                <p><a class="font-weight-bold" href="https://www.walmart.com/cp/digital-vaccine-record/9508321" target="_blank">Walmart</a></p>
+              <div class="col-12 grid-cols pharm_lab-issuers-us">
+
+                {% assign used_name = "" %}
+                {% for pharmlab_issuer in pharmlab_issuers %}
+                  {% assign issuer_data = metadata | where: "canonical_iss", pharmlab_issuer.iss | last %}
+                  {% if issuer_data.website or pharmlab_issuer.website %}
+                    {% assign issuer_name = pharmlab_issuer.name %}
+                    {% if issuer_data.label %}
+                      {% assign issuer_name = issuer_data.label %}
+                    {% endif %}
+
+                    {% if issuer_name == used_name %}
+                      {% continue %}
+                    {% endif %}
+
+                    {% assign issuer_website = pharmlab_issuer.website %}
+                    {% if issuer_data.website %}
+                      {% assign issuer_website = issuer_data.website %}
+                    {% endif %}
+                    <p>
+                      <a class="font-weight-bold" href="{{ issuer_website }}" target="_blank">
+                        {{ issuer_name }}
+                      </a>
+                    </p>
+                    {% assign used_name = issuer_name %}
+                  {% endif %}
+                {% endfor %}
+
               </div>
             </div>
           </div>
@@ -214,61 +279,25 @@ nav: issuers
               {% assign issuers = issuers | push: best_entry_for_issuer %}
           {% endfor %}
 
-          {% comment %} Create offset numbers to break the list up into 3 roughly equal groups {% endcomment %}
-          {% assign looplength = issuers.size | divided_by: 3 %}
-          {% assign looplength2 = looplength | plus: looplength %}
-
           {% comment %} Setup a variable to track the most recently iterated name. If that name comes up more than once, skip the duplicate(s) {% endcomment %}
           {% assign name = '' %}
           {% assign num = 0 %}
 
           {% comment %} Iterate through the sorted array into three columns, offsetting by the items we've already listed. Add each entry together to get the total of non-duplicate entries. {% endcomment %}
-          <div class="col-12 col-md-4">
-            {% for issuer in issuers limit: looplength %}
-            {% if issuer.name == name %}
-            {% continue %}
-            {% endif %}
-            {% if issuer.website %}
-            <a href={{ issuer.website }} target="_blank">
-            {% endif %}
-            <p class="font-weight-bold">{{ issuer.name }}</p>
-            {% if issuer.website %}
-            </a>
-            {% endif %}
-            {% assign name = issuer.name %}
-            {% assign num = num | plus: 1 %}
-            {% endfor %}
-          </div>
-          <div class="col-12 col-md-4">
-            {% for issuer in issuers limit: looplength offset: looplength %}
-            {% if issuer.name == name %}
-            {% continue %}
-            {% endif %}
-            {% if issuer.website %}
-            <a href={{ issuer.website }} target="_blank">
-            {% endif %}
-            <p class="font-weight-bold">{{ issuer.name }}</p>
-            {% if issuer.website %}
-            </a>
-            {% endif %}
-            {% assign name = issuer.name %}
-            {% assign num = num | plus: 1 %}
-            {% endfor %}
-          </div>
-          <div class="col-12 col-md-4">
-            {% for issuer in issuers limit: looplength2 offset: looplength2  %}
-            {% if issuer.name == name %}
-            {% continue %}
-            {% endif %}
-            {% if issuer.website %}
-            <a href={{ issuer.website }} target="_blank">
-            {% endif %}
-            <p class="font-weight-bold">{{ issuer.name }}</p>
-            {% if issuer.website %}
-            </a>
-            {% endif %}
-            {% assign name = issuer.name %}
-            {% assign num = num | plus: 1 %}
+          <div class="col-12 grid-cols all-issuers">
+            {% for issuer in issuers %}
+              {% if issuer.name == name %}
+                {% continue %}
+              {% endif %}
+              {% if issuer.website %}
+                <a href={{ issuer.website }} target="_blank">
+              {% endif %}
+              <p class="font-weight-bold">{{ issuer.name }}</p>
+              {% if issuer.website %}
+                </a>
+              {% endif %}
+              {% assign name = issuer.name %}
+              {% assign num = num | plus: 1 %}
             {% endfor %}
           </div>
 
