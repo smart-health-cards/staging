@@ -6,6 +6,4 @@ label: Vermont
 location:
   - state: VT
     country: US
-category: us
-smart_issuer: false
 ---

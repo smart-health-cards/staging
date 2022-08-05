@@ -6,6 +6,4 @@ label: Sydney, Australia
 location:
   - state: NS
     country: AU
-category: world
-smart_issuer: true
 ---

@@ -6,6 +6,4 @@ label: Maryland
 location:
   - state: MD
     country: US
-category: us
-smart_issuer: true
 ---

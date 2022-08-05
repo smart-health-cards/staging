@@ -2444,11 +2444,6 @@
       "name": "Heritage Valley Health System"
     },
     {
-      "iss": "https://smart.medconciergela.com/api/ISSUER",
-      "name": "Med Concierge LA",
-      "website": "https://medconciergela.com/"
-    },
-    {
       "iss": "https://soapepic.montefiore.org/FhirProxyPrd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
       "name": "Montefiore Medical Center",
       "website": "https://www.montefiore.org/"
@@ -2474,6 +2469,12 @@
     },
     {
       "iss": "https://rp.sleh.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+      "canonical_iss": "https://rpsouth.catholichealth.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+      "name": "CommonSpirit Health",
+      "website": "https://www.commonspirit.org/"
+    },
+    {
+      "iss": "https://rpsouth.catholichealth.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
       "name": "CommonSpirit Health",
       "website": "https://www.commonspirit.org/"
     },
@@ -2810,18 +2811,18 @@
     },
     {
       "iss": "https://dvc.mohw.gov.tw",
-      "name": "Government of Taiwan",
+      "name": "Taiwan",
       "website": "https://www.mohw.gov.tw/mp-2.html"
     },
     {
       "iss": "https://senegal.tbi.ohms.oracle.com",
-      "name": "Republic of Senegal",
-      "website": "https://vaccincorona.sec.gouv.sn/webforms/view.php?id=18762"
+      "name": "République du Sénégal",
+      "website": "https://www.sante.gouv.sn/"
     },
     {
       "iss": "https://rxhub.luhs.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
       "name": "Loyola Medicine",
-      "website": "https://myloyola.luhs.org/mychart"
+      "website": "https://www.loyolamedicine.org/"
     },
     {
       "iss": "https://webproxy.allina.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -2831,17 +2832,17 @@
     {
       "iss": "https://epicproxy.bhsala.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
       "name": "Brookwood Baptist Health",
-      "website": "https://www.brookwoodbaptisthealth.com/portal"
+      "website": "https://www.brookwoodbaptisthealth.com/"
     },
     {
       "iss": "https://cnesp001.carene.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
       "name": "Care New England",
-      "website": "https://www.carenewengland.org/personal-health-record"
+      "website": "https://www.carenewengland.org/"
     },
     {
       "iss": "https://mobileproxy.sjhsyr.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-      "name": "St. Joseph's Hospital Health Center",
-      "website": "https://www.sjhsyr.org/my-st-josephs/"
+      "name": "St. Joseph’s Hospital Health Center",
+      "website": "https://www.sjhsyr.org/"
     },
     {
       "iss": "https://mycynchealth.org",
@@ -2849,9 +2850,14 @@
       "website": "https://www.mycynchealth.org/login"
     },
     {
+      "iss": "https://docket.care/id",
+      "name": "State of Idaho",
+      "website": "https://healthandwelfare.idaho.gov/covid-19-vaccination"
+    },
+    {
       "iss": "https://epsoap.conehealth.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
       "name": "Cone Health",
-      "website": "https://mychart.conehealth.com/MyChart"
+      "website": "https://www.conehealth.com/"
     },
     {
       "iss": "https://shc.cdr-healthmed.com/issuer",
@@ -2861,12 +2867,27 @@
     {
       "iss": "https://epicproxy.et0939.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
       "name": "Spartanburg Regional Healthcare System",
-      "website": "https://mychart.spartanburgregional.com/MyChart"
+      "website": "https://www.spartanburgregional.com/"
     },
     {
       "iss": "https://epicproxy.et1030.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
       "name": "St. Charles Health System",
-      "website": "https://www.stcharleshealthcare.org/mychart-patient-portal"
+      "website": "https://www.stcharleshealthcare.org/"
+    },
+    {
+      "iss": "https://epicedi.leememorial.org/FHIR-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+      "name": "Lee Health",
+      "website": "https://www.leehealth.org/covid-19-vaccine/"
+    },
+    {
+      "iss": "https://external.fastmed.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+      "name": "FastMed",
+      "website": "https://www.fastmed.com/"
+    },
+    {
+      "iss": "https://lsepprdsoap.lifespan.org/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+      "name": "Lifespan",
+      "website": "https://www.lifespan.org/"
     }
   ]
 }

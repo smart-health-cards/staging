@@ -6,6 +6,4 @@ label: Utah
 location:
   - state: UT
     country: US
-category: us
-smart_issuer: true
 ---

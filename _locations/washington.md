@@ -6,6 +6,4 @@ label: Washington
 location:
   - state: WA
     country: US
-category: us
-smart_issuer: true
 ---

@@ -6,6 +6,4 @@ label: Idaho
 location:
   - state: ID
     country: US
-category: us
-smart_issuer: false
 ---

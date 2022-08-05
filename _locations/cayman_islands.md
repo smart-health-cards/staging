@@ -5,6 +5,4 @@ nav: none
 label: Cayman Islands
 location:
     - country: KY
-category: world
-smart_issuer: true
 ---

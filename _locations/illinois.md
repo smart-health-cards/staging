@@ -6,6 +6,4 @@ label: Illinois
 location:
   - state: IL
     country: US
-category: us
-smart_issuer: true
 ---

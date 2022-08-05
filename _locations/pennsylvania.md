@@ -6,6 +6,4 @@ label: Pennsylvania
 location:
   - state: PA
     country: US
-category: us
-smart_issuer: false
 ---
