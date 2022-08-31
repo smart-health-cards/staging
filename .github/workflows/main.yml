@@ -1,5 +1,11 @@
 name: Fetch json files
-on: [push]
+on:
+  push:
+    branches:
+        gh-pages
+  schedule:
+    - cron: "0 8 * * 2"
+
 jobs:
  fetchIssuerJSON:
     runs-on: ubuntu-latest
