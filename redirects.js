@@ -88,7 +88,7 @@ const remaps = [
   {"page": "changelog", "id": "004"}, 
   {"page": "changelog", "id": "003"}, 
   {"page": "changelog", "id": "002"},
-  {"page": "ial", "id": "", "target": `${targetOrigin}/ial`},
+  {"page": "ial", "id": "", "target": `https://terminology.smarthealth.cards/CodeSystem-identity-assurance-level.html`},
 ];
 
 const path = window.location.pathname.replace(/\//g, "");
