@@ -4,6 +4,6 @@ title: Find an Issuer | Florida
 nav: none
 label: Florida
 location:
-  - state: TX
+  - state: FL
     country: US
 ---
