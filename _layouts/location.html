@@ -166,7 +166,11 @@
 
             {% for pharmacy in pharmacy_issuers %}
               {% if pharmacy.name and pharmacy.website %}
+                {% if pharmacy.name == pharm_name %}
+                  {% continue %}
+                {% endif %}
                 <p><a class="font-weight-bold link-no-underline link-arrow" href="{{ pharmacy.website }}" target="_blank">{{ pharmacy.name }}<span class="right-arrow"></span></a></p>
+                {% assign pharm_name = pharmacy.name %}
               {% endif %}
             {% endfor %}
 
