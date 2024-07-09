@@ -5918,6 +5918,7 @@
         {
             "canonical_iss":"https://webproxy.comhs.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "issuer_type":"organizational.health_system",
+            "website":"https://mychart.powershealth.org/mychart/authentication/Login?",
             "locations":[
                 {
                     "state":"IN",
@@ -8086,6 +8087,41 @@
                 },
                 {
                     "state":"RI",
+                    "country":"US"
+                },
+                {
+                    "state":"TX",
+                    "country":"US"
+                }
+            ]
+        },
+        {
+            "canonical_iss":"https://epicproxy.et1256.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "website":"https://mychart.hcnetwork.org/MyChart/Authentication/Login?",
+            "issuer_type":"organizational.health_system",
+            "locations":[
+                {
+                    "state":"FL",
+                    "country":"US"
+                },
+                {
+                    "state":"HI",
+                    "country":"US"
+                },
+                {
+                    "state":"KS",
+                    "country":"US"
+                },
+                {
+                    "state":"MO",
+                    "country":"US"
+                },
+                {
+                    "state":"NM",
+                    "country":"US"
+                },
+                {
+                    "state":"NC",
                     "country":"US"
                 },
                 {
